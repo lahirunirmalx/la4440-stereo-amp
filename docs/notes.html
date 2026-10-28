@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LA4440 stereo amp - volume pot, mute, X9C104-ready</title>
+<style>
+/* Bench notes house style. Extracted from soft-power-standby-9v.html.
+ * Schematic ink classes (.wire .fat .thin .dot .fillink .boxf .accf .open
+ * .grid) and text classes (.ref .val .volt .rail .tiny) are what schem.py
+ * emits, so a generated schematic themes itself with no inline styling.
+ * Trace classes .tr1-.tr4 are for waveform panels. */
+
+*, *::before, *::after { box-sizing: border-box; }
+  body, h1, h2, h3, p, figure, table, ul, ol { margin: 0; padding: 0; }
+  ul, ol { list-style-position: outside; }
+  svg, img { display: block; max-width: 100%; }
+  button { font: inherit; color: inherit; }
+
+  :root {
+    --bg:        #F5F7F6;
+    --surface:   #FFFFFF;
+    --ink:       #141A19;
+    --ink-2:     #4A5654;
+    --ink-3:     #6E7B78;
+    --rule:      #D6DEDB;
+    --rule-soft: #E6ECEA;
+    --accent:    #0F6F63;
+    --accent-2:  #E1EFEC;
+    --warn:      #A6412A;
+    --warn-2:    #F6E7E2;
+    --red:       #C0392B;
+    --green:     #1F7A3A;
+
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    --mono: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0D1413; --surface: #141D1B; --ink: #E7EEEC; --ink-2: #9BA9A6;
+      --ink-3: #788683; --rule: #26332F; --rule-soft: #1B2523; --accent: #57D3C0;
+      --accent-2: #16302C; --warn: #E98B71; --warn-2: #2E1A15;
+      --red: #F0705E; --green: #57C97C;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0D1413; --surface: #141D1B; --ink: #E7EEEC; --ink-2: #9BA9A6;
+    --ink-3: #788683; --rule: #26332F; --rule-soft: #1B2523; --accent: #57D3C0;
+    --accent-2: #16302C; --warn: #E98B71; --warn-2: #2E1A15;
+    --red: #F0705E; --green: #57C97C;
+  }
+  :root[data-theme="light"] {
+    --bg: #F5F7F6; --surface: #FFFFFF; --ink: #141A19; --ink-2: #4A5654;
+    --ink-3: #6E7B78; --rule: #D6DEDB; --rule-soft: #E6ECEA; --accent: #0F6F63;
+    --accent-2: #E1EFEC; --warn: #A6412A; --warn-2: #F6E7E2;
+    --red: #C0392B; --green: #1F7A3A;
+  }
+
+  body {
+    background: var(--bg); color: var(--ink); font-family: var(--sans);
+    font-size: 17px; line-height: 1.65; -webkit-font-smoothing: antialiased;
+  }
+  .shell {
+    max-width: 1020px; margin: 0 auto; padding: 3rem 1.5rem 6rem;
+    display: flex; flex-direction: column; gap: 3.25rem;
+  }
+  .prose { max-width: 68ch; display: flex; flex-direction: column; gap: 1.15rem; }
+
+  h1, h2, h3 { font-family: var(--serif); font-weight: 600; text-wrap: balance; line-height: 1.15; }
+  h1 { font-size: clamp(2.1rem, 5vw, 3rem); letter-spacing: -0.015em; }
+  h2 { font-size: clamp(1.5rem, 3vw, 1.9rem); }
+  h3 { font-size: 1.16rem; }
+  strong { font-weight: 650; }
+
+  .eyebrow {
+    font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--accent);
+  }
+  .lede { font-size: 1.16rem; color: var(--ink-2); max-width: 60ch; }
+
+  .topbar { display: flex; justify-content: flex-end; margin-bottom: -1.5rem; }
+  #themeBtn {
+    font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--ink-2); background: var(--surface);
+    border: 1px solid var(--rule); border-radius: 2px; padding: 0.4rem 0.75rem; cursor: pointer;
+  }
+  #themeBtn:hover { border-color: var(--accent); color: var(--accent); }
+  #themeBtn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  header.masthead {
+    border-bottom: 1px solid var(--rule); padding-bottom: 2.25rem;
+    display: flex; flex-direction: column; gap: 0.85rem;
+  }
+  section { display: flex; flex-direction: column; gap: 1.5rem; }
+  .sec-head { display: flex; flex-direction: column; gap: 0.6rem; max-width: 68ch; }
+
+  figure {
+    background: var(--surface); border: 1px solid var(--rule);
+    border-radius: 3px; overflow: hidden;
+  }
+  .fig-body { padding: 1.5rem 1rem; overflow-x: auto; }
+  .fig-body svg { margin: 0 auto; height: auto; }
+  figcaption {
+    border-top: 1px solid var(--rule-soft); padding: 0.85rem 1.25rem;
+    font-size: 0.88rem; color: var(--ink-2); background: var(--bg);
+  }
+  figcaption b { color: var(--ink); font-weight: 620; }
+
+  .wire   { stroke: var(--ink); stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .fat    { stroke: var(--ink); stroke-width: 3.2; fill: none; stroke-linecap: round; }
+  .thin   { stroke: var(--ink-3); stroke-width: 1.25; fill: none; }
+  .grid   { stroke: var(--rule); stroke-width: 1; fill: none; }
+  .dot    { fill: var(--ink); }
+  .fillink{ fill: var(--ink); stroke: none; }
+  .boxf   { fill: var(--surface); stroke: var(--ink); stroke-width: 2; }
+  .accf   { fill: var(--accent-2); stroke: var(--accent); stroke-width: 2; }
+  .open   { fill: var(--surface); stroke: var(--ink); stroke-width: 2; }
+  .tr1 { stroke: var(--accent); stroke-width: 2.2; fill: none; stroke-linejoin: round; }
+  .tr2 { stroke: var(--warn); stroke-width: 2.2; fill: none; stroke-linejoin: round; }
+  .tr3 { stroke: var(--ink-2); stroke-width: 1.6; fill: none; stroke-dasharray: 5 3; }
+  .tr4 { stroke: var(--ink); stroke-width: 1.6; fill: none; stroke-dasharray: 2 3; }
+
+  svg text { font-family: var(--mono); font-size: 13px; fill: var(--ink); }
+  .ref  { font-weight: 700; }
+  .val  { fill: var(--ink-2); font-size: 12px; }
+  .volt { fill: var(--accent); font-weight: 700; font-size: 12px; }
+  .rail { fill: var(--ink-2); font-size: 12px; letter-spacing: 0.06em; }
+  .tiny { fill: var(--ink-3); font-size: 11px; }
+  .lred { fill: var(--red); font-weight: 700; font-size: 12px; }
+  .lgrn { fill: var(--green); font-weight: 700; font-size: 12px; }
+
+  .tw { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.93rem; font-variant-numeric: tabular-nums; }
+  th, td { text-align: left; padding: 0.6rem 0.85rem; border-bottom: 1px solid var(--rule-soft); vertical-align: top; }
+  thead th {
+    font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase;
+    letter-spacing: 0.1em; color: var(--ink-3); font-weight: 600;
+    border-bottom: 1px solid var(--rule);
+  }
+  tbody tr:last-child td { border-bottom: none; }
+  td.num, th.num { text-align: right; font-family: var(--mono); }
+  td.ref { font-family: var(--mono); font-weight: 650; white-space: nowrap; }
+  code { font-family: var(--mono); font-size: 0.88em; background: var(--rule-soft); padding: 0.1em 0.36em; border-radius: 2px; }
+
+  .eq {
+    font-family: var(--mono); background: var(--surface); border: 1px solid var(--rule);
+    border-left: 3px solid var(--accent); border-radius: 2px; padding: 1rem 1.15rem;
+    font-size: 0.9rem; line-height: 1.75; overflow-x: auto; white-space: pre;
+  }
+  .note {
+    border-left: 3px solid var(--warn); background: var(--warn-2);
+    padding: 0.9rem 1.15rem; border-radius: 2px; font-size: 0.95rem; max-width: 68ch;
+  }
+  .key {
+    border: 1px solid var(--accent); background: var(--accent-2);
+    border-radius: 2px; padding: 1.1rem 1.3rem; max-width: 68ch;
+  }
+  .key .eyebrow { margin-bottom: 0.35rem; display: block; }
+  ul.bullets, ol.bullets { padding-left: 1.3rem; display: flex; flex-direction: column; gap: 0.5rem; }
+  ul.bullets li::marker, ol.bullets li::marker { color: var(--accent); }
+
+  .urlbox {
+    font-family: var(--mono); font-size: 0.74rem; line-height: 1.5;
+    background: var(--surface); border: 1px solid var(--rule); border-radius: 2px;
+    padding: 0.9rem 1rem; word-break: break-all; max-height: 9rem; overflow-y: auto;
+  }
+  .btnrow { display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center; }
+  a.cta {
+    font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.06em;
+    text-transform: uppercase; text-decoration: none;
+    color: var(--bg); background: var(--accent);
+    padding: 0.6rem 1rem; border-radius: 2px;
+  }
+  a.cta:hover { filter: brightness(1.1); }
+  #copyBtn {
+    font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.06em;
+    text-transform: uppercase; background: var(--surface); color: var(--ink-2);
+    border: 1px solid var(--rule); border-radius: 2px; padding: 0.6rem 1rem; cursor: pointer;
+  }
+  #copyBtn:hover { border-color: var(--accent); color: var(--accent); }
+
+  .legend { display: flex; flex-wrap: wrap; gap: 1.25rem; font-size: 0.84rem; color: var(--ink-2); font-family: var(--mono); }
+  .legend span { display: inline-flex; align-items: center; gap: 0.4rem; }
+  .sw { width: 26px; height: 3px; border-radius: 2px; display: inline-block; }
+
+  footer {
+    border-top: 1px solid var(--rule); padding-top: 1.5rem;
+    color: var(--ink-3); font-size: 0.88rem; max-width: 68ch;
+  }
+  @media print {
+    body { background: #fff; color: #000; }
+    .topbar, .btnrow { display: none; }
+    figure { break-inside: avoid; }
+  }
+
+  .pin { fill: var(--warn); font-size: 11px; font-family: var(--mono); }
+  .pol { fill: var(--red); font-weight: 700; font-size: 14px; }
+  .tiny { font-size: 11px; fill: var(--ink-2); }
+  .buy { color: var(--warn); font-weight: 700; }
+  .hand { color: var(--green); font-weight: 700; }
+
+</style>
+</head>
+<body>
+<div class="shell">
+
+  <div class="topbar">
+    <button id="themeBtn" type="button" aria-label="Toggle colour theme">Theme</button>
+  </div>
+
+  <header class="masthead">
+    <span class="eyebrow">Bench notes / Audio</span>
+    <h1>LA4440 stereo amplifier with volume, mute and a digital-pot upgrade path</h1>
+    <p class="lede">
+      2 x 4.4 W clean into 4 ohm at 13.2 V (model), 30 dB gain, flat from 20 Hz. Volume is a
+      dual 100k linear pot that two X9C104 digital pots (in hand) replace on the same header;
+      mute is a toggle now and a GPIO later, wired in parallel. Every part except the pot,
+      three film caps, the connectors and a heatsink is in the catalog.
+    </p>
+  </header>
+
+  <section>
+    <div class="sec-head">
+      <span class="eyebrow">The problem</span>
+      <h2>The LA4440 has too much gain for a volume pot</h2>
+    </div>
+    <div class="prose">
+      <p>The chip's gain is fixed at 51.5 dB (x376). Full power needs only 18 mV at the input, so a
+      phone at 1 V would reach full volume in the first 2% of the pot's travel - that is tap 1 or 2
+      of the 100 taps on an X9C104. The volume control would be useless.</p>
+      <div class="key">
+        <span class="eyebrow">The mechanism</span>
+        <p>The datasheet lets you lower the gain with a resistor RNF' in series with the
+        feedback capacitor on pins 1 and 7: gain = 20k / (50 + RNF'). 470 ohm gives 30 dB, so full
+        power now needs 0.18 V and the pot uses its whole travel. "Adjustable gain" is the volume pot;
+        RNF' sets its range. The digital pot cannot replace RNF' - its 1k steps are too coarse for a
+        0 to 500 ohm job.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <span class="eyebrow">Figure 1</span>
+      <h2>Volume and mute</h2>
+      <p>Both channels; everything a later ESP32 controls comes in on header J2.</p>
+    </div>
+    <figure>
+      <div class="fig-body">
+<svg viewBox="0 0 1300 690" width="100%" style="min-width:1000px" role="img" aria-label="Input, volume and mute: each line input feeds one gang of a 100k linear pot (or an X9C104 later) whose wiper has a 10k taper resistor to ground, then 47 uF and 5.6k to the LA4440 input. Mute: toggle SW1 or a GPIO through 2N3904 Q1 and 2N5401 Q2 connects VCC through 1.8k to the LA4440 mute pin, with 47 uF to ground">
+  <circle class="wire" cx="60" cy="140" r="5" fill="var(--bg)"/>
+  <text class="rail" x="74" y="145"></text>
+  <text class="rail" x="50" y="126">LINE L (J2-1)</text>
+  <path class="wire" d="M60 140 L200 140"/>
+  <path class="wire" d="M200 140 L200 194"/>
+  <path class="wire" d="M200 194 l-9 8 l18 14 l-18 14 l18 14 l-18 14 l9 8"/>
+  <path class="wire" d="M200 266 L200 320"/>
+  <path class="wire" d="M244 230 L216 230"/>
+  <polygon class="fillink" points="216,230 229,225 229,235"/>
+  <text class="ref" text-anchor="end" x="180" y="226">RV1A</text>
+  <text class="val" text-anchor="end" x="180" y="242">100k LIN</text>
+  <path class="wire" d="M200 320 L200 338"/>
+  <path class="wire" d="M178 338 H222 M186 346 H214 M194 354 H206"/>
+  <path class="wire" d="M244 230 L320 230"/>
+  <text class="pin" x="252" y="248">J2-2</text>
+  <path class="wire" d="M320 230 L320 254"/>
+  <path class="wire" d="M320 254 l-9 8 l18 14 l-18 14 l18 14 l-18 14 l9 8"/>
+  <path class="wire" d="M320 326 L320 350"/>
+  <text class="ref" text-anchor="start" x="338" y="286">R3</text>
+  <text class="val" text-anchor="start" x="338" y="302">10k</text>
+  <path class="wire" d="M320 350 L320 368"/>
+  <path class="wire" d="M298 368 H342 M306 376 H334 M314 384 H326"/>
+  <circle class="dot" cx="320" cy="230" r="4"/>
+  <path class="wire" d="M320 230 L373 230"/>
+  <path class="wire" d="M373 208 V252"/>
+  <path class="wire" d="M387 208 V252"/>
+  <path class="wire" d="M387 230 L440 230"/>
+  <text class="ref" text-anchor="middle" x="380" y="182">C13</text>
+  <text class="val" text-anchor="middle" x="380" y="198">47u</text>
+  <text class="pol" text-anchor="middle" x="400" y="224">+</text>
+  <path class="wire" d="M440 230 L474 230"/>
+  <path class="wire" d="M474 230 l8 -9 l14 18 l14 -18 l14 18 l14 -18 l8 9"/>
+  <path class="wire" d="M546 230 L580 230"/>
+  <text class="ref" text-anchor="middle" x="510" y="204">R5</text>
+  <text class="val" text-anchor="middle" x="510" y="220">5.6k</text>
+  <circle class="wire" cx="580" cy="230" r="5" fill="var(--bg)"/>
+  <text class="rail" x="594" y="235"></text>
+  <text class="rail" x="594" y="235">IN1: U1 pin 2</text>
+  <circle class="wire" cx="60" cy="420" r="5" fill="var(--bg)"/>
+  <text class="rail" x="74" y="425"></text>
+  <text class="rail" x="50" y="406">LINE R (J2-3)</text>
+  <path class="wire" d="M60 420 L200 420"/>
+  <path class="wire" d="M200 420 L200 474"/>
+  <path class="wire" d="M200 474 l-9 8 l18 14 l-18 14 l18 14 l-18 14 l9 8"/>
+  <path class="wire" d="M200 546 L200 600"/>
+  <path class="wire" d="M244 510 L216 510"/>
+  <polygon class="fillink" points="216,510 229,505 229,515"/>
+  <text class="ref" text-anchor="end" x="180" y="506">RV1B</text>
+  <text class="val" text-anchor="end" x="180" y="522">100k LIN</text>
+  <path class="wire" d="M200 600 L200 618"/>
+  <path class="wire" d="M178 618 H222 M186 626 H214 M194 634 H206"/>
+  <path class="wire" d="M244 510 L320 510"/>
+  <text class="pin" x="252" y="528">J2-4</text>
+  <path class="wire" d="M320 510 L320 534"/>
+  <path class="wire" d="M320 534 l-9 8 l18 14 l-18 14 l18 14 l-18 14 l9 8"/>
+  <path class="wire" d="M320 606 L320 630"/>
+  <text class="ref" text-anchor="start" x="338" y="566">R4</text>
+  <text class="val" text-anchor="start" x="338" y="582">10k</text>
+  <path class="wire" d="M320 630 L320 648"/>
+  <path class="wire" d="M298 648 H342 M306 656 H334 M314 664 H326"/>
+  <circle class="dot" cx="320" cy="510" r="4"/>
+  <path class="wire" d="M320 510 L373 510"/>
+  <path class="wire" d="M373 488 V532"/>
+  <path class="wire" d="M387 488 V532"/>
+  <path class="wire" d="M387 510 L440 510"/>
+  <text class="ref" text-anchor="middle" x="380" y="462">C14</text>
+  <text class="val" text-anchor="middle" x="380" y="478">47u</text>
+  <text class="pol" text-anchor="middle" x="400" y="504">+</text>
+  <path class="wire" d="M440 510 L474 510"/>
+  <path class="wire" d="M474 510 l8 -9 l14 18 l14 -18 l14 18 l14 -18 l8 9"/>
+  <path class="wire" d="M546 510 L580 510"/>
+  <text class="ref" text-anchor="middle" x="510" y="484">R6</text>
+  <text class="val" text-anchor="middle" x="510" y="500">5.6k</text>
+  <circle class="wire" cx="580" cy="510" r="5" fill="var(--bg)"/>
+  <text class="rail" x="594" y="515"></text>
+  <text class="rail" x="594" y="515">IN2: U1 pin 6</text>
+  <text class="tiny" x="60" y="676">RV1 = dual B100K on the panel, wired to header J2 (J2-5 = GND). Swap for 2 x X9C104 later: same pins.</text>
+  <path class="wire" d="M940 100 L940 74"/>
+  <circle class="accf" cx="940" cy="74" r="7"/>
+  <text class="volt" text-anchor="middle" x="940" y="60">VCC</text>
+  <path class="wire" d="M940 100 L1044 100 L1150 100"/>
+  <path class="wire" d="M940 100 L940 114"/>
+  <path class="wire" d="M940 114 l-9 8 l18 14 l-18 14 l18 14 l-18 14 l9 8"/>
+  <path class="wire" d="M940 186 L940 200"/>
+  <text class="ref" text-anchor="end" x="922" y="146">R10</text>
+  <text class="val" text-anchor="end" x="922" y="162">47k</text>
+  <path class="wire" d="M940 200 L1000 200"/>
+  <circle class="dot" cx="940" cy="200" r="4"/>
+  <circle class="thin" cx="1020" cy="200" r="46"/>
+  <path class="wire" d="M1000 172 V228"/>
+  <path class="wire" d="M1000 214 L1044 258"/>
+  <path class="wire" d="M1000 186 L1044 142"/>
+  <polygon class="fillink" points="1016.7,169.3 1023.4,154.8 1031.2,162.6"/>
+  <text class="ref" text-anchor="start" x="1074" y="198">Q2</text>
+  <text class="val" text-anchor="start" x="1074" y="214">2N5401</text>
+  <path class="wire" d="M1044 142 L1044 100"/>
+  <circle class="dot" cx="1044" cy="100" r="4"/>
+  <path class="wire" d="M940 200 L940 229"/>
+  <path class="wire" d="M940 229 l-9 8 l18 14 l-18 14 l18 14 l-18 14 l9 8"/>
+  <path class="wire" d="M940 301 L940 330"/>
+  <text class="ref" text-anchor="end" x="922" y="261">R11</text>
+  <text class="val" text-anchor="end" x="922" y="277">10k</text>
+  <circle class="thin" cx="916" cy="388" r="46"/>
+  <path class="wire" d="M896 360 V416"/>
+  <path class="wire" d="M896 374 L940 330"/>
+  <path class="wire" d="M896 402 L940 446"/>
+  <polygon class="fillink" points="933.9,439.9 919.4,433.2 927.2,425.4"/>
+  <text class="ref" text-anchor="start" x="970" y="386">Q1</text>
+  <text class="val" text-anchor="start" x="970" y="402">2N3904</text>
+  <path class="wire" d="M940 446 L940 464"/>
+  <path class="wire" d="M918 464 H962 M926 472 H954 M934 480 H946"/>
+  <path class="wire" d="M720 388 L744 388"/>
+  <path class="wire" d="M744 388 l8 -9 l14 18 l14 -18 l14 18 l14 -18 l8 9"/>
+  <path class="wire" d="M816 388 L840 388"/>
+  <text class="ref" text-anchor="middle" x="780" y="362">R12</text>
+  <text class="val" text-anchor="middle" x="780" y="378">4.7k</text>
+  <path class="wire" d="M840 388 L896 388"/>
+  <path class="wire" d="M840 388 L840 408"/>
+  <path class="wire" d="M840 408 l-9 8 l18 14 l-18 14 l18 14 l-18 14 l9 8"/>
+  <path class="wire" d="M840 480 L840 500"/>
+  <text class="ref" text-anchor="end" x="822" y="440">R13</text>
+  <text class="val" text-anchor="end" x="822" y="456">100k</text>
+  <path class="wire" d="M840 500 L840 518"/>
+  <path class="wire" d="M818 518 H862 M826 526 H854 M834 534 H846"/>
+  <circle class="dot" cx="840" cy="388" r="4"/>
+  <circle class="wire" cx="690" cy="388" r="5" fill="var(--bg)"/>
+  <text class="rail" x="704" y="393"></text>
+  <text class="rail" x="680" y="374">MUTE_CTL</text>
+  <text class="tiny" x="560" y="420">(J2-6, GPIO high = mute)</text>
+  <path class="wire" d="M690 388 L720 388"/>
+  <path class="wire" d="M1044 258 L1044 300 L1150 300"/>
+  <path class="wire" d="M1150 100 L1150 178"/>
+  <path class="wire" d="M1150 222 L1150 300"/>
+  <circle class="wire" cx="1150" cy="178" r="3" fill="var(--bg)"/>
+  <circle class="wire" cx="1150" cy="222" r="3" fill="var(--bg)"/>
+  <path class="wire" d="M1150 219 L1130 182"/>
+  <text class="ref" x="1166" y="196">SW1</text>
+  <text class="val" x="1166" y="212">MTS-112 MUTE</text>
+  <circle class="dot" cx="1044" cy="300" r="4"/>
+  <path class="wire" d="M1044 300 L1044 334"/>
+  <path class="wire" d="M1044 334 l-9 8 l18 14 l-18 14 l18 14 l-18 14 l9 8"/>
+  <path class="wire" d="M1044 406 L1044 440"/>
+  <text class="ref" text-anchor="end" x="1026" y="366">R9</text>
+  <text class="val" text-anchor="end" x="1026" y="382">1.8k</text>
+  <path class="wire" d="M1044 440 L1150 440 L1220 440"/>
+  <path class="wire" d="M1150 440 L1150 483"/>
+  <path class="wire" d="M1124 483 H1176"/>
+  <path class="wire" d="M1124 497 H1176"/>
+  <path class="wire" d="M1150 497 L1150 540"/>
+  <text class="ref" x="1184" y="488">C10</text>
+  <text class="val" x="1184" y="504">47u</text>
+  <text class="pol" text-anchor="middle" x="1116" y="486">+</text>
+  <path class="wire" d="M1150 540 L1150 558"/>
+  <path class="wire" d="M1128 558 H1172 M1136 566 H1164 M1144 574 H1156"/>
+  <circle class="dot" cx="1150" cy="440" r="4"/>
+  <circle class="wire" cx="1220" cy="440" r="5" fill="var(--bg)"/>
+  <text class="rail" x="1234" y="445"></text>
+  <text class="rail" x="1096" y="428">MUTE: U1 pin 4</text>
+</svg>
+      </div>
+      <figcaption>
+        <b>Mute pulls 6.9 mA into pin 4 at 13.2 V, by toggle or GPIO.</b> SW1 and Q2 are in parallel,
+        so the GPIO driver can be fitted now and used later. A 3.3 V GPIO high on MUTE_CTL turns Q1 on,
+        Q1 turns Q2 on. For the X9C104 swap: unplug RV1, plug the two X9C104s into J2 pins 1 to 5;
+        they also need 5 V and three ESP32 lines (CS, INC, U/D), and the firmware must store the wiper
+        (CS high while INC is high) or the volume is lost at power-off.
+        Solid dot = joined; wires crossing with no dot are not connected.
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <span class="eyebrow">Figure 2</span>
+      <h2>LA4440 core, outputs and supply</h2>
+      <p>The datasheet's stereo circuit, with RNF' added and parts swapped for what is in hand.</p>
+    </div>
+    <figure>
+      <div class="fig-body">
+<svg viewBox="0 0 1360 720" width="100%" style="min-width:1050px" role="img" aria-label="LA4440 stereo core: pin 1 and 7 feedback legs of 470 ohm plus 47 uF to ground set 30 dB gain; 1000 uF bootstrap caps from pins 13 and 9 to the outputs; 1000 uF on pin 5; outputs on pins 12 and 10 through 2200 uF to 4 to 8 ohm speakers with 0.1 uF plus 5 ohm Zobel networks; 12 to 15 V on pin 11 with 2200 uF and 0.1 uF">
+  <rect class="boxf" x="160" y="230" width="1140" height="70" rx="4"/>
+  <text class="ref" x="176" y="260">U1  LA4440 (SIP-14, heatsink tab to GND)</text>
+  <path class="wire" d="M220 300 L220 340"/>
+  <text class="tiny" text-anchor="middle" x="220" y="292">NF1</text>
+  <text class="pin" x="224" y="330">1</text>
+  <path class="wire" d="M300 300 L300 340"/>
+  <text class="tiny" text-anchor="middle" x="300" y="292">IN1</text>
+  <text class="pin" x="304" y="330">2</text>
+  <path class="wire" d="M380 300 L380 340"/>
+  <text class="tiny" text-anchor="middle" x="380" y="292">PGND</text>
+  <text class="pin" x="384" y="330">3</text>
+  <path class="wire" d="M460 300 L460 340"/>
+  <text class="tiny" text-anchor="middle" x="460" y="292">MUTE</text>
+  <text class="pin" x="464" y="330">4</text>
+  <path class="wire" d="M540 300 L540 340"/>
+  <text class="tiny" text-anchor="middle" x="540" y="292">DC</text>
+  <text class="pin" x="544" y="330">5</text>
+  <path class="wire" d="M620 300 L620 340"/>
+  <text class="tiny" text-anchor="middle" x="620" y="292">IN2</text>
+  <text class="pin" x="624" y="330">6</text>
+  <path class="wire" d="M700 300 L700 340"/>
+  <text class="tiny" text-anchor="middle" x="700" y="292">NF2</text>
+  <text class="pin" x="704" y="330">7</text>
+  <path class="wire" d="M780 300 L780 340"/>
+  <text class="tiny" text-anchor="middle" x="780" y="292">GND2</text>
+  <text class="pin" x="784" y="330">8</text>
+  <path class="wire" d="M860 300 L860 340"/>
+  <text class="tiny" text-anchor="middle" x="860" y="292">BS2</text>
+  <text class="pin" x="864" y="330">9</text>
+  <path class="wire" d="M940 300 L940 340"/>
+  <text class="tiny" text-anchor="middle" x="940" y="292">OUT2</text>
+  <text class="pin" x="944" y="330">10</text>
+  <path class="wire" d="M1020 300 L1020 340"/>
+  <text class="tiny" text-anchor="middle" x="1020" y="292">VCC</text>
+  <text class="pin" x="1024" y="330">11</text>
+  <path class="wire" d="M1100 300 L1100 340"/>
+  <text class="tiny" text-anchor="middle" x="1100" y="292">OUT1</text>
+  <text class="pin" x="1104" y="330">12</text>
+  <path class="wire" d="M1180 300 L1180 340"/>
+  <text class="tiny" text-anchor="middle" x="1180" y="292">BS1</text>
+  <text class="pin" x="1184" y="330">13</text>
+  <path class="wire" d="M1260 300 L1260 340"/>
+  <text class="tiny" text-anchor="middle" x="1260" y="292">GND1</text>
+  <text class="pin" x="1264" y="330">14</text>
+  <path class="wire" d="M220 340 L220 359"/>
+  <path class="wire" d="M220 359 l-9 8 l18 14 l-18 14 l18 14 l-18 14 l9 8"/>
+  <path class="wire" d="M220 431 L220 450"/>
+  <text class="ref" text-anchor="end" x="202" y="391">R7</text>
+  <text class="val" text-anchor="end" x="202" y="407">470</text>
+  <path class="wire" d="M220 450 L220 488"/>
+  <path class="wire" d="M194 488 H246"/>
+  <path class="wire" d="M194 502 H246"/>
+  <path class="wire" d="M220 502 L220 540"/>
+  <text class="ref" x="254" y="493">C1</text>
+  <text class="val" x="254" y="509">47u</text>
+  <text class="pol" text-anchor="middle" x="186" y="486">+</text>
+  <path class="wire" d="M220 540 L220 558"/>
+  <path class="wire" d="M198 558 H242 M206 566 H234 M214 574 H226"/>
+  <path class="wire" d="M700 340 L700 359"/>
+  <path class="wire" d="M700 359 l-9 8 l18 14 l-18 14 l18 14 l-18 14 l9 8"/>
+  <path class="wire" d="M700 431 L700 450"/>
+  <text class="ref" text-anchor="end" x="682" y="391">R8</text>
+  <text class="val" text-anchor="end" x="682" y="407">470</text>
+  <path class="wire" d="M700 450 L700 488"/>
+  <path class="wire" d="M674 488 H726"/>
+  <path class="wire" d="M674 502 H726"/>
+  <path class="wire" d="M700 502 L700 540"/>
+  <text class="ref" x="734" y="493">C2</text>
+  <text class="val" x="734" y="509">47u</text>
+  <text class="pol" text-anchor="middle" x="666" y="486">+</text>
+  <path class="wire" d="M700 540 L700 558"/>
+  <path class="wire" d="M678 558 H722 M686 566 H714 M694 574 H706"/>
+  <path class="wire" d="M300 340 L300 620"/>
+  <circle class="wire" cx="300" cy="620" r="5" fill="var(--bg)"/>
+  <text class="rail" x="314" y="625"></text>
+  <text class="rail" x="286" y="648">IN1</text>
+  <path class="wire" d="M620 340 L620 620"/>
+  <circle class="wire" cx="620" cy="620" r="5" fill="var(--bg)"/>
+  <text class="rail" x="634" y="625"></text>
+  <text class="rail" x="606" y="648">IN2</text>
+  <path class="wire" d="M460 340 L460 620"/>
+  <circle class="wire" cx="460" cy="620" r="5" fill="var(--bg)"/>
+  <text class="rail" x="474" y="625"></text>
+  <text class="rail" x="446" y="648">MUTE</text>
+  <path class="wire" d="M380 340 L380 358"/>
+  <path class="wire" d="M358 358 H402 M366 366 H394 M374 374 H386"/>
+  <path class="wire" d="M780 340 L780 358"/>
+  <path class="wire" d="M758 358 H802 M766 366 H794 M774 374 H786"/>
+  <path class="wire" d="M1260 340 L1260 358"/>
+  <path class="wire" d="M1238 358 H1282 M1246 366 H1274 M1254 374 H1266"/>
+  <path class="wire" d="M540 340 L540 388"/>
+  <path class="wire" d="M514 388 H566"/>
+  <path class="wire" d="M514 402 H566"/>
+  <path class="wire" d="M540 402 L540 450"/>
+  <text class="ref" x="574" y="393">C9</text>
+  <text class="val" x="574" y="409">1000u</text>
+  <text class="pol" text-anchor="middle" x="506" y="386">+</text>
+  <path class="wire" d="M540 450 L540 468"/>
+  <path class="wire" d="M518 468 H562 M526 476 H554 M534 484 H546"/>
+  <path class="wire" d="M860 340 L860 380"/>
+  <path class="wire" d="M940 340 L940 380"/>
+  <path class="wire" d="M860 380 L893 380"/>
+  <path class="wire" d="M893 364 V396"/>
+  <path class="wire" d="M907 364 V396"/>
+  <path class="wire" d="M907 380 L940 380"/>
+  <text class="ref" text-anchor="middle" x="900" y="338">C4</text>
+  <text class="val" text-anchor="middle" x="900" y="354">1000u</text>
+  <text class="pol" text-anchor="middle" x="850" y="372">+</text>
+  <path class="wire" d="M940 380 L940 420"/>
+  <circle class="dot" cx="940" cy="380" r="4"/>
+  <path class="wire" d="M940 420 L820 420"/>
+  <circle class="dot" cx="940" cy="420" r="4"/>
+  <path class="wire" d="M820 420 L820 453"/>
+  <path class="wire" d="M794 453 H846"/>
+  <path class="wire" d="M794 467 H846"/>
+  <path class="wire" d="M820 467 L820 500"/>
+  <text class="ref" x="854" y="458">C6</text>
+  <text class="val" x="854" y="474">0.1u</text>
+  <path class="wire" d="M820 500 L820 514"/>
+  <path class="wire" d="M820 514 l-9 8 l18 14 l-18 14 l18 14 l-18 14 l9 8"/>
+  <path class="wire" d="M820 586 L820 600"/>
+  <text class="ref" text-anchor="start" x="838" y="546">R2</text>
+  <text class="val" text-anchor="start" x="838" y="562">5R</text>
+  <path class="wire" d="M820 600 L820 618"/>
+  <path class="wire" d="M798 618 H842 M806 626 H834 M814 634 H826"/>
+  <path class="wire" d="M940 420 L940 463"/>
+  <path class="wire" d="M914 463 H966"/>
+  <path class="wire" d="M914 477 H966"/>
+  <path class="wire" d="M940 477 L940 520"/>
+  <text class="ref" x="974" y="468">C8</text>
+  <text class="val" x="974" y="484">2200u</text>
+  <text class="pol" text-anchor="middle" x="906" y="466">+</text>
+  <path class="wire" d="M940 520 L940 544"/>
+  <path class="wire" d="M940 544 l-9 8 l18 14 l-18 14 l18 14 l-18 14 l9 8"/>
+  <path class="wire" d="M940 616 L940 640"/>
+  <text class="ref" text-anchor="start" x="958" y="576">RL2</text>
+  <text class="val" text-anchor="start" x="958" y="592">SPK 4-8R</text>
+  <path class="wire" d="M940 640 L940 658"/>
+  <path class="wire" d="M918 658 H962 M926 666 H954 M934 674 H946"/>
+  <path class="wire" d="M1180 340 L1180 380"/>
+  <path class="wire" d="M1100 340 L1100 380"/>
+  <path class="wire" d="M1100 380 L1133 380"/>
+  <path class="wire" d="M1133 364 V396"/>
+  <path class="wire" d="M1147 364 V396"/>
+  <path class="wire" d="M1147 380 L1180 380"/>
+  <text class="ref" text-anchor="middle" x="1140" y="338">C3</text>
+  <text class="val" text-anchor="middle" x="1140" y="354">1000u</text>
+  <text class="pol" text-anchor="middle" x="1190" y="372">+</text>
+  <path class="wire" d="M1100 380 L1100 420"/>
+  <circle class="dot" cx="1100" cy="380" r="4"/>
+  <path class="wire" d="M1100 420 L1220 420"/>
+  <circle class="dot" cx="1100" cy="420" r="4"/>
+  <path class="wire" d="M1220 420 L1220 453"/>
+  <path class="wire" d="M1194 453 H1246"/>
+  <path class="wire" d="M1194 467 H1246"/>
+  <path class="wire" d="M1220 467 L1220 500"/>
+  <text class="ref" x="1254" y="458">C5</text>
+  <text class="val" x="1254" y="474">0.1u</text>
+  <path class="wire" d="M1220 500 L1220 514"/>
+  <path class="wire" d="M1220 514 l-9 8 l18 14 l-18 14 l18 14 l-18 14 l9 8"/>
+  <path class="wire" d="M1220 586 L1220 600"/>
+  <text class="ref" text-anchor="start" x="1238" y="546">R1</text>
+  <text class="val" text-anchor="start" x="1238" y="562">5R</text>
+  <path class="wire" d="M1220 600 L1220 618"/>
+  <path class="wire" d="M1198 618 H1242 M1206 626 H1234 M1214 634 H1226"/>
+  <path class="wire" d="M1100 420 L1100 463"/>
+  <path class="wire" d="M1074 463 H1126"/>
+  <path class="wire" d="M1074 477 H1126"/>
+  <path class="wire" d="M1100 477 L1100 520"/>
+  <text class="ref" x="1134" y="468">C7</text>
+  <text class="val" x="1134" y="484">2200u</text>
+  <text class="pol" text-anchor="middle" x="1066" y="466">+</text>
+  <path class="wire" d="M1100 520 L1100 544"/>
+  <path class="wire" d="M1100 544 l-9 8 l18 14 l-18 14 l18 14 l-18 14 l9 8"/>
+  <path class="wire" d="M1100 616 L1100 640"/>
+  <text class="ref" text-anchor="start" x="1118" y="576">RL1</text>
+  <text class="val" text-anchor="start" x="1118" y="592">SPK 4-8R</text>
+  <path class="wire" d="M1100 640 L1100 658"/>
+  <path class="wire" d="M1078 658 H1122 M1086 666 H1114 M1094 674 H1106"/>
+  <path class="wire" d="M1020 340 L1020 360"/>
+  <path class="wire" d="M1020 360 L1020 386"/>
+  <circle class="accf" cx="1020" cy="386" r="7"/>
+  <text class="volt" text-anchor="middle" x="1020" y="408">VCC</text>
+  <circle class="wire" cx="160" cy="90" r="5" fill="var(--bg)"/>
+  <text class="rail" x="174" y="95"></text>
+  <text class="rail" x="150" y="76">+12 to 15 V DC, 2 A</text>
+  <path class="wire" d="M160 90 L300 90 L420 90 L520 90"/>
+  <path class="wire" d="M300 90 L300 128"/>
+  <path class="wire" d="M274 128 H326"/>
+  <path class="wire" d="M274 142 H326"/>
+  <path class="wire" d="M300 142 L300 180"/>
+  <text class="ref" x="334" y="133">C11</text>
+  <text class="val" x="334" y="149">2200u</text>
+  <text class="pol" text-anchor="middle" x="266" y="132">+</text>
+  <path class="wire" d="M300 180 L300 198"/>
+  <path class="wire" d="M278 198 H322 M286 206 H314 M294 214 H306"/>
+  <path class="wire" d="M420 90 L420 128"/>
+  <path class="wire" d="M394 128 H446"/>
+  <path class="wire" d="M394 142 H446"/>
+  <path class="wire" d="M420 142 L420 180"/>
+  <text class="ref" x="454" y="133">C12</text>
+  <text class="val" x="454" y="149">0.1u</text>
+  <path class="wire" d="M420 180 L420 198"/>
+  <path class="wire" d="M398 198 H442 M406 206 H434 M414 214 H426"/>
+  <circle class="dot" cx="300" cy="90" r="4"/>
+  <circle class="dot" cx="420" cy="90" r="4"/>
+  <path class="wire" d="M520 90 L572 90"/>
+  <circle class="accf" cx="572" cy="90" r="7"/>
+  <text class="volt" text-anchor="start" x="584" y="95">VCC</text>
+</svg>
+      </div>
+      <figcaption>
+        <b>Outputs idle at 6.8 V; the 2200 uF caps take bass down to 18 Hz into 4 ohm.</b> R7 and R8
+        set 30 dB. C5/C6 with R1/R2 (each two 10R in parallel) are the Zobel networks the datasheet
+        requires against oscillation. Pins 3, 8 and 14 and the heatsink tab go to ground. Brown
+        numbers are LA4440 pins.
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <span class="eyebrow">Bill of materials</span>
+      <h2>Parts for a 12 to 15 V supply</h2>
+    </div>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Ref</th><th>Value</th><th>Stock</th><th>Job</th></tr></thead>
+        <tbody>
+<tr><td class="ref">U1</td><td>LA4440 (SIP-14)</td><td class="hand">in hand</td><td>The amplifier. 2 x 6 W at 13.2 V (datasheet, 10% THD).</td></tr>
+<tr><td class="ref">R3, R4</td><td>10k</td><td class="hand">in hand</td><td>Taper resistors: make the linear pot behave like a log pot.</td></tr>
+<tr><td class="ref">R5, R6</td><td>5.6k</td><td class="hand">in hand</td><td>Lift mute from 40 to 55 dB (datasheet). Costs 1.5 dB of gain.</td></tr>
+<tr><td class="ref">R7, R8</td><td>470</td><td class="hand">in hand</td><td>RNF': sets gain to 30 dB instead of 51.5 dB. Change to 1k for loud sources (24 dB).</td></tr>
+<tr><td class="ref">R1, R2</td><td>2 x 10R 1 W in parallel, each</td><td class="hand">in hand</td><td>Zobel resistor, 5 ohm (datasheet 4.7). Uses 4 of the 10 x 10R.</td></tr>
+<tr><td class="ref">R9</td><td>1.8k</td><td class="hand">in hand</td><td>Mute current about 6.9 mA (datasheet 1k at 9 V = 8.3 mA; 1.5k not in the kit).</td></tr>
+<tr><td class="ref">R10, R11, R12, R13</td><td>47k, 10k, 4.7k, 100k</td><td class="hand">in hand</td><td>Mute driver bias.</td></tr>
+<tr><td class="ref">Q1, Q2</td><td>2N3904, 2N5401</td><td class="hand">in hand</td><td>GPIO mute driver: Q1 level shift, Q2 switches VCC to the mute pin.</td></tr>
+<tr><td class="ref">SW1</td><td>MTS-112 toggle</td><td class="hand">in hand</td><td>Manual mute. Check its pin count first.</td></tr>
+<tr><td class="ref">C1, C2, C10, C13, C14</td><td>47 uF 50 V</td><td class="hand">in hand</td><td>NF caps, mute cap, wiper caps. <b>Uses all 5 in stock.</b></td></tr>
+<tr><td class="ref">C3, C4, C9</td><td>1000 uF 25 V</td><td class="hand">in hand</td><td>Bootstrap (datasheet 100 uF) and pin 5 (datasheet 220 uF): slower start, quieter turn-on.</td></tr>
+<tr><td class="ref">C7, C8, C11</td><td>2200 uF 25 V</td><td class="hand">in hand</td><td>Output caps (bass to 18 Hz into 4 ohm) and supply reservoir.</td></tr>
+<tr><td class="ref">RV1</td><td>Dual 100k LINEAR (B100K)</td><td class="buy">buy</td><td>Volume. Linear, not log, so it matches the X9C104 exactly. Later: 2 x X9C104 (in hand).</td></tr>
+<tr><td class="ref">-</td><td>Heatsink, about 5 C/W, tab to GND</td><td class="buy">buy</td><td>Required: several watts dissipated at full volume.</td></tr>
+<tr><td class="ref">C5, C6</td><td>0.1 uF polyester film</td><td class="buy">buy</td><td>Zobel caps. The datasheet requires film; they stop oscillation.</td></tr>
+<tr><td class="ref">C12</td><td>0.1 uF film or ceramic</td><td class="buy">buy</td><td>Supply decoupling at pin 11.</td></tr>
+<tr><td class="ref">J2</td><td>6-pin header + plug</td><td class="buy">buy</td><td>Pot / X9C104 connector: 1 L in, 2 L wiper, 3 R in, 4 R wiper, 5 GND, 6 MUTE_CTL.</td></tr>
+<tr><td class="ref">-</td><td>3.5 mm stereo jack, 2 speaker terminals</td><td class="buy">buy</td><td>Connectors.</td></tr>
+<tr><td class="ref">-</td><td>12 to 15 V DC, 2 A adapter</td><td class="buy">buy</td><td>Or the bench PSU (in hand). Never above 18 V.</td></tr>
+<tr><td class="ref">-</td><td>47 uF 50 V x 3</td><td class="buy">buy</td><td>Only if the VLF receiver is also built - this amp takes all 5.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <span class="eyebrow">Simulated, hand checked</span>
+      <h2>Gain, band and full power</h2>
+      <p>run_gain.cir and run_fp.cir, 13.2 V, 4 ohm, pot full up.</p>
+    </div>
+    <div class="tw">
+      <table>
+        <thead><tr><th>RNF'</th><th class="num">Gain</th><th class="num">Low -3 dB</th><th class="num">High -3 dB</th><th class="num">Source for full power</th><th>Hand check</th></tr></thead>
+        <tbody>
+          <tr><td class="ref">0 (datasheet)</td><td class="num">49.4 dB</td><td class="num">64 Hz</td><td class="num">21 kHz</td><td class="num">20 mV pk</td><td>51.5 dB less 1.5 dB = 50.0 (model 0.6 dB low). NF corner 1/(2 pi 47u 50) = 68 Hz: bass-light.</td></tr>
+          <tr><td class="ref">220</td><td class="num">35.8 dB</td><td class="num">24 Hz</td><td class="num">101 kHz</td><td class="num">96 mV pk</td><td>20k/270 = 37.4 dB less 1.5 dB = 35.9.</td></tr>
+          <tr><td class="ref"><b>470 (chosen)</b></td><td class="num">30.3 dB</td><td class="num">20 Hz</td><td class="num">190 kHz</td><td class="num">0.18 V pk</td><td>20k/520 = 31.7 dB less 1.5 dB = 30.2. Agrees.</td></tr>
+          <tr><td class="ref">1000</td><td class="num">24.5 dB</td><td class="num">19 Hz</td><td class="num">370 kHz</td><td class="num">0.35 V pk</td><td>For hot sources.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Supply</th><th class="num">Source 0.10 V pk</th><th class="num">0.15 V</th><th class="num">0.20 V</th><th class="num">0.30 V</th></tr></thead>
+        <tbody>
+          <tr><td class="ref">13.2 V</td><td class="num">1.3 W</td><td class="num">2.9 W</td><td class="num">4.5 W (clipping)</td><td class="num">4.6 W (clipped)</td></tr>
+          <tr><td class="ref">12 V</td><td class="num">1.3 W</td><td class="num">2.9 W</td><td class="num">3.7 W (clipping)</td><td class="num">3.7 W (clipped)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <span class="eyebrow">Sweeps</span>
+      <h2>Volume law, channel match and mute drive</h2>
+    </div>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Pot position (or X9C104 tap)</th><th class="num">Plain linear pot</th><th class="num">With 10k taper R (built)</th></tr></thead>
+        <tbody>
+          <tr><td>100% (tap 99)</td><td class="num">0 dB</td><td class="num">0 dB</td></tr>
+          <tr><td>75%</td><td class="num">-6.2 dB</td><td class="num">-13.0 dB</td></tr>
+          <tr><td>50%</td><td class="num">-10.6 dB</td><td class="num">-18.4 dB</td></tr>
+          <tr><td>25%</td><td class="num">-15.7 dB</td><td class="num">-22.6 dB</td></tr>
+          <tr><td>10%</td><td class="num">-21.9 dB</td><td class="num">-26.5 dB</td></tr>
+          <tr><td>5%</td><td class="num">-27.1 dB</td><td class="num">-30.0 dB</td></tr>
+          <tr><td>2%</td><td class="num">-34.4 dB</td><td class="num">-35.8 dB</td></tr>
+          <tr><td>1% (tap 1)</td><td class="num">-40.2 dB</td><td class="num">-40.9 dB</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Swept</th><th>Range tested</th><th>Result</th></tr></thead>
+        <tbody>
+          <tr><td>X9C104 end-to-end tolerance</td><td>80k to 120k (+/-20%)</td><td>With the 10k taper R: up to 2.7 dB apart (+/-1.3 dB) between 30% and 60%, 0 dB at full. Firmware can trim one channel by a few taps.</td></tr>
+          <tr><td>Mute drive, GPIO</td><td>MUTE_CTL 3.3 V, 13.2 V supply</td><td>Pin 4 at 0.71 V, 6.9 mA in. Q1 collector 0.04 V (saturated).</td></tr>
+          <tr><td>Mute drive, toggle</td><td>SW1 closed</td><td>6.9 mA. Same as GPIO.</td></tr>
+          <tr><td>Mute drive at 12 V</td><td>GPIO</td><td>6.2 mA. Above the 5.3 mA the datasheet's minimum (6 V, 1k) gives.</td></tr>
+          <tr><td>Not muted</td><td>MUTE_CTL 0 V, SW1 open</td><td>Pin 4 at 0.36 V, about 10 nA: off.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <span class="eyebrow">Where the simulation corrected me</span>
+      <h2>What I had wrong on paper</h2>
+    </div>
+    <div class="prose">
+      <p><strong>CORRECTED.</strong> The datasheet circuit (RNF' = 0) reaches clipping at 20 mV of input, so a 1 V source clips at 2% of pot travel. RNF' = 470 moves clipping to 0.18 V (run_gain.cir, run_fp.cir). Not optional with a 100-tap digital pot.</p>
+      <p><strong>CORRECTED.</strong> I expected the 10k taper resistor to hide the X9C104's +/-20% tolerance. It does the opposite: the fixed 10k load makes the law depend more on the pot's own value, so 80k against 120k is 2.7 dB apart at 30 to 60% travel (run_vol.cir, with the taper R). Without it the gap is 1.4 dB. A per-channel firmware offset fixes it; a mechanical dual pot also has 1 to 3 dB gang tracking error.</p>
+      <p><strong>CONFIRMED.</strong> Low corner 20 Hz at RNF' 470, set by 2200 uF into 4 ohm (18 Hz by hand). At RNF' 0 it is 64 Hz because the 47 uF NF cap against 50 ohm then dominates (68 Hz by hand).</p>
+      <p><strong>CONFIRMED.</strong> Mute current (VCC - 0.7) / 1.8k = 6.9 mA, simulated 6.9 mA (run_full.cir).</p>
+      <p><strong>LIMIT.</strong> Clean output ends at 4.4 W into 4 ohm at 13.2 V (model); the datasheet's 6 W is at 10% distortion.</p>
+      <p><strong>MODEL.</strong> The behavioural chip (open-loop gain 3000) reads 49.4 dB at RNF' 0 against 50.0 dB expected (51.5 dB typical less 1.5 dB for R5 into the 30k input): 0.6 dB low. At 470 it agrees within 0.1 dB. The 190 kHz high corner at 30 dB is a model number, not a datasheet one.</p>
+      <div class="note"><strong>The one to watch.</strong> Mute pop. The wiper caps C13/C14 are what the datasheet says makes AC-mute pop worse; they are there to stop pot scratch and X9C104 step clicks. If mute pops, short C13/C14 first and live with some slider noise.</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <span class="eyebrow">Build notes</span>
+      <h2>Building and adapting it</h2>
+    </div>
+    <div class="prose">
+      <ul class="bullets">
+        <li><strong>Verified:</strong> RNF' 1k instead of 470 gives 24.5 dB for sources hotter than 1 V (run_gain.cir).</li>
+        <li><strong>Proposed:</strong> R9 1.2k raises mute current to about 10 mA if 40 dB is not reached at 6.9 mA - unsimulated attenuation, bench check.</li>
+        <li><strong>Proposed:</strong> first power-up on the bench PSU at 13.2 V with a 300 mA limit and no input. Idle draw should be about 100 mA (datasheet), outputs 6.8 V.</li>
+        <li><strong>Proposed:</strong> follow the datasheet layout: keep input wiring (pins 2, 6) away from the outputs (pins 10, 12), Zobels right at the pins.</li>
+        <li><strong>Digital later:</strong> X9C104 powered from the ESP32's 5 V; signal stays inside its +/-5 V terminal limit. Map volume steps in firmware; tap 0 puts the wiper at ground through its 40 ohm wiper resistance, about -68 dB (hand estimate).</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <span class="eyebrow">Interactive</span>
+      <h2>Open one channel in CircuitJS</h2>
+      <p>The LA4440 is drawn as its equivalent: op-amp, internal 20k / 50 ohm feedback and 30k input, on a +/-6.6 V split supply so the output idles at 0 V. Drag the Volume slider; scope the speaker.</p>
+    </div>
+    <div class="btnrow">
+      <a class="cta" id="cjsLink" href="https://www.falstad.com/circuit/circuitjs.html?cct=$%201%200.000005%2010.20027730826997%2050%205%2050%0Av%2048%20336%2048%20256%200%201%201000%200.15%200%200%200.5%0Ag%2048%20336%2048%20368%200%0Ar%2048%20256%2048%20176%200%20100%0Aw%2048%20176%20128%20176%200%0A174%20128%20176%20128%20336%201%20100000%201%20Volume%0Ag%20128%20336%20128%20368%200%0Aw%20144%20256%20224%20256%200%0Ar%20224%20256%20224%20336%200%2010000%0Ag%20224%20336%20224%20368%200%0Ac%20224%20256%20304%20256%200%204.7e-05%200%200%0Ar%20304%20256%20400%20256%200%205600%0Ar%20400%20256%20400%20336%200%2030000%0Ag%20400%20336%20400%20368%200%0Aw%20400%20256%20480%20256%200%0Aa%20480%20240%20576%20240%208%206.1%20-6.3%207.5e6%200%200%203000%0Aw%20480%20224%20480%20160%200%0Ar%20576%20160%20480%20160%200%2020000%0Aw%20576%20240%20576%20160%200%0Ar%20480%20160%20384%20160%200%2050%0Ar%20384%20160%20384%2080%200%20470%0Ac%20384%2080%20304%2080%200%204.7e-05%200%200%0Ag%20304%2080%20304%20112%200%0Ac%20576%20240%20672%20240%200%200.0022%200%200%0Ar%20672%20240%20672%20320%200%204%0Ag%20672%20320%20672%20352%200%0Ac%20576%20240%20576%20304%200%201e-07%200%200%0Ar%20576%20304%20576%20384%200%205%0Ag%20576%20384%20576%20416%200%0Ax%2048%20420%20400%20420%204%2016%20LA4440%20one%20channel,%2030%20dB:%20drag%20Volume,%20scope%20Rspk%0A">Launch the interactive circuit</a>
+      <button id="copyBtn" type="button">Copy the URL</button>
+    </div>
+    <div class="urlbox" id="urlText">https://www.falstad.com/circuit/circuitjs.html?cct=$%201%200.000005%2010.20027730826997%2050%205%2050%0Av%2048%20336%2048%20256%200%201%201000%200.15%200%200%200.5%0Ag%2048%20336%2048%20368%200%0Ar%2048%20256%2048%20176%200%20100%0Aw%2048%20176%20128%20176%200%0A174%20128%20176%20128%20336%201%20100000%201%20Volume%0Ag%20128%20336%20128%20368%200%0Aw%20144%20256%20224%20256%200%0Ar%20224%20256%20224%20336%200%2010000%0Ag%20224%20336%20224%20368%200%0Ac%20224%20256%20304%20256%200%204.7e-05%200%200%0Ar%20304%20256%20400%20256%200%205600%0Ar%20400%20256%20400%20336%200%2030000%0Ag%20400%20336%20400%20368%200%0Aw%20400%20256%20480%20256%200%0Aa%20480%20240%20576%20240%208%206.1%20-6.3%207.5e6%200%200%203000%0Aw%20480%20224%20480%20160%200%0Ar%20576%20160%20480%20160%200%2020000%0Aw%20576%20240%20576%20160%200%0Ar%20480%20160%20384%20160%200%2050%0Ar%20384%20160%20384%2080%200%20470%0Ac%20384%2080%20304%2080%200%204.7e-05%200%200%0Ag%20304%2080%20304%20112%200%0Ac%20576%20240%20672%20240%200%200.0022%200%200%0Ar%20672%20240%20672%20320%200%204%0Ag%20672%20320%20672%20352%200%0Ac%20576%20240%20576%20304%200%201e-07%200%200%0Ar%20576%20304%20576%20384%200%205%0Ag%20576%20384%20576%20416%200%0Ax%2048%20420%20400%20420%204%2016%20LA4440%20one%20channel,%2030%20dB:%20drag%20Volume,%20scope%20Rspk%0A</div>
+    <div class="note">
+      Never opened in a browser. The netlist was checked with <code>connectivity.py --deck</code>
+      (0 findings). The CircuitJS op-amp is ideal-ish; its bandwidth setting may not be honoured,
+      so read gains from it, not the high corner. Fallback: File &gt; Import From Text with
+      la4440-channel.txt.
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <span class="eyebrow">Files</span>
+      <h2>Everything behind this page</h2>
+    </div>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Path</th><th>What it is</th></tr></thead>
+        <tbody>
+          <tr><td class="ref">sim/amp.cir</td><td>One channel with the behavioural LA4440.</td></tr>
+          <tr><td class="ref">sim/amp_full.cir</td><td>Whole board: both channels, volume, mute driver, supply. The drawings are checked against this.</td></tr>
+          <tr><td class="ref">sim/run_gain.cir</td><td>Gain and band edges vs RNF'.</td></tr>
+          <tr><td class="ref">sim/run_vol.cir, run_law.cir</td><td>Volume law, taper resistor, X9C104 tolerance.</td></tr>
+          <tr><td class="ref">sim/run_fp.cir</td><td>Clipping level at 13.2 and 12 V.</td></tr>
+          <tr><td class="ref">sim/run_full.cir</td><td>Mute drive in all states, both channels.</td></tr>
+          <tr><td class="ref">sim/build_schem.py, build_cjs.py</td><td>Figures and CircuitJS link, each checked against the decks.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      ngspice 42. The LA4440 is a behavioural model built from the Sanyo ENN750F datasheet (Rf 20k,
+      RNF 50, ri 30k, fH 20 kHz, output at 0.515 VCC, 0.5 V swing limit); no maker SPICE model exists.
+      Not modelled: the 40 / 55 dB mute attenuation (only the mute pin current is simulated), turn-on
+      thump and mute pop, the bootstrap effect and the slower start from 1000 uF on pins 5, 9 and 13
+      (placeholders in the deck), distortion, heat. MTS-112 pin count unchecked. Not built.
+    </p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  var btn = document.getElementById('themeBtn');
+  var root = document.documentElement;
+  btn.addEventListener('click', function () {
+    var cur = root.getAttribute('data-theme');
+    if (!cur) cur = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    root.setAttribute('data-theme', cur === 'dark' ? 'light' : 'dark');
+  });
+  var copy = document.getElementById('copyBtn');
+  if (copy) copy.addEventListener('click', function () {
+    var t = document.getElementById('urlText').textContent.trim();
+    navigator.clipboard.writeText(t).then(function () {
+      copy.textContent = 'Copied';
+      setTimeout(function () { copy.textContent = 'Copy the URL'; }, 1600);
+    }, function () { copy.textContent = 'Select it manually'; });
+  });
+})();
+</script>
+</body>
+</html>

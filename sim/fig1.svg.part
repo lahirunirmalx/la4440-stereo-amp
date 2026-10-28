@@ -1,0 +1,160 @@
+<svg viewBox="0 0 1300 690" width="100%" style="min-width:1000px" role="img" aria-label="Input, volume and mute: each line input feeds one gang of a 100k linear pot (or an X9C104 later) whose wiper has a 10k taper resistor to ground, then 47 uF and 5.6k to the LA4440 input. Mute: toggle SW1 or a GPIO through 2N3904 Q1 and 2N5401 Q2 connects VCC through 1.8k to the LA4440 mute pin, with 47 uF to ground">
+  <circle class="wire" cx="60" cy="140" r="5" fill="var(--bg)"/>
+  <text class="rail" x="74" y="145"></text>
+  <text class="rail" x="50" y="126">LINE L (J2-1)</text>
+  <path class="wire" d="M60 140 L200 140"/>
+  <path class="wire" d="M200 140 L200 194"/>
+  <path class="wire" d="M200 194 l-9 8 l18 14 l-18 14 l18 14 l-18 14 l9 8"/>
+  <path class="wire" d="M200 266 L200 320"/>
+  <path class="wire" d="M244 230 L216 230"/>
+  <polygon class="fillink" points="216,230 229,225 229,235"/>
+  <text class="ref" text-anchor="end" x="180" y="226">RV1A</text>
+  <text class="val" text-anchor="end" x="180" y="242">100k LIN</text>
+  <path class="wire" d="M200 320 L200 338"/>
+  <path class="wire" d="M178 338 H222 M186 346 H214 M194 354 H206"/>
+  <path class="wire" d="M244 230 L320 230"/>
+  <text class="pin" x="252" y="248">J2-2</text>
+  <path class="wire" d="M320 230 L320 254"/>
+  <path class="wire" d="M320 254 l-9 8 l18 14 l-18 14 l18 14 l-18 14 l9 8"/>
+  <path class="wire" d="M320 326 L320 350"/>
+  <text class="ref" text-anchor="start" x="338" y="286">R3</text>
+  <text class="val" text-anchor="start" x="338" y="302">10k</text>
+  <path class="wire" d="M320 350 L320 368"/>
+  <path class="wire" d="M298 368 H342 M306 376 H334 M314 384 H326"/>
+  <circle class="dot" cx="320" cy="230" r="4"/>
+  <path class="wire" d="M320 230 L373 230"/>
+  <path class="wire" d="M373 208 V252"/>
+  <path class="wire" d="M387 208 V252"/>
+  <path class="wire" d="M387 230 L440 230"/>
+  <text class="ref" text-anchor="middle" x="380" y="182">C13</text>
+  <text class="val" text-anchor="middle" x="380" y="198">47u</text>
+  <text class="pol" text-anchor="middle" x="400" y="224">+</text>
+  <path class="wire" d="M440 230 L474 230"/>
+  <path class="wire" d="M474 230 l8 -9 l14 18 l14 -18 l14 18 l14 -18 l8 9"/>
+  <path class="wire" d="M546 230 L580 230"/>
+  <text class="ref" text-anchor="middle" x="510" y="204">R5</text>
+  <text class="val" text-anchor="middle" x="510" y="220">5.6k</text>
+  <circle class="wire" cx="580" cy="230" r="5" fill="var(--bg)"/>
+  <text class="rail" x="594" y="235"></text>
+  <text class="rail" x="594" y="235">IN1: U1 pin 2</text>
+  <circle class="wire" cx="60" cy="420" r="5" fill="var(--bg)"/>
+  <text class="rail" x="74" y="425"></text>
+  <text class="rail" x="50" y="406">LINE R (J2-3)</text>
+  <path class="wire" d="M60 420 L200 420"/>
+  <path class="wire" d="M200 420 L200 474"/>
+  <path class="wire" d="M200 474 l-9 8 l18 14 l-18 14 l18 14 l-18 14 l9 8"/>
+  <path class="wire" d="M200 546 L200 600"/>
+  <path class="wire" d="M244 510 L216 510"/>
+  <polygon class="fillink" points="216,510 229,505 229,515"/>
+  <text class="ref" text-anchor="end" x="180" y="506">RV1B</text>
+  <text class="val" text-anchor="end" x="180" y="522">100k LIN</text>
+  <path class="wire" d="M200 600 L200 618"/>
+  <path class="wire" d="M178 618 H222 M186 626 H214 M194 634 H206"/>
+  <path class="wire" d="M244 510 L320 510"/>
+  <text class="pin" x="252" y="528">J2-4</text>
+  <path class="wire" d="M320 510 L320 534"/>
+  <path class="wire" d="M320 534 l-9 8 l18 14 l-18 14 l18 14 l-18 14 l9 8"/>
+  <path class="wire" d="M320 606 L320 630"/>
+  <text class="ref" text-anchor="start" x="338" y="566">R4</text>
+  <text class="val" text-anchor="start" x="338" y="582">10k</text>
+  <path class="wire" d="M320 630 L320 648"/>
+  <path class="wire" d="M298 648 H342 M306 656 H334 M314 664 H326"/>
+  <circle class="dot" cx="320" cy="510" r="4"/>
+  <path class="wire" d="M320 510 L373 510"/>
+  <path class="wire" d="M373 488 V532"/>
+  <path class="wire" d="M387 488 V532"/>
+  <path class="wire" d="M387 510 L440 510"/>
+  <text class="ref" text-anchor="middle" x="380" y="462">C14</text>
+  <text class="val" text-anchor="middle" x="380" y="478">47u</text>
+  <text class="pol" text-anchor="middle" x="400" y="504">+</text>
+  <path class="wire" d="M440 510 L474 510"/>
+  <path class="wire" d="M474 510 l8 -9 l14 18 l14 -18 l14 18 l14 -18 l8 9"/>
+  <path class="wire" d="M546 510 L580 510"/>
+  <text class="ref" text-anchor="middle" x="510" y="484">R6</text>
+  <text class="val" text-anchor="middle" x="510" y="500">5.6k</text>
+  <circle class="wire" cx="580" cy="510" r="5" fill="var(--bg)"/>
+  <text class="rail" x="594" y="515"></text>
+  <text class="rail" x="594" y="515">IN2: U1 pin 6</text>
+  <text class="tiny" x="60" y="676">RV1 = dual B100K on the panel, wired to header J2 (J2-5 = GND). Swap for 2 x X9C104 later: same pins.</text>
+  <path class="wire" d="M940 100 L940 74"/>
+  <circle class="accf" cx="940" cy="74" r="7"/>
+  <text class="volt" text-anchor="middle" x="940" y="60">VCC</text>
+  <path class="wire" d="M940 100 L1044 100 L1150 100"/>
+  <path class="wire" d="M940 100 L940 114"/>
+  <path class="wire" d="M940 114 l-9 8 l18 14 l-18 14 l18 14 l-18 14 l9 8"/>
+  <path class="wire" d="M940 186 L940 200"/>
+  <text class="ref" text-anchor="end" x="922" y="146">R10</text>
+  <text class="val" text-anchor="end" x="922" y="162">47k</text>
+  <path class="wire" d="M940 200 L1000 200"/>
+  <circle class="dot" cx="940" cy="200" r="4"/>
+  <circle class="thin" cx="1020" cy="200" r="46"/>
+  <path class="wire" d="M1000 172 V228"/>
+  <path class="wire" d="M1000 214 L1044 258"/>
+  <path class="wire" d="M1000 186 L1044 142"/>
+  <polygon class="fillink" points="1016.7,169.3 1023.4,154.8 1031.2,162.6"/>
+  <text class="ref" text-anchor="start" x="1074" y="198">Q2</text>
+  <text class="val" text-anchor="start" x="1074" y="214">2N5401</text>
+  <path class="wire" d="M1044 142 L1044 100"/>
+  <circle class="dot" cx="1044" cy="100" r="4"/>
+  <path class="wire" d="M940 200 L940 229"/>
+  <path class="wire" d="M940 229 l-9 8 l18 14 l-18 14 l18 14 l-18 14 l9 8"/>
+  <path class="wire" d="M940 301 L940 330"/>
+  <text class="ref" text-anchor="end" x="922" y="261">R11</text>
+  <text class="val" text-anchor="end" x="922" y="277">10k</text>
+  <circle class="thin" cx="916" cy="388" r="46"/>
+  <path class="wire" d="M896 360 V416"/>
+  <path class="wire" d="M896 374 L940 330"/>
+  <path class="wire" d="M896 402 L940 446"/>
+  <polygon class="fillink" points="933.9,439.9 919.4,433.2 927.2,425.4"/>
+  <text class="ref" text-anchor="start" x="970" y="386">Q1</text>
+  <text class="val" text-anchor="start" x="970" y="402">2N3904</text>
+  <path class="wire" d="M940 446 L940 464"/>
+  <path class="wire" d="M918 464 H962 M926 472 H954 M934 480 H946"/>
+  <path class="wire" d="M720 388 L744 388"/>
+  <path class="wire" d="M744 388 l8 -9 l14 18 l14 -18 l14 18 l14 -18 l8 9"/>
+  <path class="wire" d="M816 388 L840 388"/>
+  <text class="ref" text-anchor="middle" x="780" y="362">R12</text>
+  <text class="val" text-anchor="middle" x="780" y="378">4.7k</text>
+  <path class="wire" d="M840 388 L896 388"/>
+  <path class="wire" d="M840 388 L840 408"/>
+  <path class="wire" d="M840 408 l-9 8 l18 14 l-18 14 l18 14 l-18 14 l9 8"/>
+  <path class="wire" d="M840 480 L840 500"/>
+  <text class="ref" text-anchor="end" x="822" y="440">R13</text>
+  <text class="val" text-anchor="end" x="822" y="456">100k</text>
+  <path class="wire" d="M840 500 L840 518"/>
+  <path class="wire" d="M818 518 H862 M826 526 H854 M834 534 H846"/>
+  <circle class="dot" cx="840" cy="388" r="4"/>
+  <circle class="wire" cx="690" cy="388" r="5" fill="var(--bg)"/>
+  <text class="rail" x="704" y="393"></text>
+  <text class="rail" x="680" y="374">MUTE_CTL</text>
+  <text class="tiny" x="560" y="420">(J2-6, GPIO high = mute)</text>
+  <path class="wire" d="M690 388 L720 388"/>
+  <path class="wire" d="M1044 258 L1044 300 L1150 300"/>
+  <path class="wire" d="M1150 100 L1150 178"/>
+  <path class="wire" d="M1150 222 L1150 300"/>
+  <circle class="wire" cx="1150" cy="178" r="3" fill="var(--bg)"/>
+  <circle class="wire" cx="1150" cy="222" r="3" fill="var(--bg)"/>
+  <path class="wire" d="M1150 219 L1130 182"/>
+  <text class="ref" x="1166" y="196">SW1</text>
+  <text class="val" x="1166" y="212">MTS-112 MUTE</text>
+  <circle class="dot" cx="1044" cy="300" r="4"/>
+  <path class="wire" d="M1044 300 L1044 334"/>
+  <path class="wire" d="M1044 334 l-9 8 l18 14 l-18 14 l18 14 l-18 14 l9 8"/>
+  <path class="wire" d="M1044 406 L1044 440"/>
+  <text class="ref" text-anchor="end" x="1026" y="366">R9</text>
+  <text class="val" text-anchor="end" x="1026" y="382">1.8k</text>
+  <path class="wire" d="M1044 440 L1150 440 L1220 440"/>
+  <path class="wire" d="M1150 440 L1150 483"/>
+  <path class="wire" d="M1124 483 H1176"/>
+  <path class="wire" d="M1124 497 H1176"/>
+  <path class="wire" d="M1150 497 L1150 540"/>
+  <text class="ref" x="1184" y="488">C10</text>
+  <text class="val" x="1184" y="504">47u</text>
+  <text class="pol" text-anchor="middle" x="1116" y="486">+</text>
+  <path class="wire" d="M1150 540 L1150 558"/>
+  <path class="wire" d="M1128 558 H1172 M1136 566 H1164 M1144 574 H1156"/>
+  <circle class="dot" cx="1150" cy="440" r="4"/>
+  <circle class="wire" cx="1220" cy="440" r="5" fill="var(--bg)"/>
+  <text class="rail" x="1234" y="445"></text>
+  <text class="rail" x="1096" y="428">MUTE: U1 pin 4</text>
+</svg>

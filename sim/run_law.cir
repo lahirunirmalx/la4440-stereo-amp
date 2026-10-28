@@ -1,0 +1,18 @@
+* taper resistor: R from wiper to GND turns the linear pot into a near-log law
+.include amp.cir
+.param RLAW=1e12
+Rlaw wip 0 {RLAW}
+.control
+foreach rl 1e12 22k 15k 10k
+  alterparam RLAW = $rl
+  foreach x 1 0.75 0.5 0.25 0.1 0.05 0.02 0.01
+    alterparam X = $x
+    reset
+    ac lin 1 1000 1000
+    let g = vdb(spk)
+    echo RESULT law rlaw $rl x $x gain_db $&g
+    destroy all
+  end
+end
+.endc
+.end

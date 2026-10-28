@@ -1,0 +1,211 @@
+<svg viewBox="0 0 1360 720" width="100%" style="min-width:1050px" role="img" aria-label="LA4440 stereo core: pin 1 and 7 feedback legs of 470 ohm plus 47 uF to ground set 30 dB gain; 1000 uF bootstrap caps from pins 13 and 9 to the outputs; 1000 uF on pin 5; outputs on pins 12 and 10 through 2200 uF to 4 to 8 ohm speakers with 0.1 uF plus 5 ohm Zobel networks; 12 to 15 V on pin 11 with 2200 uF and 0.1 uF">
+  <rect class="boxf" x="160" y="230" width="1140" height="70" rx="4"/>
+  <text class="ref" x="176" y="260">U1  LA4440 (SIP-14, heatsink tab to GND)</text>
+  <path class="wire" d="M220 300 L220 340"/>
+  <text class="tiny" text-anchor="middle" x="220" y="292">NF1</text>
+  <text class="pin" x="224" y="330">1</text>
+  <path class="wire" d="M300 300 L300 340"/>
+  <text class="tiny" text-anchor="middle" x="300" y="292">IN1</text>
+  <text class="pin" x="304" y="330">2</text>
+  <path class="wire" d="M380 300 L380 340"/>
+  <text class="tiny" text-anchor="middle" x="380" y="292">PGND</text>
+  <text class="pin" x="384" y="330">3</text>
+  <path class="wire" d="M460 300 L460 340"/>
+  <text class="tiny" text-anchor="middle" x="460" y="292">MUTE</text>
+  <text class="pin" x="464" y="330">4</text>
+  <path class="wire" d="M540 300 L540 340"/>
+  <text class="tiny" text-anchor="middle" x="540" y="292">DC</text>
+  <text class="pin" x="544" y="330">5</text>
+  <path class="wire" d="M620 300 L620 340"/>
+  <text class="tiny" text-anchor="middle" x="620" y="292">IN2</text>
+  <text class="pin" x="624" y="330">6</text>
+  <path class="wire" d="M700 300 L700 340"/>
+  <text class="tiny" text-anchor="middle" x="700" y="292">NF2</text>
+  <text class="pin" x="704" y="330">7</text>
+  <path class="wire" d="M780 300 L780 340"/>
+  <text class="tiny" text-anchor="middle" x="780" y="292">GND2</text>
+  <text class="pin" x="784" y="330">8</text>
+  <path class="wire" d="M860 300 L860 340"/>
+  <text class="tiny" text-anchor="middle" x="860" y="292">BS2</text>
+  <text class="pin" x="864" y="330">9</text>
+  <path class="wire" d="M940 300 L940 340"/>
+  <text class="tiny" text-anchor="middle" x="940" y="292">OUT2</text>
+  <text class="pin" x="944" y="330">10</text>
+  <path class="wire" d="M1020 300 L1020 340"/>
+  <text class="tiny" text-anchor="middle" x="1020" y="292">VCC</text>
+  <text class="pin" x="1024" y="330">11</text>
+  <path class="wire" d="M1100 300 L1100 340"/>
+  <text class="tiny" text-anchor="middle" x="1100" y="292">OUT1</text>
+  <text class="pin" x="1104" y="330">12</text>
+  <path class="wire" d="M1180 300 L1180 340"/>
+  <text class="tiny" text-anchor="middle" x="1180" y="292">BS1</text>
+  <text class="pin" x="1184" y="330">13</text>
+  <path class="wire" d="M1260 300 L1260 340"/>
+  <text class="tiny" text-anchor="middle" x="1260" y="292">GND1</text>
+  <text class="pin" x="1264" y="330">14</text>
+  <path class="wire" d="M220 340 L220 359"/>
+  <path class="wire" d="M220 359 l-9 8 l18 14 l-18 14 l18 14 l-18 14 l9 8"/>
+  <path class="wire" d="M220 431 L220 450"/>
+  <text class="ref" text-anchor="end" x="202" y="391">R7</text>
+  <text class="val" text-anchor="end" x="202" y="407">470</text>
+  <path class="wire" d="M220 450 L220 488"/>
+  <path class="wire" d="M194 488 H246"/>
+  <path class="wire" d="M194 502 H246"/>
+  <path class="wire" d="M220 502 L220 540"/>
+  <text class="ref" x="254" y="493">C1</text>
+  <text class="val" x="254" y="509">47u</text>
+  <text class="pol" text-anchor="middle" x="186" y="486">+</text>
+  <path class="wire" d="M220 540 L220 558"/>
+  <path class="wire" d="M198 558 H242 M206 566 H234 M214 574 H226"/>
+  <path class="wire" d="M700 340 L700 359"/>
+  <path class="wire" d="M700 359 l-9 8 l18 14 l-18 14 l18 14 l-18 14 l9 8"/>
+  <path class="wire" d="M700 431 L700 450"/>
+  <text class="ref" text-anchor="end" x="682" y="391">R8</text>
+  <text class="val" text-anchor="end" x="682" y="407">470</text>
+  <path class="wire" d="M700 450 L700 488"/>
+  <path class="wire" d="M674 488 H726"/>
+  <path class="wire" d="M674 502 H726"/>
+  <path class="wire" d="M700 502 L700 540"/>
+  <text class="ref" x="734" y="493">C2</text>
+  <text class="val" x="734" y="509">47u</text>
+  <text class="pol" text-anchor="middle" x="666" y="486">+</text>
+  <path class="wire" d="M700 540 L700 558"/>
+  <path class="wire" d="M678 558 H722 M686 566 H714 M694 574 H706"/>
+  <path class="wire" d="M300 340 L300 620"/>
+  <circle class="wire" cx="300" cy="620" r="5" fill="var(--bg)"/>
+  <text class="rail" x="314" y="625"></text>
+  <text class="rail" x="286" y="648">IN1</text>
+  <path class="wire" d="M620 340 L620 620"/>
+  <circle class="wire" cx="620" cy="620" r="5" fill="var(--bg)"/>
+  <text class="rail" x="634" y="625"></text>
+  <text class="rail" x="606" y="648">IN2</text>
+  <path class="wire" d="M460 340 L460 620"/>
+  <circle class="wire" cx="460" cy="620" r="5" fill="var(--bg)"/>
+  <text class="rail" x="474" y="625"></text>
+  <text class="rail" x="446" y="648">MUTE</text>
+  <path class="wire" d="M380 340 L380 358"/>
+  <path class="wire" d="M358 358 H402 M366 366 H394 M374 374 H386"/>
+  <path class="wire" d="M780 340 L780 358"/>
+  <path class="wire" d="M758 358 H802 M766 366 H794 M774 374 H786"/>
+  <path class="wire" d="M1260 340 L1260 358"/>
+  <path class="wire" d="M1238 358 H1282 M1246 366 H1274 M1254 374 H1266"/>
+  <path class="wire" d="M540 340 L540 388"/>
+  <path class="wire" d="M514 388 H566"/>
+  <path class="wire" d="M514 402 H566"/>
+  <path class="wire" d="M540 402 L540 450"/>
+  <text class="ref" x="574" y="393">C9</text>
+  <text class="val" x="574" y="409">1000u</text>
+  <text class="pol" text-anchor="middle" x="506" y="386">+</text>
+  <path class="wire" d="M540 450 L540 468"/>
+  <path class="wire" d="M518 468 H562 M526 476 H554 M534 484 H546"/>
+  <path class="wire" d="M860 340 L860 380"/>
+  <path class="wire" d="M940 340 L940 380"/>
+  <path class="wire" d="M860 380 L893 380"/>
+  <path class="wire" d="M893 364 V396"/>
+  <path class="wire" d="M907 364 V396"/>
+  <path class="wire" d="M907 380 L940 380"/>
+  <text class="ref" text-anchor="middle" x="900" y="338">C4</text>
+  <text class="val" text-anchor="middle" x="900" y="354">1000u</text>
+  <text class="pol" text-anchor="middle" x="850" y="372">+</text>
+  <path class="wire" d="M940 380 L940 420"/>
+  <circle class="dot" cx="940" cy="380" r="4"/>
+  <path class="wire" d="M940 420 L820 420"/>
+  <circle class="dot" cx="940" cy="420" r="4"/>
+  <path class="wire" d="M820 420 L820 453"/>
+  <path class="wire" d="M794 453 H846"/>
+  <path class="wire" d="M794 467 H846"/>
+  <path class="wire" d="M820 467 L820 500"/>
+  <text class="ref" x="854" y="458">C6</text>
+  <text class="val" x="854" y="474">0.1u</text>
+  <path class="wire" d="M820 500 L820 514"/>
+  <path class="wire" d="M820 514 l-9 8 l18 14 l-18 14 l18 14 l-18 14 l9 8"/>
+  <path class="wire" d="M820 586 L820 600"/>
+  <text class="ref" text-anchor="start" x="838" y="546">R2</text>
+  <text class="val" text-anchor="start" x="838" y="562">5R</text>
+  <path class="wire" d="M820 600 L820 618"/>
+  <path class="wire" d="M798 618 H842 M806 626 H834 M814 634 H826"/>
+  <path class="wire" d="M940 420 L940 463"/>
+  <path class="wire" d="M914 463 H966"/>
+  <path class="wire" d="M914 477 H966"/>
+  <path class="wire" d="M940 477 L940 520"/>
+  <text class="ref" x="974" y="468">C8</text>
+  <text class="val" x="974" y="484">2200u</text>
+  <text class="pol" text-anchor="middle" x="906" y="466">+</text>
+  <path class="wire" d="M940 520 L940 544"/>
+  <path class="wire" d="M940 544 l-9 8 l18 14 l-18 14 l18 14 l-18 14 l9 8"/>
+  <path class="wire" d="M940 616 L940 640"/>
+  <text class="ref" text-anchor="start" x="958" y="576">RL2</text>
+  <text class="val" text-anchor="start" x="958" y="592">SPK 4-8R</text>
+  <path class="wire" d="M940 640 L940 658"/>
+  <path class="wire" d="M918 658 H962 M926 666 H954 M934 674 H946"/>
+  <path class="wire" d="M1180 340 L1180 380"/>
+  <path class="wire" d="M1100 340 L1100 380"/>
+  <path class="wire" d="M1100 380 L1133 380"/>
+  <path class="wire" d="M1133 364 V396"/>
+  <path class="wire" d="M1147 364 V396"/>
+  <path class="wire" d="M1147 380 L1180 380"/>
+  <text class="ref" text-anchor="middle" x="1140" y="338">C3</text>
+  <text class="val" text-anchor="middle" x="1140" y="354">1000u</text>
+  <text class="pol" text-anchor="middle" x="1190" y="372">+</text>
+  <path class="wire" d="M1100 380 L1100 420"/>
+  <circle class="dot" cx="1100" cy="380" r="4"/>
+  <path class="wire" d="M1100 420 L1220 420"/>
+  <circle class="dot" cx="1100" cy="420" r="4"/>
+  <path class="wire" d="M1220 420 L1220 453"/>
+  <path class="wire" d="M1194 453 H1246"/>
+  <path class="wire" d="M1194 467 H1246"/>
+  <path class="wire" d="M1220 467 L1220 500"/>
+  <text class="ref" x="1254" y="458">C5</text>
+  <text class="val" x="1254" y="474">0.1u</text>
+  <path class="wire" d="M1220 500 L1220 514"/>
+  <path class="wire" d="M1220 514 l-9 8 l18 14 l-18 14 l18 14 l-18 14 l9 8"/>
+  <path class="wire" d="M1220 586 L1220 600"/>
+  <text class="ref" text-anchor="start" x="1238" y="546">R1</text>
+  <text class="val" text-anchor="start" x="1238" y="562">5R</text>
+  <path class="wire" d="M1220 600 L1220 618"/>
+  <path class="wire" d="M1198 618 H1242 M1206 626 H1234 M1214 634 H1226"/>
+  <path class="wire" d="M1100 420 L1100 463"/>
+  <path class="wire" d="M1074 463 H1126"/>
+  <path class="wire" d="M1074 477 H1126"/>
+  <path class="wire" d="M1100 477 L1100 520"/>
+  <text class="ref" x="1134" y="468">C7</text>
+  <text class="val" x="1134" y="484">2200u</text>
+  <text class="pol" text-anchor="middle" x="1066" y="466">+</text>
+  <path class="wire" d="M1100 520 L1100 544"/>
+  <path class="wire" d="M1100 544 l-9 8 l18 14 l-18 14 l18 14 l-18 14 l9 8"/>
+  <path class="wire" d="M1100 616 L1100 640"/>
+  <text class="ref" text-anchor="start" x="1118" y="576">RL1</text>
+  <text class="val" text-anchor="start" x="1118" y="592">SPK 4-8R</text>
+  <path class="wire" d="M1100 640 L1100 658"/>
+  <path class="wire" d="M1078 658 H1122 M1086 666 H1114 M1094 674 H1106"/>
+  <path class="wire" d="M1020 340 L1020 360"/>
+  <path class="wire" d="M1020 360 L1020 386"/>
+  <circle class="accf" cx="1020" cy="386" r="7"/>
+  <text class="volt" text-anchor="middle" x="1020" y="408">VCC</text>
+  <circle class="wire" cx="160" cy="90" r="5" fill="var(--bg)"/>
+  <text class="rail" x="174" y="95"></text>
+  <text class="rail" x="150" y="76">+12 to 15 V DC, 2 A</text>
+  <path class="wire" d="M160 90 L300 90 L420 90 L520 90"/>
+  <path class="wire" d="M300 90 L300 128"/>
+  <path class="wire" d="M274 128 H326"/>
+  <path class="wire" d="M274 142 H326"/>
+  <path class="wire" d="M300 142 L300 180"/>
+  <text class="ref" x="334" y="133">C11</text>
+  <text class="val" x="334" y="149">2200u</text>
+  <text class="pol" text-anchor="middle" x="266" y="132">+</text>
+  <path class="wire" d="M300 180 L300 198"/>
+  <path class="wire" d="M278 198 H322 M286 206 H314 M294 214 H306"/>
+  <path class="wire" d="M420 90 L420 128"/>
+  <path class="wire" d="M394 128 H446"/>
+  <path class="wire" d="M394 142 H446"/>
+  <path class="wire" d="M420 142 L420 180"/>
+  <text class="ref" x="454" y="133">C12</text>
+  <text class="val" x="454" y="149">0.1u</text>
+  <path class="wire" d="M420 180 L420 198"/>
+  <path class="wire" d="M398 198 H442 M406 206 H434 M414 214 H426"/>
+  <circle class="dot" cx="300" cy="90" r="4"/>
+  <circle class="dot" cx="420" cy="90" r="4"/>
+  <path class="wire" d="M520 90 L572 90"/>
+  <circle class="accf" cx="572" cy="90" r="7"/>
+  <text class="volt" text-anchor="start" x="584" y="95">VCC</text>
+</svg>

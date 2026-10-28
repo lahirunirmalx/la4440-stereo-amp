@@ -1,0 +1,19 @@
+* full-power check: source level at clip, 13.2 V and 12 V supply, RNF' 470, pot full up, 10k taper R
+.include amp.cir
+Rlaw wip 0 10k
+.control
+foreach vc 13.2 12
+  alterparam VCC = $vc
+  foreach a 0.1 0.15 0.2 0.3
+    reset
+    alter @Vs[sin] = [ 0 $a 1000 ]
+    tran 10u 400m 300m
+    meas tran pk MAX v(spk) from=300m to=400m
+    meas tran tr MIN v(spk) from=300m to=400m
+    let p = (pk-tr)*(pk-tr)/8/4
+    echo RESULT fp vcc $vc vs_pk $a spk_max $&pk spk_min $&tr p_w $&p
+    destroy all
+  end
+end
+.endc
+.end

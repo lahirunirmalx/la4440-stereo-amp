@@ -1,0 +1,19 @@
+* gain, band edges and full-power input level vs RNF'
+.include amp.cir
+.control
+foreach rx 0 220 470 1000
+  alterparam RNFX = $rx
+  reset
+  op
+  let vo = v(out1)
+  ac dec 40 2 1e6
+  let g = vdb(spk)
+  meas ac gmid FIND g AT=1000
+  let ref = gmid - 3
+  meas ac flo WHEN g=ref CROSS=1
+  meas ac fhi WHEN g=ref CROSS=LAST
+  echo RESULT rnfx $rx outdc $&vo gain1k_db $&gmid flo $&flo fhi $&fhi
+  destroy all
+end
+.endc
+.end

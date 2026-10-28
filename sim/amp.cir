@@ -1,0 +1,38 @@
+* LA4440 stereo amp, one channel modelled (ch1: pins 2 IN, 1 NF, 12 OUT, 13 BS)
+.param VCC=13.2 X=1 RPOT=100k RNFX=470 RSER=5.6k
+.param RT={max(RPOT*(1-X),1)} RB={max(RPOT*X,1)}
+
+* LA4440 channel, behavioural: Rf 20k / RNF 50 internal, ri 30k, fH ~20 kHz at 51.5 dB
+* output biased at 0.515 x VCC (6.8 V at 13.2 V), swing limited 0.5 V from each rail
+.subckt LA4440CH in nf out vcc
+Rin in 0 30k
+Boac oac 0 V = V(out) - 0.515*V(vcc)
+Rf oac fbn 20k
+Rnf fbn nf 50
+Bg 0 nc I = 1e-3*(V(in)-V(fbn))
+Rc nc 0 3MEG
+Cc nc 0 21p
+Bcl vt 0 V = min(max(V(nc)+0.515*V(vcc), 0.5), V(vcc)-0.5)
+Ro vt out 0.1
+.ends
+
+Vcc vcc 0 DC {VCC}
+* source: phone / line out, 100 ohm
+Vs src 0 DC 0 AC 1 SIN(0 0 1k)
+Rs src inp 100
+* volume pot, linear 100k (B100K now, X9C104 later): H = inp, L = GND, W = wiper
+Rtop inp wip {RT}
+Rbot wip 0 {RB}
+* wiper cap (stops pot scratch / X9C step clicks) and 5.6k series R (mute 40 -> 55 dB)
+Cw wip w2 47u
+Rser w2 in1 {RSER}
+XU1 in1 nf1 out1 vcc LA4440CH
+* gain set: RNF' in series with the 47 uF NF cap
+Rnfx nf1 nfc {RNFX+0.001}
+C1 nfc 0 47u
+* output cap, speaker, Zobel (0.1 uF + two 10R 1 W in parallel = 5R)
+C7 out1 spk 2200u
+Rspk spk 0 4
+C5 out1 zb 0.1u
+R1 zb 0 5
+.end

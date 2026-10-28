@@ -1,0 +1,19 @@
+# generated / scratch
+*.dsn
+*.ses
+kicad/la4440.net
+kicad/erc.json
+kicad/drc*.json
+kicad/panel/drc_panel.json
+kicad/svg/
+kicad/pcbsvg/
+kicad/pcb_placed.png
+kicad/gerbers/
+kicad/*-backups/
+kicad/fp-info-cache
+kicad/*.kicad_prl
+kicad/panel/*.kicad_prl
+kicad/logs/
+**/__pycache__/
+kicad/pcb.png
+kicad/sch.png

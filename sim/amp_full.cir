@@ -1,0 +1,94 @@
+* LA4440 stereo amp, full board netlist: both channels, volume, mute driver, supply
+.param VCC=13.2 VCTL=0 RSW=1e9 X=1 RNFX=470
+
+* LA4440, 14 pins in pin order. Channels behavioural (see amp.cir). Pin 4 mute input is a
+* base-emitter to GND (current only - the 40 dB attenuation is NOT modelled). Pins 5, 9, 13
+* are placeholders (1MEG to VCC) so their external caps have a DC path; real values unknown.
+.subckt LA4440 nf1 in1 pgnd mute dc in2 nf2 gnd2 bs2 out2 vcc out1 bs1 gnd1
+Rin1 in1 pgnd 30k
+Boac1 oac1 pgnd V = V(out1) - 0.515*V(vcc)
+Rf1 oac1 fb1 20k
+Rnf1 fb1 nf1 50
+Bg1 pgnd nc1 I = 1e-3*(V(in1)-V(fb1))
+Rc1 nc1 pgnd 3MEG
+Cc1 nc1 pgnd 21p
+Bcl1 vt1 pgnd V = min(max(V(nc1)+0.515*V(vcc), 0.5), V(vcc)-0.5)
+Ro1 vt1 out1 0.1
+Rin2 in2 pgnd 30k
+Boac2 oac2 pgnd V = V(out2) - 0.515*V(vcc)
+Rf2 oac2 fb2 20k
+Rnf2 fb2 nf2 50
+Bg2 pgnd nc2 I = 1e-3*(V(in2)-V(fb2))
+Rc2 nc2 pgnd 3MEG
+Cc2 nc2 pgnd 21p
+Bcl2 vt2 pgnd V = min(max(V(nc2)+0.515*V(vcc), 0.5), V(vcc)-0.5)
+Ro2 vt2 out2 0.1
+Dmute mute pgnd DBE
+.model DBE D(IS=1e-14 N=1)
+Rdc vcc dc 1MEG
+Rbs1 vcc bs1 1MEG
+Rbs2 vcc bs2 1MEG
+Rg1 gnd1 pgnd 0.01
+Rg2 gnd2 pgnd 0.01
+.ends
+
+.model Q2N3904 NPN(IS=6.7f BF=200 VAF=74 RB=10 RC=1 CJE=4.5p CJC=3.6p)
+.model Q2N5401 PNP(IS=21f BF=120 VAF=100 RB=10 RC=1 CJE=20p CJC=6p)
+
+* supply
+Vcc vcc 0 DC {VCC}
+C11 vcc 0 2200u
+C12 vcc 0 0.1u
+
+* sources (test only): left and right line in
+VsL inl 0 DC 0 AC 1
+VsR inr 0 DC 0 AC 1
+
+* volume: dual linear 100k (B100K) now, two X9C104 later - one gang per channel
+RV1AT inl wl {max(100k*(1-X),1)}
+RV1AB wl 0 {max(100k*X,1)}
+RV1BT inr wr {max(100k*(1-X),1)}
+RV1BB wr 0 {max(100k*X,1)}
+* taper resistors: linear pot -> near-log law
+R3 wl 0 10k
+R4 wr 0 10k
+* wiper caps and 5.6k series (mute 40 -> 55 dB)
+C13 wl w1 47u
+C14 wr w2 47u
+R5 w1 in1 5.6k
+R6 w2 in2 5.6k
+
+XU1 nf1 in1 0 mute dc in2 nf2 0 bs2 out2 vcc out1 bs1 0 LA4440
+
+* gain set: RNF' + NF cap (51.5 dB -> 30 dB)
+R7 nf1 nfc1 {RNFX}
+C1 nfc1 0 47u
+R8 nf2 nfc2 {RNFX}
+C2 nfc2 0 47u
+* bootstrap (100 uF in the datasheet; 1000 uF in hand)
+C3 out1 bs1 1000u
+C4 bs2 out2 1000u
+* ripple filter / start + mute time constant (220 uF in the datasheet; 1000 uF in hand)
+C9 dc 0 1000u
+* outputs and Zobels (0.1 uF film + 2 x 10R 1 W in parallel)
+C7 out1 spk1 2200u
+C8 out2 spk2 2200u
+RL1 spk1 0 4
+RL2 spk2 0 4
+C5 out1 zb1 0.1u
+R1 zb1 0 5
+C6 out2 zb2 0.1u
+R2 zb2 0 5
+
+* mute: SW1 (VCC to MV) or GPIO via Q2/Q1, wire-OR; RO + CO per datasheet
+Rsw1 vcc mv {RSW}
+R9 mv mute 1.8k
+C10 mute 0 47u
+Q2 mv pb vcc Q2N5401
+R10 vcc pb 47k
+R11 pb c1 10k
+Q1 c1 b1 0 Q2N3904
+R12 mctl b1 4.7k
+R13 b1 0 100k
+Vctl mctl 0 DC {VCTL}
+.end
