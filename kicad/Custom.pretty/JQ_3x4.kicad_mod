@@ -7,7 +7,7 @@
 		(at 3.81 -2.555 0)
 		(layer "F.SilkS")
 		(hide yes)
-		(uuid "e35e8f48-af6d-4eeb-9fb0-06839c29b9e0")
+		(uuid "29facd7a-b9f0-43fa-aaae-e847f19d4d2a")
 		(effects
 			(font
 				(size 0.9 0.9)
@@ -18,7 +18,7 @@
 	(property "Value" "Q2 2N5401 pinout field"
 		(at 0 0 0)
 		(layer "F.Fab")
-		(uuid "aeee49fc-bf64-4543-a077-15f4a619e708")
+		(uuid "d03a4395-cb0d-4cc9-ab25-7ddc19abd804")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -30,7 +30,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "48291850-8d04-4e6b-8538-13286cf24f06")
+		(uuid "2eb2d09a-667a-4980-bddd-b0059a648260")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -42,7 +42,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "0981769f-8971-4b2a-b78d-eb3448492f57")
+		(uuid "a3ce43b2-8297-4842-ba0d-e787aa7a1f72")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -59,7 +59,7 @@
 		)
 		(fill no)
 		(layer "F.SilkS")
-		(uuid "506faf43-0233-499d-989a-1bbe5eb5cefc")
+		(uuid "18d94dc3-3261-4dd6-8f2f-dfc19529a34f")
 	)
 	(fp_rect
 		(start -1.81 -1.81)
@@ -70,7 +70,7 @@
 		)
 		(fill no)
 		(layer "F.CrtYd")
-		(uuid "fefb6056-fc09-4c5e-8514-d539e3c9756f")
+		(uuid "03a35a72-ad37-4776-b759-20f4807ac76b")
 	)
 	(pad "1" thru_hole rect
 		(at 7.62 0)
@@ -79,7 +79,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(thermal_bridge_angle 45)
-		(uuid "c39d21a8-224b-403f-ade8-4bf014ec7405")
+		(uuid "54241aa9-bde4-496b-8a84-dbb11e6cdbfb")
 	)
 	(pad "2" thru_hole circle
 		(at 5.08 0)
@@ -87,7 +87,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "1fbcf1c7-34d9-43ec-931e-792ece660a88")
+		(uuid "a9425dc2-c12d-4ad0-a109-2baea2778400")
 	)
 	(pad "3" thru_hole circle
 		(at 2.54 0)
@@ -95,7 +95,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "8c62c50f-ba54-44f2-81df-40fd702c0f54")
+		(uuid "1d0ca4d9-5798-4506-a659-048d66d8db16")
 	)
 	(pad "4" thru_hole circle
 		(at 0 0)
@@ -103,7 +103,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "add4ef75-9bb5-4ae7-ad62-e2718c3e618a")
+		(uuid "64fe5a5f-23d0-405a-9baf-2b4294290045")
 	)
 	(pad "5" thru_hole rect
 		(at 7.62 2.54)
@@ -112,7 +112,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(thermal_bridge_angle 45)
-		(uuid "4479b48d-9d4b-4724-907b-8f25e5bef081")
+		(uuid "cdb344db-1319-4c66-9491-cf97fb990e82")
 	)
 	(pad "6" thru_hole circle
 		(at 5.08 2.54)
@@ -120,7 +120,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "48128b90-d25a-43fe-ae60-25dd21399101")
+		(uuid "e489e569-0b8b-4af6-b5aa-c9e33db5064e")
 	)
 	(pad "7" thru_hole circle
 		(at 2.54 2.54)
@@ -128,7 +128,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "7589cfaf-f469-4630-9e3c-83d7445441e5")
+		(uuid "2f653e99-aff2-45e6-a5a9-368c20ea5b65")
 	)
 	(pad "8" thru_hole circle
 		(at 0 2.54)
@@ -136,7 +136,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "6c77a043-284a-4a9a-826b-80cd24c96fe0")
+		(uuid "de0bfa13-2b58-4276-b305-fb64a4aa0f11")
 	)
 	(pad "9" thru_hole rect
 		(at 7.62 5.08)
@@ -145,7 +145,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(thermal_bridge_angle 45)
-		(uuid "5db7cc05-89b4-44be-ab65-525f28f40d15")
+		(uuid "48debe53-64f7-44cd-915b-f15edc224bc5")
 	)
 	(pad "10" thru_hole circle
 		(at 5.08 5.08)
@@ -153,7 +153,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "bfdbd006-435a-4cce-b76e-c67c5f360072")
+		(uuid "4016a74d-e21c-45e5-81f3-4b8585234c9b")
 	)
 	(pad "11" thru_hole circle
 		(at 2.54 5.08)
@@ -161,7 +161,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "647abc05-750e-4172-b9ef-d7d269bbb743")
+		(uuid "f257b4ac-4ce8-42b7-a0d0-239d242d0862")
 	)
 	(pad "12" thru_hole circle
 		(at 0 5.08)
@@ -169,7 +169,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "8ea7a236-9ed7-4da5-8522-bd96201df0e3")
+		(uuid "63f25b4f-753e-4b63-9c61-d859334fcf23")
 	)
 	(embedded_fonts no)
 )

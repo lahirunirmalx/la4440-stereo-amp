@@ -13,7 +13,6 @@ tr = list(b.GetTracks()); vias = [t for t in tr if t.GetClass() == "PCB_VIA"]
 print("routed: %d track segments, %d vias" % (len(tr) - len(vias), len(vias)))
 pcbnew.SaveBoard("la4440.kicad_pcb", b)
 PY
-/usr/bin/python3 post_route.py la4440.kicad_pcb
 /usr/bin/python3 add_gnd_zone.py la4440.kicad_pcb /GND
 kicad-cli pcb drc --schematic-parity --format json -o drc.json la4440.kicad_pcb >/dev/null
 /usr/bin/python3 - <<'PY'

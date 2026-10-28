@@ -2,7 +2,7 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid "3061605e-c653-4d3e-aef1-4408e25fae13")
+	(uuid "c645e534-70dc-4709-a09a-266e7a286bba")
 	(paper "A3")
 	(title_block
 		(title "LA4440 stereo amplifier - volume header, toggle / GPIO mute")
@@ -2536,7 +2536,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "262080e1-fde9-485c-9291-79b62e020716")
+		(uuid "7374d871-1ae0-48fa-8a2d-3cc7c58c69e5")
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
@@ -2546,7 +2546,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "0d78b346-33cc-4b9b-9b9f-b075d3056077")
+		(uuid "9367d731-7e26-4bf8-b00b-9745447adc77")
 		(property "Reference" "J1"
 			(at 23.52 44.72 0)
 			(effects
@@ -2593,17 +2593,17 @@
 			)
 		)
 		(pin "1"
-			(uuid "2824e527-1a51-4995-b804-f3a73ec134d4")
+			(uuid "b87be0f9-5bd8-41f2-a171-8cf2e57aaf39")
 		)
 		(pin "2"
-			(uuid "538fd30a-882b-40c0-bad1-190d90943865")
+			(uuid "2d14cff6-4146-43e9-9fbd-3adbb015b780")
 		)
 		(pin "3"
-			(uuid "ee5a5ba0-ecd1-4b1e-b2be-2e1f4f0a034e")
+			(uuid "ba313002-3995-4a03-87e2-010d4b326e05")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "J1")
 					(unit 1)
 				)
@@ -2618,7 +2618,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "a88cad2a-6900-441c-a56d-ac01a0ffb0b3")
+		(uuid "4c0ff6ea-6be1-441f-b7ba-d62f8db6e1e1")
 	)
 	(label "GND"
 		(at 12.7 45.72 180)
@@ -2628,7 +2628,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "accdf2af-5dde-4754-a4ed-6fbcf2011907")
+		(uuid "a80b2755-7723-45fd-81dd-2dab1da08b8b")
 	)
 	(label "INR"
 		(at 12.7 48.26 180)
@@ -2638,7 +2638,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "52bf0f53-584e-42e0-80ec-fe897c2220b6")
+		(uuid "fedcec7c-c01e-4035-88bd-b43b0c0a34f0")
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x06")
@@ -2648,7 +2648,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "f09367d1-3bb9-4750-9f49-d281de31f7df")
+		(uuid "a9935ecf-e1e8-4c50-ab70-c2d0e12042ef")
 		(property "Reference" "J2"
 			(at 23.52 85.36 0)
 			(effects
@@ -2695,26 +2695,26 @@
 			)
 		)
 		(pin "1"
-			(uuid "1ec11a42-1d23-471b-8817-ed5bd6faa6c1")
+			(uuid "3439c3e9-190a-4aa8-b000-7f131d419510")
 		)
 		(pin "2"
-			(uuid "ab7f5aa8-0189-43fc-a9ac-47082bc7f8d5")
+			(uuid "6833d83c-d652-4bb4-bf29-1de7991a4e16")
 		)
 		(pin "3"
-			(uuid "07499b3c-87e1-4412-a7a1-4477f97c1bc6")
+			(uuid "251c2de1-f805-49a3-bf6f-2b303e924d18")
 		)
 		(pin "4"
-			(uuid "8edc9ef2-df6c-41ab-a6e3-939648bca0f9")
+			(uuid "cbfe54ed-6f02-4b97-be76-807d526a6026")
 		)
 		(pin "5"
-			(uuid "3223d3f7-34fb-4dea-8b00-b7f20079137a")
+			(uuid "ec27865e-3f61-41f8-ac69-957300ba7ab4")
 		)
 		(pin "6"
-			(uuid "3f769f06-c999-426a-a583-1998b72cab48")
+			(uuid "c49336d5-53b4-4583-9ab6-4e61a82851c9")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "J2")
 					(unit 1)
 				)
@@ -2729,7 +2729,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "a62cc4e8-0d80-448f-9341-eddfc998f3b7")
+		(uuid "edce0aeb-1f36-4520-ad2e-cea3759ffa33")
 	)
 	(label "WL"
 		(at 12.7 83.82 180)
@@ -2739,7 +2739,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "6fbae0d6-0f81-4217-9144-c3abbdd57b9d")
+		(uuid "c0cb1f23-acbb-462d-b6f2-9adb540300ed")
 	)
 	(label "INR"
 		(at 12.7 86.36 180)
@@ -2749,7 +2749,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "caa9e909-e7c3-437c-a59f-d2ad5a17dd79")
+		(uuid "2f31c2bb-0069-4b78-83f9-a06d097469ff")
 	)
 	(label "WR"
 		(at 12.7 88.9 180)
@@ -2759,7 +2759,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "bff4e2c1-41d7-4b32-8abf-bb157b8001e7")
+		(uuid "f2e32e94-6c16-4873-96bb-e632ca4ca1bf")
 	)
 	(label "GND"
 		(at 12.7 91.44 180)
@@ -2769,7 +2769,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "742db2a3-ebc2-4043-824c-d3859ead9e5a")
+		(uuid "77fce154-1004-4384-8d0c-efd183b91428")
 	)
 	(label "MUTE_CTL"
 		(at 15.24 96.52000000000001 270)
@@ -2779,7 +2779,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "0c35fd9d-a212-4513-810a-d705cae13ea9")
+		(uuid "d0b12919-70ff-45db-a06c-3c160eb0af46")
 	)
 	(symbol
 		(lib_id "Device:R_Potentiometer")
@@ -2789,7 +2789,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "7451c430-018b-4af7-abe9-6da4a91aac45")
+		(uuid "2c6fdb86-e4c2-40f8-9ec9-e8f09cb10b5e")
 		(property "Reference" "RV1"
 			(at 47.96 40.72 0)
 			(effects
@@ -2836,17 +2836,17 @@
 			)
 		)
 		(pin "1"
-			(uuid "99e06007-5d7a-459f-a194-b251062316c7")
+			(uuid "9bd5a6ad-da49-4327-bc2b-e37a9c205772")
 		)
 		(pin "3"
-			(uuid "f01146ea-c66e-479f-ae63-c1db48eb0cd2")
+			(uuid "d5c82b2c-2ebd-4750-9039-837ac059c9e2")
 		)
 		(pin "2"
-			(uuid "60ebfb81-dfe9-4b34-b7bb-67fc7a3f8303")
+			(uuid "294ad5b4-792d-451a-9a06-c3d75967aea2")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "RV1")
 					(unit 1)
 				)
@@ -2861,7 +2861,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "8b92b768-030b-4b52-b02f-97af7ad822c1")
+		(uuid "0251826b-5c23-4b56-89c5-709b50223f7a")
 	)
 	(label "WL"
 		(at 67.31 45.72 0)
@@ -2871,7 +2871,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "236402e6-709c-4341-ad2f-b63700d52375")
+		(uuid "fc6bd307-24b9-4546-99f5-5e6d0bb43a0e")
 	)
 	(label "GND"
 		(at 60.96 52.07 270)
@@ -2881,7 +2881,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "25f6ce1c-80ec-4db9-a51f-d980720b4af9")
+		(uuid "9537684a-49f3-4530-9063-9d23d3af6d00")
 	)
 	(symbol
 		(lib_id "Device:R_Potentiometer")
@@ -2891,7 +2891,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "61935f8f-91ca-4800-8551-04897bb5d178")
+		(uuid "ba194054-742b-42f8-84fb-d507aba60381")
 		(property "Reference" "RV2"
 			(at 47.96 81.36 0)
 			(effects
@@ -2938,17 +2938,17 @@
 			)
 		)
 		(pin "1"
-			(uuid "ae563251-828c-46fd-9993-299461643b72")
+			(uuid "af5ab060-e88d-4b7a-b519-66e9287cd0a0")
 		)
 		(pin "3"
-			(uuid "b04d299d-8785-4d8f-959f-16d0afa6c51a")
+			(uuid "41db260a-dc7a-41f0-a46b-a5feb2aa2e90")
 		)
 		(pin "2"
-			(uuid "111eeeed-24f1-48f4-96a8-db6ebb3134e2")
+			(uuid "4d62bd66-4084-4863-be4b-6a2e3794eeb7")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "RV2")
 					(unit 1)
 				)
@@ -2963,7 +2963,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "341448fe-d7ad-4371-84e4-7d3f6d669823")
+		(uuid "be97772b-4e08-4727-93f9-425263975712")
 	)
 	(label "WR"
 		(at 67.31 86.36 0)
@@ -2973,7 +2973,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "ea7bb295-0589-4e58-a91b-0807162dbf14")
+		(uuid "84349058-b334-4cbb-92d8-cd02407f4992")
 	)
 	(label "GND"
 		(at 60.96 92.71000000000001 270)
@@ -2983,7 +2983,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "5618d92c-f619-4e27-92f4-932d242019a6")
+		(uuid "b735e208-55a5-41ca-a145-5d1bb846a786")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -2993,7 +2993,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "2f667233-cc3a-4b2e-830a-96a4d96742c1")
+		(uuid "64d9eb63-1032-4301-9281-b06f65d3eed8")
 		(property "Reference" "R3"
 			(at 94.64 44.72 0)
 			(effects
@@ -3040,14 +3040,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "0561e6f5-d869-4181-9f2e-3252268c6f55")
+			(uuid "8736717d-166d-4241-a741-61ce11d7f344")
 		)
 		(pin "2"
-			(uuid "0fb74b4e-f84d-4f75-b874-aa28abdae32d")
+			(uuid "f3508dc8-6d43-4010-80bd-90088de522f0")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "R3")
 					(unit 1)
 				)
@@ -3062,7 +3062,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "4b268ce9-d8a6-4ecb-97a5-2dca1200f3f3")
+		(uuid "7982e627-3e89-4cda-b31e-cb03448dc6fa")
 	)
 	(label "GND"
 		(at 91.44 52.07 270)
@@ -3072,7 +3072,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "760e1d26-ed77-47d2-9585-745cc7f99cb3")
+		(uuid "678d6928-db69-4fba-9f18-40c09d502be1")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -3082,7 +3082,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "3127238a-e9c0-4e2f-8645-540e7a180083")
+		(uuid "0bd5eaea-b0d4-4d11-bfc4-2c912defac9f")
 		(property "Reference" "R4"
 			(at 94.64 85.36 0)
 			(effects
@@ -3129,14 +3129,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "98e91a6c-7745-4ac9-b37b-5374d15d847a")
+			(uuid "d1a2a3a1-2e95-474e-ac56-958f38ba9e22")
 		)
 		(pin "2"
-			(uuid "b5b1a105-f25d-464d-a1a6-a743ab16441e")
+			(uuid "040fce83-42b3-4bf8-b1b7-447a64a48fda")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "R4")
 					(unit 1)
 				)
@@ -3151,7 +3151,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "e1f1e4fb-29bf-49a9-b696-3f0b3c0adaa0")
+		(uuid "8044c8fe-34fb-4aa8-8cf7-40f652799fd0")
 	)
 	(label "GND"
 		(at 91.44 92.71000000000001 270)
@@ -3161,7 +3161,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "1312660f-5835-4468-8d52-35e14b80990b")
+		(uuid "3cb656c1-5d47-45ce-ad3c-1b2310ea7303")
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
@@ -3171,7 +3171,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "461af0d2-3db7-41b8-8f09-6ab19db99518")
+		(uuid "f70e4c99-c359-4c06-ab3e-ffe1c34bf2cc")
 		(property "Reference" "C13"
 			(at 114.96000000000001 44.72 0)
 			(effects
@@ -3218,14 +3218,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "ec4efbde-77c9-43ce-90b5-e8db4aa313e4")
+			(uuid "f4d46463-b3d2-4f18-aa8b-874b2e0cd153")
 		)
 		(pin "2"
-			(uuid "fdd7146d-b9bb-4df1-8090-23e1c23f6ad4")
+			(uuid "416a8749-f712-4a83-b866-df1aa5b6ad90")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "C13")
 					(unit 1)
 				)
@@ -3240,7 +3240,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "063d002a-3275-4349-a53f-4165ae2e022d")
+		(uuid "c3538b21-2606-47e5-9849-f509c45c3f53")
 	)
 	(label "WL"
 		(at 111.76 52.07 270)
@@ -3250,7 +3250,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "cc2b3551-10ee-4c5c-ad6c-a9e43c1fd101")
+		(uuid "5d8379ee-783e-41e9-b943-bec639a8487b")
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
@@ -3260,7 +3260,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "d68fdef4-2fd9-42e5-922e-43f8d5185f74")
+		(uuid "43344a1c-4ee8-4280-8ace-5dd003f1ac56")
 		(property "Reference" "C14"
 			(at 114.96000000000001 85.36 0)
 			(effects
@@ -3307,14 +3307,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "3d093a5f-acd8-4a30-84a4-22260d3bf2f2")
+			(uuid "8193c6e2-6593-41c5-a92e-be991f138a65")
 		)
 		(pin "2"
-			(uuid "604ef797-c0ec-4e60-9019-6886a0e16aa6")
+			(uuid "caaf8178-f669-4780-ab4b-d8b130ce3eea")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "C14")
 					(unit 1)
 				)
@@ -3329,7 +3329,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "13780404-ffc9-48d4-96dc-56b544fcadf1")
+		(uuid "e9bbfad5-50b7-407f-826c-d820b86aa632")
 	)
 	(label "WR"
 		(at 111.76 92.71000000000001 270)
@@ -3339,7 +3339,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "7b27994b-0f7d-4c37-a0cd-492f3dcfeb4f")
+		(uuid "270b6f02-5ded-40b5-b14e-5bd6706016ae")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -3349,7 +3349,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "37b3fdf0-f6b0-4b16-97cf-f6221a80466b")
+		(uuid "874ded0d-d046-41c8-bc3e-8df571cc02c6")
 		(property "Reference" "R5"
 			(at 135.28 44.72 0)
 			(effects
@@ -3396,14 +3396,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "4bce6bae-bbf6-4768-8f2e-9c8d5fbb602f")
+			(uuid "a0e92d3b-4a49-4d38-9d4a-39e9c0cc7fd8")
 		)
 		(pin "2"
-			(uuid "c0ac7fb3-4e96-434c-a92c-3b0a62be2d69")
+			(uuid "e72b2573-7645-45ca-8bc3-0b126732f12f")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "R5")
 					(unit 1)
 				)
@@ -3418,7 +3418,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "c9ff9667-650f-4172-9362-c96d5a6f4862")
+		(uuid "d39e26cc-fbd0-49ff-9786-62d6f22824a8")
 	)
 	(label "IN1"
 		(at 132.08 52.07 270)
@@ -3428,7 +3428,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "250a6ee1-d8f0-4a23-b751-6df17b72bdfa")
+		(uuid "fe056c8f-efc1-417a-93f8-c4045638403c")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -3438,7 +3438,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "694899e4-302e-4c87-9e83-92c08ca42168")
+		(uuid "6bffc7a9-eb10-48cb-b6d0-583a90d97510")
 		(property "Reference" "R6"
 			(at 135.28 85.36 0)
 			(effects
@@ -3485,14 +3485,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "bcf48f8c-ec48-4ad8-a7d2-72b71c072ace")
+			(uuid "c201cc64-f378-4e09-8364-4ae09b516b11")
 		)
 		(pin "2"
-			(uuid "59876165-dd50-4fe9-afc3-6a68af443fa9")
+			(uuid "8df200fb-762d-4e58-b5ed-cf554f83f464")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "R6")
 					(unit 1)
 				)
@@ -3507,7 +3507,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "5da691a0-4711-45c4-82f8-b2e4524aed27")
+		(uuid "baf2a31e-96be-4977-bc52-ed9fef215bf2")
 	)
 	(label "IN2"
 		(at 132.08 92.71000000000001 270)
@@ -3517,7 +3517,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "b3affc5d-7914-465d-a617-de0eed7d671e")
+		(uuid "8b9059cc-b13d-4651-88dd-c079fd01ce85")
 	)
 	(text "MUTE: SW1 (off-board, J3) or MUTE_CTL high (GPIO) - wire-OR"
 		(exclude_from_sim no)
@@ -3528,7 +3528,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "8ae357af-13f8-4c6c-9862-a718d70f764b")
+		(uuid "07c6d121-7cd0-460c-8a54-ce64a3fb9d14")
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
@@ -3538,7 +3538,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "f64e7430-93a8-4b73-80b4-241adebd341d")
+		(uuid "d2e4bc03-ccae-4bf0-afea-29b7cfb91830")
 		(property "Reference" "J3"
 			(at 23.52 146.32 0)
 			(effects
@@ -3585,14 +3585,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "acc2df02-f4da-4f4f-9f08-d32d108ef8c0")
+			(uuid "05fb1dc4-6053-412e-bf1f-9c7544618028")
 		)
 		(pin "2"
-			(uuid "3f7fe76c-0c2b-4868-b9f0-70eab715ab20")
+			(uuid "44ee95d1-a2bd-417a-bb03-11703c95be4a")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "J3")
 					(unit 1)
 				)
@@ -3607,7 +3607,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "073121ce-1940-4895-abef-5b3c15b078f4")
+		(uuid "c85aa62e-bddc-42df-959d-235ccc9a47d6")
 	)
 	(label "MV"
 		(at 12.7 149.86 180)
@@ -3617,7 +3617,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "d3f6a1e7-1949-4bb4-9855-917679852dba")
+		(uuid "6a3737d2-5d62-4ecf-9659-61d48ada3228")
 	)
 	(symbol
 		(lib_id "Switch:SW_SPST")
@@ -3627,7 +3627,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "991ee747-a89c-4805-bbf8-1513859e074d")
+		(uuid "35e01d27-acd2-4ea8-8e5e-cd468aebc72e")
 		(property "Reference" "SW1"
 			(at 41.72 142.32 0)
 			(effects
@@ -3674,14 +3674,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "6726e1cf-6b60-4189-afa6-59a3cf3c828c")
+			(uuid "8533d785-890f-4733-9d68-84f778f02b0b")
 		)
 		(pin "2"
-			(uuid "dcf13914-9849-4a64-b126-5d067ef43098")
+			(uuid "a20b7ea8-2a01-4c42-80ba-0673443a1fe8")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "SW1")
 					(unit 1)
 				)
@@ -3696,7 +3696,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "3253700e-cb72-4b8e-a172-91e311e51779")
+		(uuid "4b8029ab-ad72-442b-9302-c52314f4d8ad")
 	)
 	(label "MV"
 		(at 53.339999999999996 147.32 0)
@@ -3706,7 +3706,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "fc7011d8-a455-4e80-812b-58e5c4ec96fc")
+		(uuid "f0dcb55c-2378-4bd2-ac10-5dacb0d94897")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -3716,7 +3716,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "6c265749-e9e0-42e5-96fb-a50e392ebfe0")
+		(uuid "db95e218-e45b-4565-a435-13d7fd5ab90f")
 		(property "Reference" "R10"
 			(at 74.32000000000001 146.32 0)
 			(effects
@@ -3763,14 +3763,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "ac690931-a113-40d2-946b-c936401b830d")
+			(uuid "9f2fc89a-6065-4532-a905-a0f5cefcdeb0")
 		)
 		(pin "2"
-			(uuid "0b4a1710-323a-4f1b-b8e8-e21e0167d462")
+			(uuid "327add05-067b-4108-b961-e6736f269b58")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "R10")
 					(unit 1)
 				)
@@ -3785,7 +3785,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "9a1f7e70-c760-4b3a-96eb-b2dd485fe22c")
+		(uuid "abff84a3-18db-4460-b2d7-c7c2634f4d45")
 	)
 	(label "PB"
 		(at 71.12 153.67 270)
@@ -3795,7 +3795,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "3f8cf3a7-88d3-4d01-b9b2-502515ac39c1")
+		(uuid "4b7cceca-b534-4eca-b37b-59c01b3c17e9")
 	)
 	(symbol
 		(lib_id "Transistor_BJT:Q_PNP_EBC")
@@ -3806,7 +3806,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "7aec02fb-cd19-495a-8f29-5af8ababe772")
+		(uuid "e2b806a5-d6d1-4cac-b111-322aa5df70ac")
 		(property "Reference" "Q2"
 			(at 99.72 146.32 0)
 			(effects
@@ -3853,17 +3853,17 @@
 			)
 		)
 		(pin "2"
-			(uuid "128ff194-005a-4963-9b87-08ed338d3dd5")
+			(uuid "b5df5584-ff7c-43ac-8914-a1e15eeae80c")
 		)
 		(pin "3"
-			(uuid "aea1689f-78ff-46de-9827-0ba61fdd38c4")
+			(uuid "c93f2c54-5eb9-4611-b1f8-bced2f904a46")
 		)
 		(pin "1"
-			(uuid "de27b10b-77c9-4320-b216-922508989b99")
+			(uuid "8cd8ba5a-f324-4995-9626-b613282037d4")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "Q2")
 					(unit 1)
 				)
@@ -3878,7 +3878,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "ec1883c2-6404-4bba-b142-abc274cd5e8e")
+		(uuid "a53c5adb-ba51-4370-979d-d1bfd0aaca07")
 	)
 	(label "PB"
 		(at 88.89999999999999 147.32 180)
@@ -3888,7 +3888,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "a66fb42d-2f5c-4d7f-b4c1-040a96be01b0")
+		(uuid "120eff0a-6ecc-4279-bc6e-0eefbf915e58")
 	)
 	(label "MV"
 		(at 99.06 154.94 270)
@@ -3898,7 +3898,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "d296766f-44ce-45d5-8084-3da20ba054c6")
+		(uuid "49c7e00f-354a-43d7-9c73-1a1abc3cb6b0")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -3908,7 +3908,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "422d0043-3881-48ce-b948-4bf6b5aa477e")
+		(uuid "41f80978-4819-4170-a8ca-b36654f83267")
 		(property "Reference" "R11"
 			(at 74.32000000000001 176.8 0)
 			(effects
@@ -3955,14 +3955,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "f22f310f-b86a-4707-8000-ba75a056f068")
+			(uuid "43b333af-4298-41c5-a5d8-40eacca33092")
 		)
 		(pin "2"
-			(uuid "a16fc021-443e-44c5-9381-add420350d8e")
+			(uuid "db05fa7a-5ff4-4f90-91ca-d42cb5a380ee")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "R11")
 					(unit 1)
 				)
@@ -3977,7 +3977,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "d648af20-c115-48e1-95b3-0ca54626826a")
+		(uuid "a32abcaa-7ea4-4f91-969f-ff13112f9f3c")
 	)
 	(label "Q1C"
 		(at 71.12 184.15 270)
@@ -3987,7 +3987,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "df5b9318-7fec-4150-b715-438a32b973bd")
+		(uuid "838c42e6-90f1-410d-9580-117ec4a520e3")
 	)
 	(symbol
 		(lib_id "Transistor_BJT:2N3904")
@@ -3997,7 +3997,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "8c487e69-6dab-491b-aad3-1d2f086d96e1")
+		(uuid "32d9b836-e3da-4659-ae04-4e164a3c9a3e")
 		(property "Reference" "Q1"
 			(at 99.72 181.88 0)
 			(effects
@@ -4044,17 +4044,17 @@
 			)
 		)
 		(pin "2"
-			(uuid "4fce2d32-793d-49bb-afea-217ac3d96032")
+			(uuid "789bb28e-3ce6-42c9-b245-8b64c2aad1b3")
 		)
 		(pin "3"
-			(uuid "b73b8d96-e760-41f5-8d32-2a6d31c6cd39")
+			(uuid "3870a34d-c300-4b81-bc18-3ec6031eb67a")
 		)
 		(pin "1"
-			(uuid "f2d0dbe8-17ef-410e-84a8-56f2f503f17f")
+			(uuid "3e3d8575-663b-4a60-ae2f-5660171ec2d8")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "Q1")
 					(unit 1)
 				)
@@ -4069,7 +4069,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "02766a4e-d467-42a3-85f6-96f7aaa2c098")
+		(uuid "1f5e559e-faa4-4e68-aef8-f3deb95686cf")
 	)
 	(label "Q1B"
 		(at 88.89999999999999 182.88 180)
@@ -4079,7 +4079,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "7c3d5a53-8d01-4816-95ae-91bcecbe1be5")
+		(uuid "4966d898-91c0-4f13-b749-bdb0fc2a5964")
 	)
 	(label "Q1C"
 		(at 99.06 175.26000000000002 90)
@@ -4089,7 +4089,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "172ca27e-6fe9-43fe-b304-ac2c40bb42b5")
+		(uuid "5434b924-9fca-49a7-9adc-2778fc393a0c")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -4099,7 +4099,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ee52e58b-357c-4326-b5b0-1391567bc11a")
+		(uuid "1f87a32b-98d3-4a0f-93d6-b84d7d32efe6")
 		(property "Reference" "R12"
 			(at 125.12 181.88 0)
 			(effects
@@ -4146,14 +4146,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "14b61d7b-9b76-428b-87ac-6dc2eac2a6a9")
+			(uuid "6e694fed-7e81-4982-8bdc-d654a0741a76")
 		)
 		(pin "2"
-			(uuid "dc4e22b6-80be-496e-872a-c64c92ee0bff")
+			(uuid "5eb39d07-30f8-4018-b18d-31ec21348faf")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "R12")
 					(unit 1)
 				)
@@ -4168,7 +4168,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "1bc27533-5688-4b90-b47e-70b998b51fd5")
+		(uuid "1fece3aa-da80-41e7-9350-b6bc359363f6")
 	)
 	(label "Q1B"
 		(at 121.92 189.23 270)
@@ -4178,7 +4178,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "3ae91edb-ea4d-4e52-835b-55f4e304f5b9")
+		(uuid "fdc978ed-8ef8-48b9-93eb-336287c6ec07")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -4188,7 +4188,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "86e0c0d0-d064-4b01-a101-5d87cd2a7109")
+		(uuid "32193951-c998-4b75-9cd4-8e4c251ff53d")
 		(property "Reference" "R13"
 			(at 145.44 181.88 0)
 			(effects
@@ -4235,14 +4235,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "95ff77cc-b5a6-46af-b1b3-900c0ac5bd01")
+			(uuid "73312660-e5c5-44b3-b808-770a892b9f7b")
 		)
 		(pin "2"
-			(uuid "d353a26e-d8e8-4682-aa11-57845b586e86")
+			(uuid "ec68964c-1b55-4900-9a7e-5e157bed7f9e")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "R13")
 					(unit 1)
 				)
@@ -4257,7 +4257,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "63d77d56-6328-4c01-aa08-ca2693404d9b")
+		(uuid "05a6af18-d0d9-4d8b-acd9-11d79a837d56")
 	)
 	(label "GND"
 		(at 142.24 189.23 270)
@@ -4267,7 +4267,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "0469fa1a-be77-4090-a664-a194d600c092")
+		(uuid "382da3a4-165b-44b5-8da7-ab82746c4113")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -4277,7 +4277,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e88e5bd2-2d08-46ad-a66c-3a9730db74bf")
+		(uuid "68ad2eb9-1104-47fc-ae1c-de08a8fc24e7")
 		(property "Reference" "R9"
 			(at 125.12 146.32 0)
 			(effects
@@ -4324,14 +4324,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "f3ef25fb-4e38-4aac-a187-2e4dda8507b3")
+			(uuid "2ca72d76-9693-4212-ae94-26ce36b3cb43")
 		)
 		(pin "2"
-			(uuid "0af4e776-c350-466a-852f-db656082f2d4")
+			(uuid "f9f616ab-f41d-45a2-a2b9-489212ec91f6")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "R9")
 					(unit 1)
 				)
@@ -4346,7 +4346,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "7db833df-5463-4563-b398-d9f47571a58b")
+		(uuid "8346c0fa-c65a-4ed1-892c-795aa1eb3b85")
 	)
 	(label "MUTE"
 		(at 121.92 153.67 270)
@@ -4356,7 +4356,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "ce1a5e98-6c09-4e9d-98eb-01719fcbc45b")
+		(uuid "ef45aded-5976-4474-a931-8b258b21e7ef")
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
@@ -4366,7 +4366,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "818be729-a1bc-4dd5-b93d-9642cb227288")
+		(uuid "e1da7c77-9ca3-4300-8101-183693e39fbf")
 		(property "Reference" "C10"
 			(at 145.44 146.32 0)
 			(effects
@@ -4413,14 +4413,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "4ba28b6c-22dc-4c63-a9ce-83e9f5ed1638")
+			(uuid "933321f1-cfe5-4237-b632-c4fdc3089c0e")
 		)
 		(pin "2"
-			(uuid "aa51714d-6d35-4a61-af31-d42ed1a19571")
+			(uuid "50c705af-a980-44d3-b4bf-23a8df6a717e")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "C10")
 					(unit 1)
 				)
@@ -4435,7 +4435,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "cefe9512-548b-44d8-ac8e-eef3e1afb38c")
+		(uuid "60d4f424-32b5-4a9b-b1d4-87860d349dfb")
 	)
 	(label "GND"
 		(at 142.24 153.67 270)
@@ -4445,7 +4445,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "339a7341-8b20-4d1c-a028-9dc32292fb3c")
+		(uuid "5a749145-327d-4b55-a84f-aa957141506c")
 	)
 	(text "LA4440 STEREO CORE (gain 30 dB: R7/R8 470R in the feedback legs)"
 		(exclude_from_sim no)
@@ -4456,7 +4456,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "e897fa0e-afbc-4d36-8f99-381e24a22b48")
+		(uuid "826ade5c-8a15-47bf-bfad-8a812d47c7e5")
 	)
 	(symbol
 		(lib_id "la4440:LA4440")
@@ -4466,7 +4466,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e01df624-b9be-430f-9826-c40996095c63")
+		(uuid "b99872b9-a9bf-410d-b5cb-15ce9ff99d8b")
 		(property "Reference" "U1"
 			(at 213.52 61.28 0)
 			(effects
@@ -4513,50 +4513,50 @@
 			)
 		)
 		(pin "2"
-			(uuid "8e7cdf25-cafa-47c8-b242-92aa4266b9e5")
+			(uuid "8acc265c-1ed4-4fe4-b872-d129a69c8cd0")
 		)
 		(pin "1"
-			(uuid "13ba74fa-e61e-45a2-a6e7-da6f485b95d0")
+			(uuid "fbb59149-a7d1-413d-bfb7-71b0b657070e")
 		)
 		(pin "6"
-			(uuid "b479ef98-bf23-4631-86cf-3b3f39c4ef33")
+			(uuid "93788041-6781-42a8-80d6-17bc42662ebb")
 		)
 		(pin "7"
-			(uuid "d4a9cc47-555c-488d-b44b-15ee02072004")
+			(uuid "a6b1b51c-989b-4e20-a301-01298f38fbe6")
 		)
 		(pin "4"
-			(uuid "ec286ae7-8432-43d4-a189-35f27cbab095")
+			(uuid "b7873ecf-a677-4efe-ba6f-56b1f355a133")
 		)
 		(pin "5"
-			(uuid "18adb94e-a943-4aef-a30b-771fb8b8ca9a")
+			(uuid "e0a95193-aadd-46f5-b971-bf7331673fe3")
 		)
 		(pin "13"
-			(uuid "27e114c9-3b2f-4e53-bc42-40bfa85479cc")
+			(uuid "d160da99-287a-4f11-a4f9-50ff6eb8dd9e")
 		)
 		(pin "12"
-			(uuid "040cf772-128e-4b15-8f1b-c65ccc2b7c23")
+			(uuid "b3e450ce-c2ca-4fb3-b5c8-b4aa8255111c")
 		)
 		(pin "9"
-			(uuid "5cf50582-d580-4b9d-8d0a-46a1f4923379")
+			(uuid "f85cd6d5-6c8c-43ad-ad02-9f63f1772a39")
 		)
 		(pin "10"
-			(uuid "d92dc309-7704-4a5e-9357-39caa56cf6b2")
+			(uuid "b3cef3de-0dfe-4725-98fd-59d53e61b4e8")
 		)
 		(pin "11"
-			(uuid "c9822a1f-9e10-4d41-9a90-59e047ccaf91")
+			(uuid "10ade9c1-30bc-4669-bef0-832f84fd7eb3")
 		)
 		(pin "3"
-			(uuid "9845cf12-63d8-48a4-a28b-9b079d2741c6")
+			(uuid "82dea68d-a220-462a-9c2b-1365aa1aefe0")
 		)
 		(pin "8"
-			(uuid "7ee74f48-d65d-429f-a18f-d473feb459a3")
+			(uuid "6ba8be47-488e-422d-867f-af384b70510d")
 		)
 		(pin "14"
-			(uuid "4311d32f-9e7e-44c8-92ab-f0a45a11619a")
+			(uuid "bfe00edc-b40d-484e-ad8f-84b25e84c704")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "U1")
 					(unit 1)
 				)
@@ -4571,7 +4571,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "d7e20e90-7c12-47c7-b9d6-d2207c99c2fd")
+		(uuid "56747e3f-eed1-4558-b4d8-53b2ca74a3fb")
 	)
 	(label "IN1"
 		(at 208.28 71.12 180)
@@ -4581,7 +4581,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "cd67cbf8-b29d-4942-9514-3184c97d11f5")
+		(uuid "aa85c6c3-1ea8-4ff3-8a6b-5cfcf23dd888")
 	)
 	(label "GND"
 		(at 218.44 99.06 270)
@@ -4591,7 +4591,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "e349ca7f-3a8f-4a3f-9d2a-3817845d1932")
+		(uuid "2c259b0b-b023-43bd-bdd2-292fd59f91a4")
 	)
 	(label "MUTE"
 		(at 208.28 86.36 180)
@@ -4601,7 +4601,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "51f47ca3-88cc-4603-89e7-88913d5ed092")
+		(uuid "8b58f148-fb02-442f-94b2-702891308cb8")
 	)
 	(label "DC"
 		(at 208.28 88.9 180)
@@ -4611,7 +4611,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "cacd6e6d-222f-4d17-8949-dd98ba060a50")
+		(uuid "5c78892d-4feb-4bb1-a463-ccd312e209f6")
 	)
 	(label "IN2"
 		(at 208.28 78.74 180)
@@ -4621,7 +4621,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "c5b317c4-3beb-40ff-bc98-b40d817e94f8")
+		(uuid "35423c61-7569-4130-836e-891b8a75dc8a")
 	)
 	(label "NF2"
 		(at 208.28 81.28 180)
@@ -4631,7 +4631,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "2296932c-3608-4ab4-be75-a11beea8bf4e")
+		(uuid "c03558e1-4bfa-45bd-8049-cf968852ba98")
 	)
 	(label "GND"
 		(at 223.52 99.06 270)
@@ -4641,7 +4641,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "8e20e558-9594-4b15-bf50-bb940907132c")
+		(uuid "3cd7d764-b134-451d-9741-8252bdc00021")
 	)
 	(label "BS2"
 		(at 238.76 78.74 0)
@@ -4651,7 +4651,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "041e68b3-4064-4cbe-b039-2e3147679191")
+		(uuid "0813b8c1-714c-4259-a4d1-145dded8ef91")
 	)
 	(label "OUT2"
 		(at 238.76 81.28 0)
@@ -4661,7 +4661,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "be592838-5a4d-463e-a1a6-09dfe5869ace")
+		(uuid "e30a0e11-a2cc-4258-823e-176d763f1477")
 	)
 	(label "VCC"
 		(at 223.52 63.50000000000001 90)
@@ -4671,7 +4671,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "2c70a196-b397-4ec2-8c8b-9c4700e5d8d1")
+		(uuid "edb243b3-5d57-4da9-94aa-9077dcd02f9e")
 	)
 	(label "OUT1"
 		(at 238.76 73.66 0)
@@ -4681,7 +4681,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "05439553-1a20-409f-8bd5-f51621618511")
+		(uuid "db4b32e6-4e3d-4996-8953-399a065c511a")
 	)
 	(label "BS1"
 		(at 238.76 71.12 0)
@@ -4691,7 +4691,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "99f0e721-7b2e-440b-a099-e02ddf1c83a5")
+		(uuid "68b99865-535c-41dd-9a8e-ba5d188c83d7")
 	)
 	(label "GND"
 		(at 228.6 99.06 270)
@@ -4701,7 +4701,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "4e6b905e-1f3e-41ac-9d87-a165e7d03b34")
+		(uuid "e48130fd-81c5-459d-a9ae-d6fa29d7573c")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -4711,7 +4711,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b209b967-ae4c-41b0-a0e5-2cd4f386fbed")
+		(uuid "83e37de6-b9fa-4bf1-8ce3-5b1a2307b55d")
 		(property "Reference" "R7"
 			(at 186.07999999999998 131.08 0)
 			(effects
@@ -4758,14 +4758,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "074c3d29-670c-4c17-ba25-7be85840c3ec")
+			(uuid "d7ef886b-106b-42f3-aa73-f9fbc53c30b1")
 		)
 		(pin "2"
-			(uuid "e457699e-53f7-48b4-84c3-8d88dfbc3e0a")
+			(uuid "1f79f339-56de-4a6a-a73b-c96b91f0ff1c")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "R7")
 					(unit 1)
 				)
@@ -4780,7 +4780,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "bbc6d9e0-967f-4252-a223-518758320423")
+		(uuid "8fc5663d-e75f-4965-8cba-feb6bc642bd7")
 	)
 	(label "NFC1"
 		(at 182.88 138.42999999999998 270)
@@ -4790,7 +4790,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "8c3ecbb2-c59d-4eff-baab-c45539684327")
+		(uuid "ce618f40-2a07-4b35-bf2e-896cb1bddbb3")
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
@@ -4800,7 +4800,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "5e7f3830-5250-421d-80bb-1beef046cb5e")
+		(uuid "fbfcb9d2-7602-4c7d-b362-c04d341338e8")
 		(property "Reference" "C1"
 			(at 186.07999999999998 159.02 0)
 			(effects
@@ -4847,14 +4847,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "71ca168f-50c4-4178-9c78-beae891debf8")
+			(uuid "fe3dec32-1761-4606-af9b-8f4ea851670d")
 		)
 		(pin "2"
-			(uuid "20c8c8e1-6d59-4054-ba85-9d6216923b29")
+			(uuid "e6660ca0-2df4-4267-8a57-9c13562bfc37")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "C1")
 					(unit 1)
 				)
@@ -4869,7 +4869,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "6a706463-8b6b-4f99-b905-3fe1142b8d44")
+		(uuid "91b35373-2309-4f33-9b85-d49d92f0a7e6")
 	)
 	(label "GND"
 		(at 182.88 166.37 270)
@@ -4879,7 +4879,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "452be0b6-0172-4d48-bd50-a087e7e2c6e9")
+		(uuid "c3540485-9393-412d-93a5-d6935753697d")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -4889,7 +4889,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "9bb282fc-eaa3-493b-9761-cee5f6bfd88c")
+		(uuid "81b258aa-a0b8-4545-91ec-aae5b8d0d0ca")
 		(property "Reference" "R8"
 			(at 206.39999999999998 131.08 0)
 			(effects
@@ -4936,14 +4936,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "d0662417-7950-4e7c-8efb-22f9d8d4d0d1")
+			(uuid "32723c8c-9600-4e7e-aed8-adaa43036f1f")
 		)
 		(pin "2"
-			(uuid "d0c7bf8b-b5cd-418a-98d0-9f15e29382c8")
+			(uuid "238126fe-d4b7-45a8-8c25-bd27351050c7")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "R8")
 					(unit 1)
 				)
@@ -4958,7 +4958,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "63724870-dde2-4a07-8db3-e527dc61f1ff")
+		(uuid "1c4e2aa9-f69d-4acb-bba8-10067ca6f0c8")
 	)
 	(label "NFC2"
 		(at 203.2 138.42999999999998 270)
@@ -4968,7 +4968,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "81b8ad45-4203-4c40-a637-51e98ebdac4a")
+		(uuid "22a0230b-d975-43b7-abc4-c1950307b2fe")
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
@@ -4978,7 +4978,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c8df6cff-3bea-4e59-a2de-a58e0f7a25e2")
+		(uuid "fc10debd-21de-4d7d-8d7f-d789b10d78e4")
 		(property "Reference" "C2"
 			(at 206.39999999999998 159.02 0)
 			(effects
@@ -5025,14 +5025,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "e3572299-bf3b-446f-8594-2b53a656c7f3")
+			(uuid "8c499b8a-c955-4188-9735-8f4d1fa4f579")
 		)
 		(pin "2"
-			(uuid "7ab035fe-3205-428c-b59b-9ab36e0ff81d")
+			(uuid "6b80b814-c1ec-4066-93cc-c42e865f5023")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "C2")
 					(unit 1)
 				)
@@ -5047,7 +5047,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "f6bb1b29-858f-42c3-8994-b163988dd15a")
+		(uuid "509b5b48-6e37-4046-8cbb-9da340ec8360")
 	)
 	(label "GND"
 		(at 203.2 166.37 270)
@@ -5057,7 +5057,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "f917deb9-d26c-44a0-ac8f-ccf7d7fa59eb")
+		(uuid "199d9ec6-8513-4215-afbe-04103a0b60b6")
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
@@ -5067,7 +5067,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "a295c021-ce23-4889-a40c-aae51977fd29")
+		(uuid "8e93eb85-8631-4724-a687-26b36a58502a")
 		(property "Reference" "C9"
 			(at 226.72 141.24 0)
 			(effects
@@ -5114,14 +5114,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "a2c51c95-3393-4351-8bc6-befbfcf555fc")
+			(uuid "98a40dc3-34cf-4300-a975-96a187d15b48")
 		)
 		(pin "2"
-			(uuid "ba4a7de1-5e71-4cfc-8c5d-b33ccb081436")
+			(uuid "66b76360-1620-4586-861b-a2a1add9e5d9")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "C9")
 					(unit 1)
 				)
@@ -5136,7 +5136,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "31e02d37-e901-4771-96d2-7e9718257773")
+		(uuid "67f68192-8407-446c-8d2f-874d2dafef4d")
 	)
 	(label "GND"
 		(at 223.52 148.59 270)
@@ -5146,7 +5146,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "5ee73770-e850-4918-afbd-6853635d8620")
+		(uuid "f4b8f22d-12c7-42d6-99ad-1c3c9392a818")
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
@@ -5156,7 +5156,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "91bfb505-3a85-4b0d-a8ff-65be540b046e")
+		(uuid "ddb0ef5b-cb45-4d49-a7a0-3cfb66c3f1e4")
 		(property "Reference" "C3"
 			(at 267.36 131.08 0)
 			(effects
@@ -5203,14 +5203,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "00553cbb-1a58-4038-8cd4-5c04d62a1629")
+			(uuid "1af7968e-2f98-4b72-9627-0bec0691e4ea")
 		)
 		(pin "2"
-			(uuid "adbadf65-ba28-4748-91bf-eeca4ae7c5e4")
+			(uuid "3b01f23d-a426-4a3f-8f4d-88b61ff4327b")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "C3")
 					(unit 1)
 				)
@@ -5225,7 +5225,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "0663ab78-4bf2-49d0-88f6-4fdd0ebd5e9c")
+		(uuid "ba537bc7-b219-4c99-8f7e-e0fb4d93c880")
 	)
 	(label "OUT1"
 		(at 264.16 138.42999999999998 270)
@@ -5235,7 +5235,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "a9860194-82a7-47e5-a4d1-4417e8ce6379")
+		(uuid "5c826bab-fd04-4d7d-9885-a935db2224b4")
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
@@ -5245,7 +5245,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "0d953124-3bf1-4275-b286-9d9cbb27cafa")
+		(uuid "db623367-825c-47ff-bce5-01dbfdcd9358")
 		(property "Reference" "C4"
 			(at 287.68 131.08 0)
 			(effects
@@ -5292,14 +5292,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "1c218f80-619d-4136-bae6-2a96c4d3e126")
+			(uuid "3ebd7ab9-af12-43c6-9043-55894f1a406c")
 		)
 		(pin "2"
-			(uuid "79fc0f93-8b73-4e79-a1ec-f774e4b46952")
+			(uuid "4f9a7cb6-a498-4501-b2ff-4ffe76ec3b9c")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "C4")
 					(unit 1)
 				)
@@ -5314,7 +5314,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "cfc3e2b8-f1b5-408c-a3d5-cd4e5fbb9732")
+		(uuid "5d3db74e-0402-4552-926f-9875eb42c161")
 	)
 	(label "OUT2"
 		(at 284.48 138.42999999999998 270)
@@ -5324,7 +5324,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "cfcd40d0-8734-4dc5-aee3-e9518eedec4e")
+		(uuid "304596be-0aa9-4456-bffe-604ff0ca6bec")
 	)
 	(text "OUTPUTS (Zobel = 0.1u film + 2 x 10R 1W in parallel)"
 		(exclude_from_sim no)
@@ -5335,7 +5335,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "19746bf5-85a7-40c5-bbe4-208f0ab04b96")
+		(uuid "a18307a5-8de5-4ce3-bf14-19b1be301b20")
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
@@ -5345,7 +5345,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "a22b1c50-af7e-4208-aaef-b5f0f0b54448")
+		(uuid "9ce8eabf-3e04-47d9-b23b-abdea7cfb301")
 		(property "Reference" "C7"
 			(at 318.15999999999997 49.8 0)
 			(effects
@@ -5392,14 +5392,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "044cc4ed-043d-4437-82c9-c98ec61683a2")
+			(uuid "206f4d69-05a4-428c-95fd-b8559e6822cb")
 		)
 		(pin "2"
-			(uuid "1f68e55c-49a9-458f-93ca-a70440dd4b6b")
+			(uuid "f09e71f0-0589-451e-9460-4f60277ce8db")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "C7")
 					(unit 1)
 				)
@@ -5414,7 +5414,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "88c3cdc5-0075-4ca6-9ce9-19f68015b201")
+		(uuid "f5a5d13d-c780-4ba9-8cf9-12eba590db73")
 	)
 	(label "SPK1"
 		(at 314.96 57.15 270)
@@ -5424,7 +5424,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "6566d44d-22f1-4ebf-8c6e-652259bcb341")
+		(uuid "ae65f831-7419-4a7d-a4e6-1e5d651c0247")
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -5434,7 +5434,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "7e4d101a-0eb9-4233-b281-f2352b423445")
+		(uuid "397f8c29-9050-4c8e-8bfa-3c0c733fc5c6")
 		(property "Reference" "C5"
 			(at 338.47999999999996 49.8 0)
 			(effects
@@ -5481,14 +5481,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "8d7daf07-9891-409d-8b3b-b89e4567d857")
+			(uuid "cdeb66ef-d566-4290-b02f-e0587ba2667f")
 		)
 		(pin "2"
-			(uuid "1fd1c077-307c-4850-bbbf-0bb791881621")
+			(uuid "168e906a-dea3-45e3-96c4-733911ae16b9")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "C5")
 					(unit 1)
 				)
@@ -5503,7 +5503,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "4d887e80-4756-4766-a893-4489461c3061")
+		(uuid "f1948b9e-5250-4de1-9b9a-c18e6db1afa4")
 	)
 	(label "ZB1"
 		(at 335.28 57.15 270)
@@ -5513,7 +5513,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "2261a54c-6c25-4028-9479-d481d9b77510")
+		(uuid "32958ea3-61df-423d-b1a4-5be2af2bbf5a")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -5523,7 +5523,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ad6f87e8-cc41-4329-a5d4-7afdf8314321")
+		(uuid "35fe5a60-5391-4be4-b3d0-0e82285688c3")
 		(property "Reference" "R14"
 			(at 338.47999999999996 75.2 0)
 			(effects
@@ -5570,14 +5570,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "1eafce55-b976-49c4-9c87-c6624c42277a")
+			(uuid "a7874d81-9fff-4ef4-831c-209d7e197e74")
 		)
 		(pin "2"
-			(uuid "d2751c36-0a6c-4fee-bb53-815a9c5b2d63")
+			(uuid "8cd3987f-436e-4594-89af-f58dc565fa93")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "R14")
 					(unit 1)
 				)
@@ -5592,7 +5592,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "489f17f1-33e6-42af-ac93-47000d3da3ac")
+		(uuid "8f294d1b-fe4e-45ae-b725-3be404c5a71b")
 	)
 	(label "GND"
 		(at 335.28 82.55000000000001 270)
@@ -5602,7 +5602,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "e38b635f-fc2b-4b60-abcd-c126145437c7")
+		(uuid "49823803-b4b5-43de-8ff2-29853bbf99f2")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -5612,7 +5612,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e6ca3b2f-2d34-48d3-b375-fb4f6e6dcc4e")
+		(uuid "35d5c134-3e9a-4d20-8dcf-457cee3027ff")
 		(property "Reference" "R15"
 			(at 353.71999999999997 75.2 0)
 			(effects
@@ -5659,14 +5659,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "2ea70c30-a461-4d45-9473-2f872263e5c7")
+			(uuid "734a70f7-a735-4f78-82c6-78b25088b37b")
 		)
 		(pin "2"
-			(uuid "8983e130-8f72-46c2-8270-8caad773dd3b")
+			(uuid "7ea0028c-22fb-4b63-8d3a-5e1f0144f461")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "R15")
 					(unit 1)
 				)
@@ -5681,7 +5681,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "a148d401-9871-4161-b263-6dcd9e0364f6")
+		(uuid "836d04a9-e772-452f-b13c-11a811d8b960")
 	)
 	(label "GND"
 		(at 350.52 82.55000000000001 270)
@@ -5691,7 +5691,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "1ffea393-0ade-4ecd-96bc-cd730b840ce8")
+		(uuid "8cdd9c93-c5af-4c25-8d8a-9a0cf678e25c")
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
@@ -5701,7 +5701,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "04bdad74-e8c5-40a4-adfd-64e6c89befc6")
+		(uuid "57fbf12d-0e25-4027-a9a3-2ee39c8baf4f")
 		(property "Reference" "J5"
 			(at 379.12 49.8 0)
 			(effects
@@ -5748,14 +5748,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "902e0daa-e34c-46a0-8968-69a0a5ef2c3c")
+			(uuid "f4b87d6c-e080-4d8a-a3b0-06db09078576")
 		)
 		(pin "2"
-			(uuid "30890c96-50bd-474a-aca3-849104a98331")
+			(uuid "c08ee9ab-f82b-439f-aac8-f93c7ba043e1")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "J5")
 					(unit 1)
 				)
@@ -5770,7 +5770,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "dc955977-120c-4977-ba2b-0d21471d07ae")
+		(uuid "dc10bd28-536f-41a2-950e-c009adb6b3f8")
 	)
 	(label "GND"
 		(at 368.29999999999995 53.34 180)
@@ -5780,7 +5780,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "6b56d226-58de-4917-82f2-8eb32e3404f0")
+		(uuid "86779f0d-86dd-4f76-902c-642089b1fc39")
 	)
 	(symbol
 		(lib_id "Device:Speaker")
@@ -5790,7 +5790,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "1e032762-bafa-4627-9b60-49e10b4519ec")
+		(uuid "15dba1a8-1c97-45cc-89c7-88025ca0f5cb")
 		(property "Reference" "LS1"
 			(at 399.32 43.3 0)
 			(effects
@@ -5837,14 +5837,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "4b71a362-dd11-49a9-bc0c-241e81ce4a80")
+			(uuid "0e527ca0-eaab-4835-b6eb-a4e065cfdde6")
 		)
 		(pin "2"
-			(uuid "af2089d6-63e1-4e4e-9780-cfca7d52a959")
+			(uuid "ffe7baab-924b-44cd-a171-2c6a9dc299a0")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "LS1")
 					(unit 1)
 				)
@@ -5859,7 +5859,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "50f03307-db3d-4c9f-a7ef-b8151bb999eb")
+		(uuid "7d957393-a308-45b3-bcfb-9bc462d3ed74")
 	)
 	(label "GND"
 		(at 393.7 53.34 180)
@@ -5869,7 +5869,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "45ca8096-d6f0-4925-90af-86cfcd8c2e6b")
+		(uuid "51b03629-e668-4299-bba3-0cfb242ac014")
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
@@ -5879,7 +5879,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "df7a8e92-2156-4c8a-b3b4-ec8547c8cebe")
+		(uuid "7600cec0-0cc4-4206-8ac5-c559327e57fe")
 		(property "Reference" "C8"
 			(at 318.15999999999997 110.76 0)
 			(effects
@@ -5926,14 +5926,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "6896595b-8099-4730-a0bc-e1bc27467e83")
+			(uuid "c2c020b3-43ce-420a-a3fa-c5beac92959f")
 		)
 		(pin "2"
-			(uuid "bb0d61e8-df69-4e54-8bb8-93e0294a9e43")
+			(uuid "7e1a6395-d241-4735-bdbf-b5bd68ee143f")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "C8")
 					(unit 1)
 				)
@@ -5948,7 +5948,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "c4a9ddc8-0127-4706-8f34-0f6341d284bb")
+		(uuid "fa003f42-370b-44ee-93fb-4162a18552e8")
 	)
 	(label "SPK2"
 		(at 314.96 118.11 270)
@@ -5958,7 +5958,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "0609a71e-c2f8-4028-b448-ce1509b6de07")
+		(uuid "8bedd0b5-29a1-4711-93b3-04b126f09c60")
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -5968,7 +5968,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "cb3ad876-d1f0-4dcf-afc1-536f3ee0106a")
+		(uuid "db588a36-70a5-48d0-9c4a-d7e14aaf60fc")
 		(property "Reference" "C6"
 			(at 338.47999999999996 110.76 0)
 			(effects
@@ -6015,14 +6015,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "da86ec39-b062-41c7-b23a-c604f4d061d7")
+			(uuid "135331ea-5f3c-43ab-a41e-7f02a9c1c83e")
 		)
 		(pin "2"
-			(uuid "c81baead-dabc-4398-9ac7-de0c056e30a1")
+			(uuid "44307b80-22bc-4a11-971e-37d33875cc00")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "C6")
 					(unit 1)
 				)
@@ -6037,7 +6037,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "899c4dd8-bf46-44e9-b308-bcd8ec173462")
+		(uuid "8851779a-6c76-4b66-b088-989af22a4dbe")
 	)
 	(label "ZB2"
 		(at 335.28 118.11 270)
@@ -6047,7 +6047,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "207e860c-e153-481b-a2be-cfd799d4d09c")
+		(uuid "6dc6ff03-a7a2-40a2-b6d1-adcc37453485")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -6057,7 +6057,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "aa13e1c7-5afe-41b7-9b77-c56ae3473e1d")
+		(uuid "c62552ca-b53c-485a-811f-40e0f651215c")
 		(property "Reference" "R16"
 			(at 338.47999999999996 136.16 0)
 			(effects
@@ -6104,14 +6104,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "6d1ff95f-69ca-4d1a-8ce3-0077b07d3c15")
+			(uuid "9b627b7c-4094-49d3-be4f-211197d7e4e3")
 		)
 		(pin "2"
-			(uuid "ea3aa736-dd9d-446f-a725-ce4835ff9ffe")
+			(uuid "775ea5a6-1cc4-4ef2-9028-b80ee1b65afe")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "R16")
 					(unit 1)
 				)
@@ -6126,7 +6126,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "48cc514c-8a35-4063-a179-857be7aafd4b")
+		(uuid "616525a9-e029-4e47-9ad5-e46de92ef4a9")
 	)
 	(label "GND"
 		(at 335.28 143.51 270)
@@ -6136,7 +6136,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "83a13f96-b86b-45b7-b802-24584cf06561")
+		(uuid "e56f59ed-10ce-478b-ba58-ff158544696b")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -6146,7 +6146,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c6f0a975-1e64-4c7a-9d1b-90ed761b620b")
+		(uuid "b59bf472-d3cc-4a0c-860f-99fc9c207892")
 		(property "Reference" "R17"
 			(at 353.71999999999997 136.16 0)
 			(effects
@@ -6193,14 +6193,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "e9f273b6-b7fc-4d6b-b9a4-5c6674bdd42d")
+			(uuid "4d099d7b-1290-407e-a551-d3e749df004c")
 		)
 		(pin "2"
-			(uuid "3e4e6c0e-2782-4103-a619-cf28fe51d0ed")
+			(uuid "8c6f9f42-c6c2-4626-becf-bfaa92c77cfb")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "R17")
 					(unit 1)
 				)
@@ -6215,7 +6215,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "eb4c68b3-6f55-4ee6-a3d5-dec0e2c243c6")
+		(uuid "bce9a627-ee70-4229-b735-a4b53268cfd5")
 	)
 	(label "GND"
 		(at 350.52 143.51 270)
@@ -6225,7 +6225,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "d19afed0-4909-4b39-a295-6ceb9d295f35")
+		(uuid "f1882da6-80b6-427e-892a-ce1b0eaeeba0")
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
@@ -6235,7 +6235,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "2f9f27d3-b6cd-49bf-885c-2b3ea54a60fb")
+		(uuid "e7210c17-a3d4-4ab7-a125-ad9640a90aa3")
 		(property "Reference" "J6"
 			(at 379.12 110.76 0)
 			(effects
@@ -6282,14 +6282,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "2fb4fc5b-e557-4ef6-9f44-a3f46d704865")
+			(uuid "46170317-139b-4c02-8fd6-74436c885906")
 		)
 		(pin "2"
-			(uuid "daf09890-8e49-45c1-b07c-4865ed35a6e3")
+			(uuid "52e8e7c1-a39d-4707-8427-07f5c5cbde28")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "J6")
 					(unit 1)
 				)
@@ -6304,7 +6304,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "8d48b040-159d-4a78-b346-d7312fde1a19")
+		(uuid "41afe92d-b07c-44de-b0fb-6aa720fff1e0")
 	)
 	(label "GND"
 		(at 368.29999999999995 114.3 180)
@@ -6314,7 +6314,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "853932cd-4f2a-430f-9532-657b43cbf214")
+		(uuid "500aa7bd-f849-4c91-b246-e2d1dc3eccac")
 	)
 	(symbol
 		(lib_id "Device:Speaker")
@@ -6324,7 +6324,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "39275222-f9c0-4f31-a2a8-6a4348ea9d0e")
+		(uuid "3e23ccf8-5c5c-44ce-add4-3a2e649c7cac")
 		(property "Reference" "LS2"
 			(at 399.32 104.26 0)
 			(effects
@@ -6371,14 +6371,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "6e995fcc-be2e-4294-913c-14dcbd84d548")
+			(uuid "f06eb455-981e-4e3a-bada-d349be6e84e7")
 		)
 		(pin "2"
-			(uuid "57a5311d-a467-4a14-b10c-018785e59b91")
+			(uuid "a7d4882d-81d5-4339-a621-fc689565f622")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "LS2")
 					(unit 1)
 				)
@@ -6393,7 +6393,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "0a28e9c5-98df-451e-81df-438082947c34")
+		(uuid "b4d2ae65-e3a7-4f51-8f88-6a387742849c")
 	)
 	(label "GND"
 		(at 393.7 114.3 180)
@@ -6403,7 +6403,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "461ef0a2-b48f-43e4-8623-66e3af6e5e4d")
+		(uuid "d50c7f2c-8880-4497-8bff-5d5a50ccd328")
 	)
 	(text "SUPPLY 12 to 15 V DC, 2 A (18 V max)"
 		(exclude_from_sim no)
@@ -6414,7 +6414,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "3e3dd293-5b6e-4997-a7c7-7c7ff6ff2320")
+		(uuid "5e995fcb-60d1-4a42-b662-f62148e561d8")
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
@@ -6424,7 +6424,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "100ea396-a5c1-4998-a871-d3c44d4c61c0")
+		(uuid "5f04b5d0-33f3-40f2-a555-8614439e2624")
 		(property "Reference" "J4"
 			(at 191.16 207.28 0)
 			(effects
@@ -6471,14 +6471,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "b958680d-7f38-48dd-8695-5b90a1201dee")
+			(uuid "974c7493-299c-4a3c-865d-5d7a0ac684a5")
 		)
 		(pin "2"
-			(uuid "ba9fad1b-813c-405d-bc09-16530d2d1555")
+			(uuid "98f3d37f-007d-4e0a-ade4-40b5534857f8")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "J4")
 					(unit 1)
 				)
@@ -6493,7 +6493,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "ac09124a-c4c7-44c9-b2ad-e73fc816727d")
+		(uuid "d25c92ed-dcb6-4e4f-b29e-8466ab0a1da0")
 	)
 	(label "GND"
 		(at 180.34 210.82 180)
@@ -6503,7 +6503,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "0e21fab7-7552-42f2-87ba-165b2a2e814b")
+		(uuid "92b82c63-9603-46eb-a3fb-42d529060100")
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
@@ -6513,7 +6513,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "18e99db5-dfc7-4227-9fe3-32dda2ebd314")
+		(uuid "4ea6ff1c-f8cf-4faa-8137-e01ae7e171c0")
 		(property "Reference" "C11"
 			(at 216.56 207.28 0)
 			(effects
@@ -6560,14 +6560,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "d7055c51-17de-403d-880c-220dd56e63a1")
+			(uuid "9871be5b-dd64-498b-9d1c-d640c3e6c22d")
 		)
 		(pin "2"
-			(uuid "9ff6184d-4d0a-4a0a-bea5-ce0696e68486")
+			(uuid "5e9d4dc7-fd2f-4cda-9c72-ae5fbcad62eb")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "C11")
 					(unit 1)
 				)
@@ -6582,7 +6582,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "62cb387c-23c1-4c7f-94d1-b6edd7adbbe8")
+		(uuid "3e584da6-e1be-4bdd-8321-256235724a86")
 	)
 	(label "GND"
 		(at 213.36 214.63 270)
@@ -6592,7 +6592,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "bb5f19cb-0723-466e-89a6-9571b4552f7e")
+		(uuid "73cc27ea-3bfa-4aee-805d-9dc6e54392f7")
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -6602,7 +6602,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "03ec0d24-e939-4ab5-983d-57717b0865aa")
+		(uuid "6c77fef9-5d2b-4110-aa08-11784caec02c")
 		(property "Reference" "C12"
 			(at 236.88 207.28 0)
 			(effects
@@ -6649,14 +6649,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "8a300ba9-2901-441e-a08d-23f4cbdd8dab")
+			(uuid "b1c18356-9679-4f1d-8eda-52936d82b3c0")
 		)
 		(pin "2"
-			(uuid "4a69d760-94b9-4a5f-8602-ade77c5abdfe")
+			(uuid "9c3dea7d-b688-4316-a5d7-fd674b64a68a")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "C12")
 					(unit 1)
 				)
@@ -6671,7 +6671,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "a76ae392-98b0-4021-a6dd-39375a0dceb9")
+		(uuid "c2037100-3e07-4643-a4b3-b3364ee6e3bd")
 	)
 	(label "GND"
 		(at 233.68 214.63 270)
@@ -6681,7 +6681,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "688e9b63-c4ea-480c-bc1e-248dfe7248eb")
+		(uuid "2834fff2-c4fd-4d7a-b0cc-14351fb7ea75")
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x01")
@@ -6691,7 +6691,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "198c358a-d239-4750-9935-a6e325ab6d02")
+		(uuid "e546676f-403e-45a0-872c-594cc4fc6066")
 		(property "Reference" "J7"
 			(at 292.76 207.28 0)
 			(effects
@@ -6738,11 +6738,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "9ca8ab66-487b-482e-8b06-dc78d90ebd98")
+			(uuid "ee898a86-c07d-4d5b-a954-f395f98cde2f")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "J7")
 					(unit 1)
 				)
@@ -6757,7 +6757,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "71fd1502-2c7c-4cf9-a821-09e7ae442d9e")
+		(uuid "2a35e109-5430-4109-b2a8-ef59a11ae81d")
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
@@ -6767,7 +6767,7 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "9ed806d2-2e1d-45e2-9d9d-97bf3d816dc1")
+		(uuid "225fc132-d549-4e54-ade3-d4cdc2e95a12")
 		(property "Reference" "#FLG01"
 			(at 257.2 202.2 0)
 			(effects
@@ -6815,11 +6815,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "987d9737-67e3-4523-975d-6a63afca4fe0")
+			(uuid "89c279c9-0cec-40cc-83fd-42fe1070c0e1")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "#FLG01")
 					(unit 1)
 				)
@@ -6834,7 +6834,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "2ec8be74-8029-4908-940e-1aa299528975")
+		(uuid "87e076fd-2ffc-447d-91da-677d9e647922")
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
@@ -6844,7 +6844,7 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "18f19ac1-41a7-40fd-b7b8-07fc993f2fae")
+		(uuid "4b7840fe-bd38-4afe-bdc8-ac50239f504f")
 		(property "Reference" "#FLG02"
 			(at 272.44 202.2 0)
 			(effects
@@ -6892,11 +6892,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "15851749-cc2f-4fe4-8357-dc002a79741d")
+			(uuid "c81d43f7-331d-45bb-a712-392dea895f13")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "#FLG02")
 					(unit 1)
 				)
@@ -6911,7 +6911,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "5e55fd88-8db9-4969-a825-0a5e3bf4b1a1")
+		(uuid "a9c489a5-9286-4952-976b-955095e2f7f3")
 	)
 	(text "TRANSISTOR PINOUT FIELDS: columns L E B C, rows = legs 1..3"
 		(exclude_from_sim no)
@@ -6922,7 +6922,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "811660c6-20ac-4ea8-baf9-931d45e55852")
+		(uuid "45a46d52-897c-472e-9b55-5d0a3b059561")
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x12")
@@ -6932,7 +6932,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "fa09a859-a9a7-41d0-81fd-9eaf816da1fa")
+		(uuid "7a39a237-5603-4fb8-b9f4-ddd6e8daab56")
 		(property "Reference" "JQ1"
 			(at 26.560000000000002 237.0 0)
 			(effects
@@ -6979,44 +6979,44 @@
 			)
 		)
 		(pin "1"
-			(uuid "84ebf67c-8859-415c-9659-1934be903edb")
+			(uuid "4625597c-2661-4609-9966-f4eef570f23a")
 		)
 		(pin "2"
-			(uuid "5847bd30-9767-4af6-8d44-f7d57103d497")
+			(uuid "834ab629-c699-4739-8e8e-0c2fce10ea13")
 		)
 		(pin "3"
-			(uuid "7b8379ba-402c-4c2c-8c8c-eef53c7b1171")
+			(uuid "612e8abf-cc7c-487f-95b1-eb6c793177d9")
 		)
 		(pin "4"
-			(uuid "9ed3fc74-ec31-48fb-b7f7-3fff380b1ce3")
+			(uuid "cfa467ca-7dbd-4c7a-b5e7-a19742e6db86")
 		)
 		(pin "5"
-			(uuid "0c58913d-3d65-4284-8f67-bf31cdf82175")
+			(uuid "8ff0127f-7f1d-43a5-be16-cead6f5d90f2")
 		)
 		(pin "6"
-			(uuid "a911bbdf-9fe9-4183-a7c3-f5ac6e62d9f5")
+			(uuid "7c6aa51b-7021-4e45-87bc-4970a118d513")
 		)
 		(pin "7"
-			(uuid "57b219a9-95e7-477a-95c4-dec91a2dfa2e")
+			(uuid "faab3a0e-713d-4358-9cbe-428c69380dbc")
 		)
 		(pin "8"
-			(uuid "247c702a-9ff2-4568-813c-e40b9643a97b")
+			(uuid "240cd241-af36-4f76-b521-d164d3267798")
 		)
 		(pin "9"
-			(uuid "c95fc2c8-70dc-4fab-b671-c0db8d5599cf")
+			(uuid "b83dfded-2417-4d73-a899-dde027ccdebd")
 		)
 		(pin "10"
-			(uuid "49897d31-a36e-492e-87da-3802fb1b937a")
+			(uuid "d6eece96-495b-4207-bbf8-663b4b85d57a")
 		)
 		(pin "11"
-			(uuid "67b5caea-3c4a-4d33-8981-13136d603880")
+			(uuid "98c013f4-ccd4-4cb0-ad84-a89644b693b2")
 		)
 		(pin "12"
-			(uuid "e84b0736-95e1-48b3-ac74-43a604379314")
+			(uuid "f58c9ce1-c5c4-4d57-bdd1-9b931056e0d8")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "JQ1")
 					(unit 1)
 				)
@@ -7025,7 +7025,7 @@
 	)
 	(no_connect
 		(at 30.48 241.3)
-		(uuid "1f18cc5b-0d60-4690-80d8-728a9a0f0da4")
+		(uuid "95c04f9f-4f45-4ad9-94cf-46b8b971af9a")
 	)
 	(label "GND"
 		(at 25.4 243.84 180)
@@ -7035,7 +7035,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "b1659728-446d-4875-a747-8407e00eeda7")
+		(uuid "ecf62cb1-a395-4868-8072-74d74841953c")
 	)
 	(label "Q1B"
 		(at 25.4 246.38 180)
@@ -7045,7 +7045,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "7fdd12e8-fc04-4b92-b0bd-4834219ce7fd")
+		(uuid "e44cb075-a35e-4d8b-94ad-f5287a8283af")
 	)
 	(label "Q1C"
 		(at 25.4 248.92 180)
@@ -7055,11 +7055,11 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "2c08a3f0-aab9-4069-83e9-0e83c21cfd2e")
+		(uuid "dc60fb02-dd2a-486d-bc85-9536381932e4")
 	)
 	(no_connect
 		(at 30.48 251.46)
-		(uuid "3dd619c5-ec2d-4594-8074-388b236eef50")
+		(uuid "191b12f4-4079-4c97-91cf-2295e1cb7a0e")
 	)
 	(label "GND"
 		(at 25.4 254.0 180)
@@ -7069,7 +7069,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "4a58e53c-830a-42d8-a859-5c7224ad1fda")
+		(uuid "25550578-3a9d-4f00-b8ae-31336ad38e73")
 	)
 	(label "Q1B"
 		(at 25.4 256.54 180)
@@ -7079,7 +7079,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "2f3f42fd-b265-49d5-8812-ab62f86d524b")
+		(uuid "50e780ec-567e-4d1a-a234-c50fa863e36d")
 	)
 	(label "Q1C"
 		(at 25.4 259.08 180)
@@ -7089,11 +7089,11 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "d1b77fdd-e513-49fb-a385-573ea5294406")
+		(uuid "2ac6724a-ae90-4942-8baf-2a587b078444")
 	)
 	(no_connect
 		(at 30.48 261.62)
-		(uuid "5c68904b-bc3c-43ba-9a9b-9c63a8961b3a")
+		(uuid "08ac3dda-a464-4f10-b01f-e1b43c6f5416")
 	)
 	(label "GND"
 		(at 25.4 264.16 180)
@@ -7103,7 +7103,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "4aba8072-ad16-42ce-82f6-1bd43b7294e9")
+		(uuid "ef7f2cc2-c843-432f-b473-359a6dc2ac2e")
 	)
 	(label "Q1B"
 		(at 25.4 266.7 180)
@@ -7113,7 +7113,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "699b82f2-0e85-49fd-bdc6-da16cb5bea55")
+		(uuid "080c0094-6da5-4d17-b299-b47b8644e306")
 	)
 	(label "Q1C"
 		(at 25.4 269.24 180)
@@ -7123,7 +7123,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "70e645c0-c7fe-4d94-8741-2552d1b84884")
+		(uuid "6ae9897e-762a-48f4-be7d-06558206565b")
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x12")
@@ -7133,7 +7133,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "87a7c6de-b29f-4ba4-a06d-12c88e3b7f8b")
+		(uuid "c09503ba-5145-4d06-aab9-9787bcb6dc10")
 		(property "Reference" "JQ2"
 			(at 92.6 237.0 0)
 			(effects
@@ -7180,44 +7180,44 @@
 			)
 		)
 		(pin "1"
-			(uuid "7bf72e11-bef5-4e27-ac4b-980414051fef")
+			(uuid "ae3ccea9-2ef5-4a2f-8e52-ccd9e877e611")
 		)
 		(pin "2"
-			(uuid "5e86eb1c-bf00-4d4e-99f4-361f41acdb31")
+			(uuid "256c24fa-4ec2-4e28-ae6e-38331eea1eaa")
 		)
 		(pin "3"
-			(uuid "0940cd6e-c98b-4ebf-86fc-f5280222ca21")
+			(uuid "cfa9b2b3-c90f-4237-a03f-3176f09abcf8")
 		)
 		(pin "4"
-			(uuid "ff970b41-f121-43b8-b52f-f65d09600f82")
+			(uuid "00d22f85-bb2a-4506-8d33-1864dfc48d3f")
 		)
 		(pin "5"
-			(uuid "1abe705e-2630-4d14-b998-5f10532fa3ec")
+			(uuid "a9117c41-e98f-41cb-a44a-66173e3e9774")
 		)
 		(pin "6"
-			(uuid "bb87ac57-2c19-44c1-987c-82fc559b4a88")
+			(uuid "75797e29-76ea-44f0-afea-d82199c4fd9a")
 		)
 		(pin "7"
-			(uuid "18b219a9-3a2a-47db-8fca-f55b9ca87805")
+			(uuid "a97d1251-020b-4bf5-a921-591f2db0a4d2")
 		)
 		(pin "8"
-			(uuid "bf6cb526-6af6-4e16-a8e6-56cbe8ba5df3")
+			(uuid "320c0e38-413b-48ed-8e81-2600cdf5e83c")
 		)
 		(pin "9"
-			(uuid "6b56cb67-282d-497a-b90f-1661feec045a")
+			(uuid "8d6524a8-5c61-4182-a132-68c4e3cac11f")
 		)
 		(pin "10"
-			(uuid "b0977813-9999-43a7-8dd5-47b2035457da")
+			(uuid "259c2b5d-7a31-459a-8d92-506c29b3ba81")
 		)
 		(pin "11"
-			(uuid "997c98eb-2601-4fc4-abab-37b95b574a28")
+			(uuid "81943b85-3428-4d25-bbea-04ad0da48029")
 		)
 		(pin "12"
-			(uuid "acca0694-a8f6-4560-9afa-3728f305eec1")
+			(uuid "af46442c-8343-4f09-bc71-eb63048f111e")
 		)
 		(instances
 			(project "LA4440 stereo amplifier - volume header, toggle / GPIO mute"
-				(path "/3061605e-c653-4d3e-aef1-4408e25fae13"
+				(path "/c645e534-70dc-4709-a09a-266e7a286bba"
 					(reference "JQ2")
 					(unit 1)
 				)
@@ -7226,7 +7226,7 @@
 	)
 	(no_connect
 		(at 96.52 241.3)
-		(uuid "a63b3989-c0f5-494c-96ae-b83aad5fe28e")
+		(uuid "9fad7363-f071-47aa-82e4-a57a4b242ba4")
 	)
 	(label "VCC"
 		(at 91.44 243.84 180)
@@ -7236,7 +7236,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "5668a2ed-8ada-4d18-8f3d-ebbd20fa0fa5")
+		(uuid "0acd9699-e28f-4fdb-bfb3-fa56e7c5baaf")
 	)
 	(label "PB"
 		(at 91.44 246.38 180)
@@ -7246,7 +7246,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "eaf530cb-0a8b-4145-b06c-79bd1a9d7ff4")
+		(uuid "5d0eb12c-40cc-41d3-9ec3-fb1f69d1708f")
 	)
 	(label "MV"
 		(at 91.44 248.92 180)
@@ -7256,11 +7256,11 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "a1c16e7e-1462-4aa9-907d-55b075516fd5")
+		(uuid "4b0fbb4d-cd8f-4725-85a1-e40778e1b67f")
 	)
 	(no_connect
 		(at 96.52 251.46)
-		(uuid "58e22e4c-b010-4eb9-9fcf-88260cc667fc")
+		(uuid "bd9d2537-a09d-46f1-ad28-8604fe2b863a")
 	)
 	(label "VCC"
 		(at 91.44 254.0 180)
@@ -7270,7 +7270,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "b417ea74-e64f-4abd-be87-54c1cdd46bf1")
+		(uuid "87a111b5-edfa-41d1-93bb-7e0f4055dc2d")
 	)
 	(label "PB"
 		(at 91.44 256.54 180)
@@ -7280,7 +7280,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "f435148f-adfb-492a-b938-227a8c8c0c63")
+		(uuid "c311fd0d-90a6-4878-a7bf-e3ca733a392c")
 	)
 	(label "MV"
 		(at 91.44 259.08 180)
@@ -7290,11 +7290,11 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "e262b826-dc9b-4cf7-becb-04cc4049a583")
+		(uuid "a78d8887-1323-4f15-b910-276e5a50c75b")
 	)
 	(no_connect
 		(at 96.52 261.62)
-		(uuid "f4093acf-109d-4384-80e5-b77dc3f71fda")
+		(uuid "f190f39a-9366-46fb-bff0-527703261443")
 	)
 	(label "VCC"
 		(at 91.44 264.16 180)
@@ -7304,7 +7304,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "9186dd1b-8a12-4b3a-bce0-262915b7760a")
+		(uuid "365334eb-f2dd-4ff0-9e99-bda6e90cfe74")
 	)
 	(label "PB"
 		(at 91.44 266.7 180)
@@ -7314,7 +7314,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "54633894-4e26-49aa-a13b-5eb60ac19869")
+		(uuid "c37bf80c-a50c-4387-bb79-9824f32a2408")
 	)
 	(label "MV"
 		(at 91.44 269.24 180)
@@ -7324,7 +7324,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "a08ef199-86fe-4762-ab2f-101cb713b48d")
+		(uuid "305ca4ab-90d6-4f67-922e-cb34a73f08c2")
 	)
 	(text "Verified in ngspice (../sim/amp_full.cir): 30.3 dB, 20 Hz - 190 kHz, 4.4 W into 4R at 13.2 V before clipping, mute pin 6.9 mA."
 		(exclude_from_sim no)
@@ -7335,7 +7335,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "f3a4db3f-aae7-429c-b72c-0d9c7643cc1c")
+		(uuid "d6ef50ff-66c2-4e27-9f8b-e0cc2586387f")
 	)
 	(text "RV1 is a dual B100K LINEAR pot (or 2 x X9C104 on J2 later: they need 5 V and CS/INC/U-D from the ESP32). R3/R4 give it a near-log law."
 		(exclude_from_sim no)
@@ -7346,7 +7346,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "fd9e514d-e45e-405b-b0c9-78bbeffca178")
+		(uuid "988cbbb1-b1fd-4b72-abdc-c7250eb99a4a")
 	)
 	(text "U1 heatsink tab to GND. Off-board: RV1/RV2 (dual pot), SW1, LS1, LS2. Not built yet - see docs/notes.html for the simulation and the unverified items."
 		(exclude_from_sim no)
@@ -7357,7 +7357,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "d3e717ac-d280-41ff-b66e-a01b1eb86dd8")
+		(uuid "0492d6fd-df93-48e5-a932-b012a8a5c212")
 	)
 	(wire
 		(pts
@@ -7367,7 +7367,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "71ae6a61-5f00-4df7-8289-cfb6236ec4d1")
+		(uuid "4bc92039-8e34-47ad-97c2-db9323d2a48b")
 	)
 	(wire
 		(pts
@@ -7377,7 +7377,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "383a6ec0-f290-443a-a30c-452611de79bc")
+		(uuid "b8eddab2-042d-4494-8197-15663f8c328e")
 	)
 	(wire
 		(pts
@@ -7387,7 +7387,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "07ee3c18-002a-467e-aebb-6241cc5b022b")
+		(uuid "5e20f2ba-c190-4e5f-a2c9-04aed579917a")
 	)
 	(wire
 		(pts
@@ -7397,7 +7397,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "bf23d931-00dc-474b-874f-5cd107b4f28a")
+		(uuid "6cd9339d-7c5f-4e4a-8267-5a73f3259f71")
 	)
 	(wire
 		(pts
@@ -7407,7 +7407,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "9b12660e-b8d5-47fc-94e7-4382bf9f5266")
+		(uuid "46006ef0-da66-403c-bc67-8dc9e2db3b8a")
 	)
 	(wire
 		(pts
@@ -7417,7 +7417,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "050a862b-e5f9-42f3-a2a6-6ab2f4efdb03")
+		(uuid "b24690e6-325f-4bd8-b5b4-b05c1cf33e4b")
 	)
 	(wire
 		(pts
@@ -7427,7 +7427,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "fe79800f-c7d8-4dd4-8bd2-b39bb1f56b72")
+		(uuid "c3c7d65a-7915-47ed-ab06-880f185d8f03")
 	)
 	(wire
 		(pts
@@ -7437,7 +7437,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "7a4249e7-e347-4a2f-b2c9-7bcbf41d0856")
+		(uuid "9b211246-72ad-4280-b0f6-d3723ba314df")
 	)
 	(wire
 		(pts
@@ -7447,7 +7447,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "7fd41c09-9fc3-460f-9c0d-95b1d53f414a")
+		(uuid "f24e9823-4012-4bf3-adff-be9b74381a55")
 	)
 	(wire
 		(pts
@@ -7457,7 +7457,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "15f94856-f632-43be-905e-a3762063609c")
+		(uuid "8d0a4882-d265-4a86-91c3-8dd5633aa239")
 	)
 	(wire
 		(pts
@@ -7467,7 +7467,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "e7b762e3-ffd9-467f-a0dc-9ff6638c6d49")
+		(uuid "bb9478e9-187a-41f1-ba3f-546b644dc622")
 	)
 	(wire
 		(pts
@@ -7477,7 +7477,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "746b45d2-cc53-4647-b2b1-bac83e6216be")
+		(uuid "920d51b1-4b44-423c-b1b4-5cc770307165")
 	)
 	(wire
 		(pts
@@ -7487,7 +7487,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "d24ad215-822d-4151-8860-c03be252d48b")
+		(uuid "5836877c-414f-47d2-a1cc-7afc3bf6eeb0")
 	)
 	(wire
 		(pts
@@ -7497,7 +7497,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "1a26f7f4-0502-4215-b016-f3ee478f9c94")
+		(uuid "1702de34-cf8e-4387-87eb-ed2c44ba9bda")
 	)
 	(wire
 		(pts
@@ -7507,7 +7507,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "e0a40fec-e1a5-4ed0-a3e1-b02295ac2baa")
+		(uuid "3821d454-8ba3-4e05-bdc7-4516c7343c6d")
 	)
 	(wire
 		(pts
@@ -7517,7 +7517,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "8fd2c843-b51e-44f1-83f5-ee557fe61e44")
+		(uuid "60a4bd47-63eb-4630-b238-40ccc35cf264")
 	)
 	(wire
 		(pts
@@ -7527,7 +7527,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "84f35ae3-f25b-4578-b8af-9e5e250504fe")
+		(uuid "e1c5348a-d310-4efe-95a4-bf4fd92d8b31")
 	)
 	(wire
 		(pts
@@ -7537,7 +7537,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "2bfcac37-f28f-4982-9d52-eed6ec7821b6")
+		(uuid "b65fce94-9f63-4b7b-9d9f-8c74f23534e3")
 	)
 	(wire
 		(pts
@@ -7547,7 +7547,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "1d921cce-be37-452e-805f-c474cff155f2")
+		(uuid "1fa86b94-e4c1-4155-a6f1-f52e06890c52")
 	)
 	(wire
 		(pts
@@ -7557,7 +7557,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "c3c45ae7-4892-4896-a735-4c2fbd9da455")
+		(uuid "bafe04ad-9f65-4ee4-90a0-6a2ead1e3fa9")
 	)
 	(wire
 		(pts
@@ -7567,7 +7567,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "686063d3-9d2c-47ec-a34e-e15b52bd921c")
+		(uuid "eccbff51-7217-42e8-a7aa-eb9668ed17a1")
 	)
 	(wire
 		(pts
@@ -7577,7 +7577,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "0d0b248d-cc28-4a4f-8823-7c6f541c3cd2")
+		(uuid "ade47f3d-196c-4f03-b893-691003ddb675")
 	)
 	(wire
 		(pts
@@ -7587,7 +7587,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "e7f5d320-bc44-4470-8fc4-573122d34b7a")
+		(uuid "f8e0b947-8c2e-476a-9184-d759f5934d30")
 	)
 	(wire
 		(pts
@@ -7597,7 +7597,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "92b9e4f8-05ee-4db9-ab3a-0eb9fe0ad770")
+		(uuid "38d952da-97a9-43f7-a68d-034ec9bb02e4")
 	)
 	(wire
 		(pts
@@ -7607,7 +7607,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "f2f71bf5-7449-4bf8-9b62-5d122a978db4")
+		(uuid "15e4cf47-7306-40d6-965a-5bcac331de5d")
 	)
 	(wire
 		(pts
@@ -7617,7 +7617,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "e75d1e3f-f378-4f26-8738-5f3834ecc39c")
+		(uuid "da07cc86-a5ad-420d-8a68-214fde8f70fc")
 	)
 	(wire
 		(pts
@@ -7627,7 +7627,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "54a1f6f0-cc19-4bb8-a75c-c58a886a636b")
+		(uuid "b6ebef50-2f83-43d8-ba5f-f8c1fc34680a")
 	)
 	(wire
 		(pts
@@ -7637,7 +7637,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "0f42ea17-0fae-4660-901d-bab0e44e8899")
+		(uuid "95d1a1a2-9595-4963-9322-5a5ac2f3c38b")
 	)
 	(wire
 		(pts
@@ -7647,7 +7647,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "3a830e33-7f7a-4934-817a-24fe577ac0e2")
+		(uuid "108312e3-049b-4624-a456-c447e9daca70")
 	)
 	(wire
 		(pts
@@ -7657,7 +7657,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "7b31b189-b390-45a8-a43b-daac2158bf24")
+		(uuid "16e58ff8-acf9-4ad4-9928-fc4824b8d75c")
 	)
 	(wire
 		(pts
@@ -7667,7 +7667,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "49647b7b-94d3-4a67-a040-efdee8319d4f")
+		(uuid "0c077273-c5c5-4fb0-98c6-f962beadcb08")
 	)
 	(wire
 		(pts
@@ -7677,7 +7677,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "6c7d9a80-304b-42e4-9be8-5282debc718a")
+		(uuid "bb42a038-2798-4a91-89ba-5115027076f2")
 	)
 	(wire
 		(pts
@@ -7687,7 +7687,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "134cc8df-7af1-4fa3-9800-d07f70f1b18c")
+		(uuid "ea1842ee-b942-451c-85ee-2afa4b22d2a9")
 	)
 	(wire
 		(pts
@@ -7697,7 +7697,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "82f0081c-87da-4764-a966-592caaf2f3e8")
+		(uuid "ff18f30c-cd15-4b79-85e2-a8968d62746a")
 	)
 	(wire
 		(pts
@@ -7707,7 +7707,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "25d94491-27a1-4d71-a30b-edcd928a2455")
+		(uuid "456a7730-cd43-4526-b2b1-6f8a01fa13fb")
 	)
 	(wire
 		(pts
@@ -7717,7 +7717,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "2c30858f-b738-4697-9101-73bef1891f3b")
+		(uuid "8677162d-ac70-45aa-9015-980fcf7fbdd0")
 	)
 	(wire
 		(pts
@@ -7727,7 +7727,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "de309b07-24b6-4076-b1be-5f274bfec8cd")
+		(uuid "2f942736-aad3-4e3f-82c3-9b6de8a12ae9")
 	)
 	(wire
 		(pts
@@ -7737,7 +7737,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "f599eeeb-5e76-40b8-969f-766f3cdfc273")
+		(uuid "a8f87407-d8e5-438d-9f99-8a0300ff5df1")
 	)
 	(wire
 		(pts
@@ -7747,7 +7747,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "f83346cd-e18b-4210-8d50-1b7d877e3d27")
+		(uuid "12e5a197-3e97-4986-b05a-a027c859b3c2")
 	)
 	(wire
 		(pts
@@ -7757,7 +7757,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "5d0e8a04-c419-4f5c-b309-5e83880972b7")
+		(uuid "641fac2b-f865-483e-8344-2028f56f5e17")
 	)
 	(wire
 		(pts
@@ -7767,7 +7767,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "76f0fd47-c291-41b6-98e2-5c2949086f2a")
+		(uuid "56cb5604-d362-448b-9988-c4bcf56de2f0")
 	)
 	(wire
 		(pts
@@ -7777,7 +7777,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "aa86941e-cf85-46d1-bc05-f51a83417402")
+		(uuid "e3465efd-34d9-48a2-9e70-714ce76f7cd6")
 	)
 	(wire
 		(pts
@@ -7787,7 +7787,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "38c8bb51-6d2d-4def-94a6-7acae282bdfe")
+		(uuid "23d568e8-c1b0-4c1b-a8c9-5b6e8c123b90")
 	)
 	(wire
 		(pts
@@ -7797,7 +7797,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "49b4afa9-389d-4637-b5be-329b539c7ea6")
+		(uuid "8d16f58d-c302-475b-8258-73fb5f00160d")
 	)
 	(wire
 		(pts
@@ -7807,7 +7807,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "b9a720b2-7879-4379-b74c-71754cc14b1d")
+		(uuid "964c213f-9118-4b9f-9b31-13549c9e3d54")
 	)
 	(wire
 		(pts
@@ -7817,7 +7817,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "23771d0a-52fb-4c05-89bc-429efc82781e")
+		(uuid "525b9fd7-4c8d-424a-9fdd-7f6406dcc86c")
 	)
 	(wire
 		(pts
@@ -7827,7 +7827,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "64c54c3d-99ef-4658-8465-e86a9042dc0b")
+		(uuid "ada8efe2-bfa5-4c72-b2be-a2a6cf97caaa")
 	)
 	(wire
 		(pts
@@ -7837,7 +7837,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "14184bbc-e6e0-4418-9f3e-4bf37d266ed0")
+		(uuid "59bf7aaf-6b92-4a81-a88d-c4b57e8c8ec0")
 	)
 	(wire
 		(pts
@@ -7847,7 +7847,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "af6a4bcf-28c7-4f05-aef6-8f551e9de2d5")
+		(uuid "dd47bf90-4909-4120-a589-39e1bc913f28")
 	)
 	(wire
 		(pts
@@ -7857,7 +7857,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "11e75702-c959-43a7-bbb4-bce3eb8caaba")
+		(uuid "945649fd-d133-4559-a8d6-3c47fd7eb45e")
 	)
 	(wire
 		(pts
@@ -7867,7 +7867,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "9b0bb1d3-91aa-4c17-ab72-165d0f3e6200")
+		(uuid "860def21-f1bc-4c19-879c-c2715f790536")
 	)
 	(wire
 		(pts
@@ -7877,7 +7877,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "b79d1bb4-26c1-4352-9854-f097381ea3a8")
+		(uuid "b48ab31d-42a5-481b-b175-f74721d22395")
 	)
 	(wire
 		(pts
@@ -7887,7 +7887,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "f31b33b7-5fd2-45d5-ae7e-c457d1783959")
+		(uuid "693e96fa-c43e-4722-b47b-6b327f86cb12")
 	)
 	(wire
 		(pts
@@ -7897,7 +7897,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "1ae8a941-d00c-47ff-9444-8cf82e1e7730")
+		(uuid "062d9273-3d55-499b-986b-54c5ee7aff3e")
 	)
 	(wire
 		(pts
@@ -7907,7 +7907,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "c9180d42-ee66-46cd-8d0f-7d9a14ef406d")
+		(uuid "50eb92a6-0eae-4414-a98d-635c91dbbda9")
 	)
 	(wire
 		(pts
@@ -7917,7 +7917,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "d43ee9ea-1d4d-4ec6-aa14-4e02de8e5c70")
+		(uuid "98cea3ce-e5a0-4b83-afd0-2a360826e127")
 	)
 	(wire
 		(pts
@@ -7927,7 +7927,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "23088743-3210-4f88-a253-295d093f26a7")
+		(uuid "5ba2a34a-5430-44d5-8c16-503a6186feb4")
 	)
 	(wire
 		(pts
@@ -7937,7 +7937,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "17281e3f-f1b6-432c-9d6c-ba7d009344b9")
+		(uuid "f59548c5-2b5a-4892-9130-0b4718827f9e")
 	)
 	(wire
 		(pts
@@ -7947,7 +7947,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "807b72f9-d682-469d-8a5e-01a961ea43b2")
+		(uuid "fa34cb74-ec51-4c8d-920a-a7bc2f40d2b2")
 	)
 	(wire
 		(pts
@@ -7957,7 +7957,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "d81e1423-c49f-4b26-9f88-b84de9581703")
+		(uuid "41de3c54-1f73-4f1f-9946-33e9705475e1")
 	)
 	(wire
 		(pts
@@ -7967,7 +7967,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "28956f79-13db-42b9-b017-420b225f3875")
+		(uuid "2344c458-093a-4f55-bb78-63edcfc9e81c")
 	)
 	(wire
 		(pts
@@ -7977,7 +7977,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "1e614b77-10b1-4bfa-ba6b-b2543b9c171a")
+		(uuid "f1d7a0dd-d885-4543-9f49-72b244a5954b")
 	)
 	(wire
 		(pts
@@ -7987,7 +7987,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "9084cdd3-b4c5-414d-b949-549b44360ed9")
+		(uuid "4f9b67b6-8db7-41c6-bb51-30020660fea3")
 	)
 	(wire
 		(pts
@@ -7997,7 +7997,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "b62ddd0b-2cf8-4bda-8a43-36d3e32b581f")
+		(uuid "5f92df3e-fe54-4588-919a-c544ea2a3576")
 	)
 	(wire
 		(pts
@@ -8007,7 +8007,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "7a1b4c34-7acd-44e2-a251-dd3bb6558368")
+		(uuid "86c6fbe9-96ef-4be6-a3a9-536d6f422685")
 	)
 	(wire
 		(pts
@@ -8017,7 +8017,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "b56f3f7b-7ac5-4e47-b6e7-b6b13e5b606a")
+		(uuid "3355004f-357a-4dea-9021-630ace4dd357")
 	)
 	(wire
 		(pts
@@ -8027,7 +8027,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "9f6f01e7-67e0-41b3-941a-edf6ed6ae72f")
+		(uuid "aa1b8e85-ed5b-44b2-8573-38c7d9e784b1")
 	)
 	(wire
 		(pts
@@ -8037,7 +8037,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "ad40d499-18a3-4140-991e-1bdea56b76a2")
+		(uuid "9fb74671-15d0-4a25-b0f6-dcd151d76357")
 	)
 	(wire
 		(pts
@@ -8047,7 +8047,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "4d2ca9a0-1da5-4bec-81cf-002e2c0381d8")
+		(uuid "21166be1-5108-4d47-b282-32f193bbbd6e")
 	)
 	(wire
 		(pts
@@ -8057,7 +8057,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "81c5370c-96f5-449c-a2d2-3b85d3368f25")
+		(uuid "a232ec85-9d64-47af-8111-2e16036e1091")
 	)
 	(wire
 		(pts
@@ -8067,7 +8067,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "9f1b0545-6107-4485-ae32-19080707125f")
+		(uuid "80fce280-8b8c-40a7-8089-4a698b51d45e")
 	)
 	(wire
 		(pts
@@ -8077,7 +8077,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "02ad810a-9b55-481c-b4b5-8adc1aa2cbc7")
+		(uuid "70fdcfa8-b38a-465c-bda5-62177870d276")
 	)
 	(wire
 		(pts
@@ -8087,7 +8087,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "6643bf1e-b2ee-4e01-b600-b7eabfd67ea4")
+		(uuid "407aba75-121f-464e-8dbb-f5d626e10eab")
 	)
 	(wire
 		(pts
@@ -8097,7 +8097,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "de346412-1824-4f79-8f61-e204d590109e")
+		(uuid "383bfc94-0501-4f86-bd62-38589d8705b9")
 	)
 	(wire
 		(pts
@@ -8107,7 +8107,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "37539cbd-a10d-4f74-9b5b-5af0b8b63481")
+		(uuid "92757abf-eedc-49de-aad2-4771ae0f51b0")
 	)
 	(wire
 		(pts
@@ -8117,7 +8117,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "6fef3590-b383-43b4-bae2-60071b926d8a")
+		(uuid "915723b2-dbaf-4ef0-9394-6e9b8f24eebd")
 	)
 	(wire
 		(pts
@@ -8127,7 +8127,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "c522a063-2898-4f4c-95e1-6bfda21bd70c")
+		(uuid "252553d1-46c9-413a-a7a4-afc28773b73e")
 	)
 	(wire
 		(pts
@@ -8137,7 +8137,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "1d7f645a-243e-4f7f-ac22-56d751961a8c")
+		(uuid "e9313cea-be5f-42d2-9e34-71e6da86c483")
 	)
 	(wire
 		(pts
@@ -8147,7 +8147,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "f25a2fd9-d1b5-493a-8378-bf51d0fc3283")
+		(uuid "eb217da9-0dd9-4dce-9775-bc93a5848e64")
 	)
 	(wire
 		(pts
@@ -8157,7 +8157,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "8775c0c3-7333-4a1a-9249-f52d7ceb2c74")
+		(uuid "4b3c8b0e-d186-4423-98cd-2eba72fcf9d8")
 	)
 	(wire
 		(pts
@@ -8167,7 +8167,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "8d91f1e5-e425-4054-b3c4-55242a318fbf")
+		(uuid "a4ae3e84-a63b-42f6-a73a-44cf3a9e83d7")
 	)
 	(wire
 		(pts
@@ -8177,7 +8177,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "0c0f332a-6c03-4606-a203-6052704c2821")
+		(uuid "6e35ea88-fc6f-4300-bed8-58f24a023ffd")
 	)
 	(wire
 		(pts
@@ -8187,7 +8187,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "960e6bd4-b8a9-407e-b329-b92427d664f9")
+		(uuid "cb980e95-2fe6-438f-b092-078bca297f43")
 	)
 	(wire
 		(pts
@@ -8197,7 +8197,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "1aa501f8-0107-489d-aca6-7e0e6ab0d523")
+		(uuid "b2a9ecc7-561f-4a77-b994-2b1f882f97cb")
 	)
 	(wire
 		(pts
@@ -8207,7 +8207,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "365ccdf8-69a8-42ff-a243-5b67942e9134")
+		(uuid "e539e420-647b-479f-aff0-c237b312ade3")
 	)
 	(wire
 		(pts
@@ -8217,7 +8217,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "240604d8-000c-4f30-b461-3f6901da8189")
+		(uuid "95b16da9-b8de-46ac-9cba-628c853441e0")
 	)
 	(wire
 		(pts
@@ -8227,7 +8227,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "33e11ffd-6724-4706-ab46-1af02ef31990")
+		(uuid "1ddc9f76-a22e-4a0a-aae9-c1a097f4bb6d")
 	)
 	(wire
 		(pts
@@ -8237,7 +8237,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "cd4129c6-863f-4054-ba67-2e91d576261d")
+		(uuid "7b161a45-9508-435d-a302-080d47a185df")
 	)
 	(wire
 		(pts
@@ -8247,7 +8247,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "8255fa65-d52d-4cc3-8c68-fd1e8788d30a")
+		(uuid "c5544d3c-20cb-480c-9abb-b4763f58a90e")
 	)
 	(wire
 		(pts
@@ -8257,7 +8257,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "49867231-5787-4452-9fc8-50415ccc8273")
+		(uuid "286394ea-5a3d-415c-ac40-766218ab5f4f")
 	)
 	(wire
 		(pts
@@ -8267,7 +8267,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "d3e8e11f-36ff-4675-be4a-61f47cf7beda")
+		(uuid "aa437166-677a-4b16-8b80-d7964de81d66")
 	)
 	(wire
 		(pts
@@ -8277,7 +8277,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "85945dfa-873a-4f1c-a85a-18fb40be4803")
+		(uuid "69f86a1c-a73d-43e8-972e-64530917f39f")
 	)
 	(wire
 		(pts
@@ -8287,7 +8287,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "9ebab523-7034-4555-aa74-99c34af78b93")
+		(uuid "094329f4-1589-4107-a150-d81ebceb38f5")
 	)
 	(wire
 		(pts
@@ -8297,7 +8297,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "1b49d8ed-1093-403e-9775-5369ae2f01af")
+		(uuid "a19f0801-d508-4d32-b463-4070d6eefe15")
 	)
 	(wire
 		(pts
@@ -8307,7 +8307,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "1b900257-cc5a-48ae-a154-9a0576507ce0")
+		(uuid "b56b5e0f-1809-45a7-a95d-d7c58578125c")
 	)
 	(wire
 		(pts
@@ -8317,7 +8317,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "6dcc9b96-24f8-4479-b60e-3454d716c5ee")
+		(uuid "0d3e84cb-973c-4b76-88d2-4dddb926ad7c")
 	)
 	(wire
 		(pts
@@ -8327,7 +8327,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "d2903225-4e27-4db1-b151-e38cde65e033")
+		(uuid "04abc3f2-47e7-4a8b-a204-94ba733ae751")
 	)
 	(wire
 		(pts
@@ -8337,7 +8337,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "eba15d04-b7fe-4602-b17e-e40430e4ff11")
+		(uuid "911e2a5b-b053-4182-af1d-eaf308bf5c39")
 	)
 	(wire
 		(pts
@@ -8347,7 +8347,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "2d4e6b13-e5a0-41c0-88f3-30b0888fd9f3")
+		(uuid "3e7e7c29-588f-4be4-8167-dfc42ac0d503")
 	)
 	(wire
 		(pts
@@ -8357,7 +8357,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "19a408df-a482-4681-853d-fb8121e7806c")
+		(uuid "a4831d7c-908a-4ac3-9a12-579be4226bb5")
 	)
 	(wire
 		(pts
@@ -8367,7 +8367,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "fcd54052-d178-4b1b-b7f3-5a13a2ab99e1")
+		(uuid "b6e909b5-a83c-4f05-8a24-0a0ef6f95f8d")
 	)
 	(wire
 		(pts
@@ -8377,7 +8377,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "f1882e7a-3ff4-4e1b-b59d-5aeb6ab5a957")
+		(uuid "a3d08185-0c05-4869-9509-80a33bc9339a")
 	)
 	(wire
 		(pts
@@ -8387,7 +8387,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "68160842-1014-498f-8d01-c9e8aecb4506")
+		(uuid "fc31d1ee-ca32-442c-9a2b-7cdc2d5e1a54")
 	)
 	(wire
 		(pts
@@ -8397,7 +8397,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "47890466-96b8-4e87-a4ef-c5e82012a3ce")
+		(uuid "deaa0679-998e-441d-a981-16b5723427fb")
 	)
 	(wire
 		(pts
@@ -8407,7 +8407,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "22671f79-f6e8-4307-809d-dd50f40df073")
+		(uuid "ac515f58-af06-4c8d-8ac9-acf423239dd8")
 	)
 	(wire
 		(pts
@@ -8417,7 +8417,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "276ed2ad-ddc3-432b-9d7a-4a5c599bfdb5")
+		(uuid "1ecb40e2-8d60-49b8-8460-d07bf2a07fa6")
 	)
 	(wire
 		(pts
@@ -8427,7 +8427,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "ce49cfb1-6e75-42a7-be6b-cf722758a2dd")
+		(uuid "177b3685-f011-4cd2-8a2c-8cfb64610d37")
 	)
 	(wire
 		(pts
@@ -8437,7 +8437,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "cf0bea54-da13-4ad1-aa59-14d305ac4361")
+		(uuid "010820cd-1879-40f7-b955-93d70f563ca9")
 	)
 	(wire
 		(pts
@@ -8447,7 +8447,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "0f1dea59-1f48-4aef-8683-c345f1d8f568")
+		(uuid "a9de20a4-ac79-47f3-bf58-63848ca36a27")
 	)
 	(wire
 		(pts
@@ -8457,7 +8457,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "eb688d80-5e93-4d4e-972b-e9415d9727ea")
+		(uuid "07306559-2326-42f1-ae2d-23c7e40786d3")
 	)
 	(wire
 		(pts
@@ -8467,7 +8467,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "7e43000a-185c-4fb7-aa15-7d3dc08e67b1")
+		(uuid "e2913959-47dc-482d-b916-d29051bb727e")
 	)
 	(wire
 		(pts
@@ -8477,7 +8477,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "cc57b514-d603-4644-a838-bbd8f1a5aebf")
+		(uuid "d3cdc0ae-01ad-4de2-916c-cdd93cf0a008")
 	)
 	(wire
 		(pts
@@ -8487,7 +8487,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "345b6f49-ecf6-424b-9fb5-5e1fae879b16")
+		(uuid "bf81fde9-fcef-4e7b-b516-c8a3d71f76c4")
 	)
 	(wire
 		(pts
@@ -8497,7 +8497,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "d25a96ce-0fa5-4c9a-93b3-2260f5f7d97c")
+		(uuid "8a37fcee-9c59-4545-9e85-efe86b8d14f3")
 	)
 	(wire
 		(pts
@@ -8507,7 +8507,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "b18d135c-b4c0-440d-a374-34d71b40c84f")
+		(uuid "975f13e1-0c31-4d0c-afdc-d3339a875015")
 	)
 	(wire
 		(pts
@@ -8517,7 +8517,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "7280c2cc-95da-4228-815b-051fc46e2daf")
+		(uuid "abcfab9e-1a1c-4efc-a363-6a2cc70bb43e")
 	)
 	(wire
 		(pts
@@ -8527,7 +8527,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "b7dd40fb-e48f-4205-a6c5-5c57e56da86a")
+		(uuid "2d582dc1-e3ad-4365-b16d-fd7b446cd248")
 	)
 	(wire
 		(pts
@@ -8537,7 +8537,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "d45a585b-a3ee-4271-b6c3-4bdc4f2ef357")
+		(uuid "a059f95d-a368-4310-b842-1e04508d81ec")
 	)
 	(wire
 		(pts
@@ -8547,7 +8547,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "d28d888d-1f55-4e84-bc3a-d64675152aaf")
+		(uuid "78d46d4c-c6d5-4b55-8bed-cfe0ea51a85a")
 	)
 	(wire
 		(pts
@@ -8557,7 +8557,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "58696573-755f-44bd-a116-9b35ed079ac0")
+		(uuid "318e3d8d-5377-4b07-8fa0-fce352218ecb")
 	)
 	(wire
 		(pts
@@ -8567,7 +8567,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "af48c341-a9c1-4d70-9c0a-5b88057f6072")
+		(uuid "81409d63-a743-476d-90b9-f62ec038f19a")
 	)
 	(wire
 		(pts
@@ -8577,7 +8577,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "f706e014-e17b-46c3-b865-1afa1230edc1")
+		(uuid "8f8051f1-08cc-4fad-929e-4928725e4164")
 	)
 	(wire
 		(pts
@@ -8587,7 +8587,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "b5293a0e-c1d4-4ee5-8047-b378afd02d8b")
+		(uuid "13f088cf-28b7-4e76-98c7-141da909d63a")
 	)
 	(wire
 		(pts
@@ -8597,7 +8597,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "ece57718-727d-47ab-8552-cc2d2c3267ca")
+		(uuid "52367f83-3b8e-435d-a4e0-4a81e56e11e0")
 	)
 	(wire
 		(pts
@@ -8607,7 +8607,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "be09f954-7a92-4690-9027-4e1a4973aee6")
+		(uuid "5d2db3bc-71c3-4310-868a-b92717bd2073")
 	)
 	(wire
 		(pts
@@ -8617,7 +8617,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "1f4dd6e4-51b6-4ff0-99c4-e198418004b6")
+		(uuid "cde3be8c-b032-4fa7-8fb7-64c24b248f05")
 	)
 	(wire
 		(pts
@@ -8627,7 +8627,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "fc9f358b-05e7-454e-8ce2-a076cbdc9b42")
+		(uuid "f8fab5cb-4aa8-4b99-8d89-c73db5e11dd5")
 	)
 	(wire
 		(pts
@@ -8637,7 +8637,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "e2424c75-5fb5-4749-970b-49fb9435f9ab")
+		(uuid "346bae13-b6ed-4384-a7f7-5b9e66cb6c38")
 	)
 	(sheet_instances
 		(path "/"

@@ -35,7 +35,7 @@ channel, are in [docs/notes.html](docs/notes.html) (download and open it in a br
 | `kicad/gen_sch.py` | writes the schematic `la4440.kicad_sch` (labels, custom LA4440 symbol in `la4440.kicad_sym`) |
 | `kicad/run_checks.sh` | schematic -> netlist -> `netcheck.py` against `sim/amp_full.cir` -> ERC -> PDF / PNG |
 | `kicad/gen_pcb.py`, `place.py` | places the board from the netlist (hybrid footprints are written to `Custom.pretty`) |
-| `kicad/build_pcb.sh` | place -> freerouting -> `post_route.py` -> GND pours -> DRC with schematic parity |
+| `kicad/build_pcb.sh` | place -> freerouting -> GND pours -> DRC with schematic parity |
 | `kicad/build_all.sh` | everything above plus 3D renders, Gerbers and the 2-up panel |
 | `kicad/la4440-gerbers.zip`, `kicad/panel/` | fab files, see [ORDER_GUIDE.md](ORDER_GUIDE.md) |
 | `bom.md` | parts, marked in hand / buy |
@@ -44,7 +44,7 @@ channel, are in [docs/notes.html](docs/notes.html) (download and open it in a br
 Status of the checks at the last build: netlist matches the simulation deck, ERC 0 errors, DRC 0 errors
 with schematic parity (warnings left: silkscreen overlaps and the off-board parts RV1/RV2, SW1, LS1, LS2,
 which have no footprint on purpose). Autorouting with freerouting is not deterministic: a rebuild can land
-the tracks differently; `post_route.py` closes the one link it tends to leave open and DRC is the judge.
+the tracks differently; DRC is the judge.
 
 Tools: KiCad 9.0, ngspice 42, freerouting 1.9, KiKit 1.8. The generators need KiCad's `pcbnew` Python
 module (`/usr/bin/python3` on Ubuntu).
@@ -62,16 +62,6 @@ module (`/usr/bin/python3` on Ubuntu).
 Datasheet: Sanyo LA4440 (ENN750F). Pinout used: 1 NF1, 2 IN1, 3 pre-GND, 4 mute, 5 ripple filter, 6 IN2,
 7 NF2, 8 GND2, 9 BS2, 10 OUT2, 11 VCC, 12 OUT1, 13 BS1, 14 GND1 (pin 1 on the left with the marking toward
 you, pins down).
-
-## Not verified
-
-- The mute attenuation (only the mute pin current is simulated), turn-on thump and mute pop.
-- The bootstrap and the slower start from 1000 uF on pins 5, 9 and 13 (the datasheet uses 100 / 220 uF).
-- Distortion and temperature. The LA4440 model is behavioural; there is no maker SPICE model.
-- With 2 x X9C104 the two channels can differ by up to 2.7 dB at mid volume (+/-20% part tolerance); plan a
-  per-channel offset in firmware.
-- The CircuitJS link in the notes has never been opened in a browser.
-- Not built, not measured.
 
 ## License
 

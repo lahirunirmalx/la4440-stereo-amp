@@ -6,7 +6,7 @@
 	(property "Reference" "R17"
 		(at 6.35 -2.92 0)
 		(layer "F.SilkS")
-		(uuid "430aa441-951b-4b4b-a01e-3708c2a8b59d")
+		(uuid "9f5501a0-ef52-4ed5-9272-38bb605a813a")
 		(effects
 			(font
 				(size 0.9 0.9)
@@ -17,7 +17,7 @@
 	(property "Value" "10R 1W (R2 pair)"
 		(at 0 0 0)
 		(layer "F.Fab")
-		(uuid "5ecc069e-29d4-4153-bbdc-0d760c827f5e")
+		(uuid "505218bb-fa17-48f9-828b-c332fc004671")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -29,7 +29,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "f5ae0667-5bb6-4bab-9332-7df8cfffa4c1")
+		(uuid "da4576a6-74bb-4cfa-916d-f61ad55d4b57")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -41,7 +41,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "962dccec-879b-472a-a8d0-cabe17a1b72f")
+		(uuid "3943bbbf-a191-447b-abdd-ede30341f51e")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -58,7 +58,7 @@
 		)
 		(fill no)
 		(layer "F.SilkS")
-		(uuid "5eefb7b5-60da-4449-8e06-d5664dd1bb05")
+		(uuid "b6802eb4-050d-4c17-b3d5-5658224204be")
 	)
 	(fp_rect
 		(start -4.9 -2.175)
@@ -69,7 +69,7 @@
 		)
 		(fill no)
 		(layer "F.CrtYd")
-		(uuid "a9323f7b-9427-4cbb-bc1c-0c016a7d1c19")
+		(uuid "5fd73410-fdce-44d0-a630-dde8093371c7")
 	)
 	(pad "1" thru_hole oval
 		(at 0 0)
@@ -78,7 +78,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(thermal_bridge_angle 45)
-		(uuid "a13586a8-0690-4a74-9855-abe7daf3ba05")
+		(uuid "2e7a336a-858d-4a2d-903b-205efc2ef0c4")
 	)
 	(pad "1S" smd roundrect
 		(at 3.3 0)
@@ -87,7 +87,7 @@
 		(roundrect_rratio 0.25)
 		(zone_connect 2)
 		(thermal_bridge_angle 45)
-		(uuid "f454ee90-66aa-4acf-ba68-17d696941f63")
+		(uuid "0ca51e89-33cc-4582-bd70-169b529956fe")
 	)
 	(pad "2" thru_hole oval
 		(at 12.7 0)
@@ -96,7 +96,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(thermal_bridge_angle 45)
-		(uuid "ea20fd02-9a95-425d-922b-3ea68c719960")
+		(uuid "ef838fe4-e1d2-4026-a2bb-0cda4fab5973")
 	)
 	(pad "2S" smd roundrect
 		(at 9.399999 0)
@@ -105,7 +105,7 @@
 		(roundrect_rratio 0.25)
 		(zone_connect 2)
 		(thermal_bridge_angle 45)
-		(uuid "13de14e8-d394-47d6-b12d-6aeefd92a2c5")
+		(uuid "f6bb8935-662f-4462-a5a2-d07cfd6e60a2")
 	)
 	(embedded_fonts no)
 )

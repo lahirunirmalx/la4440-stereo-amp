@@ -262,6 +262,20 @@ def main():
         if ref.startswith("JQ"):
             fp.Reference().SetVisible(False)
 
+    # Q2 emitter: freerouting reaches the SOT-23 twin pad (1S) but never the TO-92 pad 1 next
+    # to it, so pre-route a LOCKED 0.5 mm stub pad 1 -> 1S around the 2S pad; the DSN export
+    # carries locked tracks as fixed wires and the router works around them.
+    q2 = {pd.GetNumber(): pd.GetPosition() for pd in board.FindFootprintByReference("Q2").Pads()}
+    p1, p1s = q2["1"], q2["1S"]
+    xr = max(p1.x, p1s.x) + FromMM(1.5)
+    pts_q2 = [p1, VECTOR2I(xr, p1.y), VECTOR2I(xr, p1s.y), p1s]
+    for a, b in zip(pts_q2, pts_q2[1:]):
+        tr = pcbnew.PCB_TRACK(board)
+        tr.SetStart(a); tr.SetEnd(b)
+        tr.SetWidth(FromMM(0.5)); tr.SetLayer(pcbnew.F_Cu)
+        tr.SetNet(netitems[pin_net[("Q2", "1")]]); tr.SetLocked(True)
+        board.Add(tr)
+
     # column labels above every pinout field
     for ref in JQ_REFS:
         px, py, _ = PLACE[ref]
